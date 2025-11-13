@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>General | Grilla</title>
+<style>
+body{background:#0b0f1a;color:#fff;font-family:sans-serif;padding:20px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(50px,1fr));gap:8px;}
+.box{padding:10px;border-radius:8px;text-align:center;font-weight:bold;transition:.2s;cursor:pointer;}
+.c10{background:#2ecc71}.c9{background:#27ae60}.c8{background:#f1c40f}
+.c7{background:#e67e22}.c6{background:#e74c3c}.c5{background:#c0392b}.cv{background:#333}
+.box:hover{transform:scale(1.1);}
+.tip{position:fixed;pointer-events:none;background:#222;padding:5px 10px;border-radius:5px;font-size:14px;display:none;}
+</style>
+</head>
+<body>
+<h1>Mapa de capítulos — General</h1>
+<div class="grid">
+
+</div>
+<div class="tip" id="tip"></div>
+<script>
+const tip=document.getElementById("tip");
+document.querySelectorAll(".box").forEach(b=>{
+  b.addEventListener("mousemove",e=>{
+    tip.style.display="block";
+    tip.textContent=b.title;
+    tip.style.left=e.clientX+14+"px";
+    tip.style.top=e.clientY+14+"px";
+  });
+  b.addEventListener("mouseleave",()=>tip.style.display="none");
+});
+</script>
+</body></html>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>General — Top & Grilla</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0b1222;--card:#0f1527;--line:#1b2440;--ink:#e8eefc;--muted:#9fb1df;--acc:#ffd166;--cell:42px;--gap:6px}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:radial-gradient(1200px 600px at 70% -10%, rgba(255,255,255,.04), transparent 50%) , var(--bg);color:var(--ink);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:1150px;margin:30px auto;padding:0 16px;opacity:0;transform:translateY(6px);transition:opacity .35s ease, transform .35s ease}
+  .wrap.ready{opacity:1;transform:translateY(0)}
+  h1{font-family:"Bebas Neue"; font-size:54px; margin:0; letter-spacing:.8px; color:#fff}
+  .muted{color:var(--muted)}
+  .tabs{display:flex;gap:8px;margin-top:18px;position:sticky;top:0;z-index:5}
+  .tab{padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02)); cursor:pointer; font-weight:700; position:relative}
+  .tab.active{outline:2px solid #2c5bff; background:rgba(44,91,255,.1)}
+  .tab.active::after{content:""; position:absolute; left:10px; right:10px; bottom:6px; height:2px; background:#2c5bff; border-radius:99px}
+  .panel{margin-top:14px;border:1px solid var(--line);background:var(--card);border-radius:14px;padding:14px;will-change:opacity,transform; opacity:0; transform:scale(.98); transition:opacity .25s ease, transform .25s ease}
+  .panel.show{opacity:1; transform:scale(1)}
+  table{width:100%;border-collapse:collapse}
+  th,td{padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.08)}
+  th{font-weight:600;color:#A8B2D1;font-size:13px}
+  td{font-size:15px}
+  .badge{padding:3px 8px;border-radius:999px;background:#18223d;border:1px solid #263154;color:#cfe0ff;font-size:12px}
+  .gold{color:#ffd166}.silver{color:#cfd8dc}.bronze{color:#ffb080}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--cell),1fr));gap:var(--gap)}
+  .cell{position:relative;height:var(--cell);display:flex;align-items:center;justify-content:center;border-radius:8px;font-weight:800;border:1px solid #1f2740;font-size:calc(var(--cell)*0.42);line-height:1;color:#fff;transform:translateY(4px);opacity:0}
+  .cell.show{transform:translateY(0);opacity:1;transition:transform .18s ease, opacity .18s ease}
+  .star{position:absolute;top:3px;right:4px;font-size:calc(var(--cell)*0.44);line-height:1;filter:drop-shadow(0 1px 2px rgba(0,0,0,.6))}
+  .tip{position:fixed;left:0;top:0;transform:translate(-9999px,-9999px);background:rgba(10,15,28,.96);color:var(--ink);border:1px solid #2a324a;border-radius:10px;padding:8px 10px;font-size:13px;pointer-events:none;z-index:999999;box-shadow:0 6px 24px rgba(0,0,0,.35);white-space:nowrap}
+</style>
+</head>
+<body>
+<div class="wrap" id="wrap">
+  <h1>General</h1>
+  <div class="muted">Colección ID: <code>default</code></div>
+
+  <div class="tabs">
+    <div class="tab active" data-tab="top">Top 10</div>
+    <div class="tab" data-tab="grid">Grilla</div>
+    <a href="../" class="tab" style="text-decoration:none" onclick="return pageBackTransition(this.href)">Volver</a>
+  </div>
+
+  <div class="panel show" id="panel-top">
+    <table>
+      <thead><tr><th>#</th><th>Capítulo</th><th>Promedio</th><th>Votos</th><th>Fecha</th></tr></thead>
+      <tbody id="tbodyTop"></tbody>
+    </table>
+  </div>
+
+  <div class="panel" id="panel-grid">
+    <div class="grid" id="grid"></div>
+  </div>
+</div>
+<div class="tip" id="tip"></div>
+
+<script>
+const fmtNum = n => Number(n||0).toLocaleString('es-AR',{minimumFractionDigits:2,maximumFractionDigits:2});
+const fmtDate = iso => { try{ return new Date(iso).toLocaleDateString('es-AR'); }catch{ return '' } };
+const esc = s => (s||'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+function color(v){ if(v>=9)return'#0f6d2f'; if(v>=8)return'#22c55e'; if(v>=7)return'#facc15'; if(v>=6)return'#fb923c'; if(v>=4)return'#ef4444'; if(v>0)return'#111827'; return'#6b7280'; }
+function label(v){ if(v>=9)return'CINE'; if(v>=8)return'MUY BUENO'; if(v>=7)return'BUENO'; if(v>=6)return'REGULAR'; if(v>=4)return'MALO'; if(v>0)return'MALISIMO'; return'SIN VOTOS'; }
+function epNum(t,i){
+  // Devuelve el número de episodio *real* buscando todos los números en el texto
+  // y tomando el último (ej: "Temp 1 Cap 4" -> 4). Si no hay números, usa i+1.
+  const m = (t||'').match(/d+/g);
+  return m ? Number(m[m.length - 1]) : (i + 1);
+}
+
+function epKey(t, i){
+  if(!t) return 'S1E'+(i+1);
+  t = t.toLowerCase().trim();
+  // Ej: "Temp 2 Cap 10"
+  const m = t.match(/temps*(d+).*caps*(d+)/i);
+  if (m) return 'T' + m[1] + 'C' + m[2];
+  // Ej: "OVA 1"
+  const o = t.match(/ovas*(d+)/i);
+  if (o) return 'OVA' + o[1];
+  // Si nada coincide, usa índice
+  const nums = t.match(/d+/g);
+  return nums ? 'T1C' + nums[nums.length-1] : 'T1C' + (i+1);
+}
+
+// === Top 3 episodios para marcar con estrellas ===
+function topOrder(arr){
+  const items = (arr||[]).map((r,i)=>({
+    key: epKey(r.capitulo,i),
+    prom: +((r.promedio||0)),
+    votos: +((r.votos||0))
+  }));
+  items.sort((a,b)=> b.prom - a.prom || b.votos - a.votos);
+  return items.slice(0,3).map(x=>x.key);
+}
+
+
+function renderTop(list){
+  const tbody=document.getElementById('tbodyTop'); tbody.innerHTML='';
+  const rows=(list||[]).slice(0,10);
+  rows.forEach((e,i)=>{
+    const medal=i===0?'🥇':i===1?'🥈':i===2?'🥉':(i+1)+'.';
+    const tr=document.createElement('tr');
+    tr.innerHTML=`<td class="${i===0?'gold':i===1?'silver':i===2?'bronze':''}">${medal}</td>
+      <td>${esc(e.capitulo||'')}</td>
+      <td><b>${fmtNum(e.promedio)}</b></td>
+      <td><span class="badge">${e.votos||0}</span></td>
+      <td>${fmtDate(e.date)}</td>`;
+    tbody.appendChild(tr);
+  });
+}
+
+function renderGrid(arr, scale){
+  const g=document.getElementById('grid'); g.innerHTML='';
+  const tip=document.getElementById('tip');
+  if (scale){
+    document.documentElement.style.setProperty('--cell', (Math.round(42*Number(scale))||42)+'px');
+  }
+
+  const setTop = new Set(topOrder(arr));
+
+  // agrupa por clave tipo "T1C3", "T2C10"
+  const map = new Map();
+  (arr||[]).forEach((r,i)=>{
+    const key = epKey(r.capitulo,i);
+    const prev = map.get(key);
+    if (!prev || (Number(r.votos||0) > Number(prev.votos||0))) map.set(key, r);
+  });
+
+  // ordenar por temporada y capítulo numérico
+  const order = Array.from(map.entries()).sort((a,b)=>{
+    const parse = k=>{
+      const m = k.match(/^T(d+)C(d+)/i);
+      return m ? [Number(m[1]), Number(m[2])] : [999,999];
+    };
+    const [sa,ea]=parse(a[0]);
+    const [sb,eb]=parse(b[0]);
+    return sa-sb || ea-eb;
+  });
+
+  // render
+  let delay=0;
+  for (const [key, r] of order){
+    const v = Number(r.promedio||0);
+    const votos = Number(r.votos||0);
+    const d = document.createElement('div');
+    d.className = 'cell';
+    d.textContent = key.replace('T','T').replace('C','×'); // T1×3
+    d.style.background = color(v);
+
+    if (setTop.has(key)){
+      const star = document.createElement('span');
+      star.className='star';
+      star.textContent='★';
+      d.appendChild(star);
+    }
+
+    d.onmousemove = function(e){
+      tip.innerHTML = '<b>' + r.capitulo + '</b> — ' + label(v) + ' (' + fmtNum(v) + '/10, votos: ' + votos + ')';
+      tip.style.transform = 'translate(' + (e.clientX+14) + 'px,' + (e.clientY+14) + 'px)';
+    };
+    d.onmouseleave = function(){
+      tip.style.transform = 'translate(-9999px,-9999px)';
+    };
+
+    g.appendChild(d);
+    setTimeout(()=>d.classList.add('show'), delay);
+    delay += 12;
+  }
+}
+
+
+function showTab(id){
+  const topP=document.getElementById('panel-top');
+  const gridP=document.getElementById('panel-grid');
+  const toShow = (id==='top')? topP : gridP;
+  const toHide = (id==='top')? gridP : topP;
+  toHide.classList.remove('show');
+  setTimeout(()=>{ toHide.style.display='none'; toShow.style.display='block'; requestAnimationFrame(()=> toShow.classList.add('show')); }, 180);
+  document.querySelectorAll('.tab').forEach(el=> el.classList.toggle('active', el.dataset.tab===id));
+}
+document.querySelectorAll('.tab[data-tab]').forEach(t=> t.onclick=()=> showTab(t.dataset.tab));
+
+fetch('./data.json').then(r=>r.json()).then(j=>{
+  document.getElementById('wrap').classList.add('ready');
+  document.title = (j.collection?.name || 'Colección') + ' — Top & Grilla';
+  renderTop(j.data);
+  renderGrid(j.data, j.scale);
+});
+
+function pageBackTransition(href){
+  if (document.startViewTransition){
+    document.startViewTransition(()=> { window.location.href = href; });
+    return false;
+  }
+  document.getElementById('wrap').style.opacity='0';
+  setTimeout(()=> window.location.href = href, 120);
+  return false;
+}
+</script>
+</body>
+</html>
