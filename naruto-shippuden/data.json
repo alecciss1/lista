@@ -1,0 +1,20 @@
+{
+  "collection": {
+    "id": "naruto-shippuden",
+    "name": "Naruto Shippuden",
+    "type": "series"
+  },
+  "generatedAt": "2025-11-18T00:44:58.051Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1760730137638",
+      "capitulo": "SIN CALIFICAR",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2025-10-17T19:42:17.638Z",
+      "channel": "alecciss",
+      "colId": "naruto-shippuden"
+    }
+  ]
+}

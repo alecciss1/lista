@@ -1,0 +1,38 @@
+{
+  "collection": {
+    "id": "peliculas",
+    "name": "Peliculas",
+    "type": "series"
+  },
+  "generatedAt": "2025-11-18T00:44:58.133Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1761105367784",
+      "capitulo": "TRANSFORMERS 1",
+      "promedio": 8.63,
+      "votos": 16,
+      "date": "2025-10-22T03:56:07.784Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1761187431802",
+      "capitulo": "Son Como Niños",
+      "promedio": 8.32,
+      "votos": 11,
+      "date": "2025-10-23T02:43:51.803Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1761191563503",
+      "capitulo": "Capitulo",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2025-10-23T03:52:43.503Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    }
+  ]
+}
