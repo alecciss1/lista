@@ -4,9 +4,27 @@
     "name": "Peliculas",
     "type": "series"
   },
-  "generatedAt": "2025-12-04T00:42:16.458Z",
+  "generatedAt": "2025-12-15T00:47:21.271Z",
   "scale": 1,
   "data": [
+    {
+      "id": "1765082991239",
+      "capitulo": "Piratas del Caribe 2",
+      "promedio": 9.88,
+      "votos": 13,
+      "date": "2025-12-07T04:49:51.239Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1765168315930",
+      "capitulo": "Señor de los Anillos 2",
+      "promedio": 9.72,
+      "votos": 9,
+      "date": "2025-12-08T04:31:55.930Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
     {
       "id": "1764218485017",
       "capitulo": "Piratas del Caribe 1",
