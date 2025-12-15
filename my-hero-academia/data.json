@@ -4,7 +4,7 @@
     "name": "My Hero Academia",
     "type": "series"
   },
-  "generatedAt": "2025-12-04T02:47:16.381Z",
+  "generatedAt": "2025-12-15T04:43:37.218Z",
   "scale": 1,
   "data": [
     {
@@ -80,6 +80,15 @@
       "colId": "my-hero-academia"
     },
     {
+      "id": "1765770595536",
+      "capitulo": "Temp 6 Cap 5",
+      "promedio": 9.68,
+      "votos": 64,
+      "date": "2025-12-15T03:49:55.536Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
       "id": "1761538530880",
       "capitulo": "Temp 1 Cap 11",
       "promedio": 9.43,
@@ -98,11 +107,38 @@
       "colId": "my-hero-academia"
     },
     {
+      "id": "1765504538892",
+      "capitulo": "Temp 5 Cap 23",
+      "promedio": 9.34,
+      "votos": 49,
+      "date": "2025-12-12T01:55:38.892Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
       "id": "1763698723102",
       "capitulo": "Temp 4 Cap 9",
       "promedio": 9.2,
       "votos": 45,
       "date": "2025-11-21T04:18:43.102Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1765252577010",
+      "capitulo": "PELICULA 3",
+      "promedio": 9.19,
+      "votos": 44,
+      "date": "2025-12-09T03:56:17.010Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1765506311110",
+      "capitulo": "Temp 5 Cap 24",
+      "promedio": 9.16,
+      "votos": 39,
+      "date": "2025-12-12T02:25:11.110Z",
       "channel": "alecciss",
       "colId": "my-hero-academia"
     },
@@ -116,6 +152,15 @@
       "colId": "my-hero-academia"
     },
     {
+      "id": "1765766814451",
+      "capitulo": "Temp 6 Cap 3",
+      "promedio": 9.12,
+      "votos": 53,
+      "date": "2025-12-15T02:46:54.451Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
       "id": "1761444815672",
       "capitulo": "Temp 1 Cap 1",
       "promedio": 9.09,
@@ -123,6 +168,33 @@
       "date": "2025-10-26T02:13:35.673Z",
       "channel": "alecciss",
       "colId": "my-hero-academy"
+    },
+    {
+      "id": "1765772302999",
+      "capitulo": "Temp 6 Cap 6",
+      "promedio": 9.08,
+      "votos": 63,
+      "date": "2025-12-15T04:18:22.999Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1765765147750",
+      "capitulo": "Temp 6 Cap 2",
+      "promedio": 9.04,
+      "votos": 58,
+      "date": "2025-12-15T02:19:07.750Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1765773817202",
+      "capitulo": "Temp 6 Cap 7",
+      "promedio": 9.01,
+      "votos": 47,
+      "date": "2025-12-15T04:43:37.202Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
     },
     {
       "id": "1762919343309",
@@ -143,11 +215,11 @@
       "colId": "my-hero-academy"
     },
     {
-      "id": "1764207834308",
-      "capitulo": "prueba",
-      "promedio": 9,
-      "votos": 1,
-      "date": "2025-11-27T01:43:54.309Z",
+      "id": "1765768551894",
+      "capitulo": "Temp 6 Cap 4",
+      "promedio": 8.97,
+      "votos": 53,
+      "date": "2025-12-15T03:15:51.894Z",
       "channel": "alecciss",
       "colId": "my-hero-academia"
     },
@@ -215,24 +287,6 @@
       "colId": "my-hero-academia"
     },
     {
-      "id": "1764297170907",
-      "capitulo": "Temp 4 Cap 23",
-      "promedio": 8.76,
-      "votos": 46,
-      "date": "2025-11-28T02:32:50.907Z",
-      "channel": "alecciss",
-      "colId": "my-hero-academia"
-    },
-    {
-      "id": "1764297180129",
-      "capitulo": "Temp 4 Cap 23",
-      "promedio": 8.76,
-      "votos": 46,
-      "date": "2025-11-28T02:33:00.129Z",
-      "channel": "alecciss",
-      "colId": "my-hero-academia"
-    },
-    {
       "id": "1761449769363",
       "capitulo": "Temp 1 Cap 4",
       "promedio": 8.72,
@@ -278,6 +332,15 @@
       "colId": "my-hero-academia"
     },
     {
+      "id": "1765763424222",
+      "capitulo": "Temp 6 Cap 1",
+      "promedio": 8.61,
+      "votos": 54,
+      "date": "2025-12-15T01:50:24.222Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
       "id": "1762828024577",
       "capitulo": "Temp 3 Cap 2",
       "promedio": 8.59,
@@ -292,6 +355,15 @@
       "promedio": 8.55,
       "votos": 41,
       "date": "2025-11-28T02:04:58.408Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1765335644180",
+      "capitulo": "Temp 5 Cap 19",
+      "promedio": 8.55,
+      "votos": 39,
+      "date": "2025-12-10T03:00:44.180Z",
       "channel": "alecciss",
       "colId": "my-hero-academia"
     },
@@ -467,6 +539,15 @@
       "colId": "my-hero-academia"
     },
     {
+      "id": "1765337345492",
+      "capitulo": "Temp 5 Cap 20",
+      "promedio": 7.95,
+      "votos": 32,
+      "date": "2025-12-10T03:29:05.492Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
       "id": "1762135476395",
       "capitulo": "Temp Cap 11",
       "promedio": 7.94,
@@ -508,6 +589,15 @@
       "promedio": 7.89,
       "votos": 33,
       "date": "2025-12-02T03:21:25.541Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1765502867797",
+      "capitulo": "Temp 5 Cap 22",
+      "promedio": 7.87,
+      "votos": 28,
+      "date": "2025-12-12T01:27:47.797Z",
       "channel": "alecciss",
       "colId": "my-hero-academia"
     },
@@ -562,6 +652,24 @@
       "promedio": 7.74,
       "votos": 19,
       "date": "2025-10-27T03:03:09.627Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1765073875036",
+      "capitulo": "Temp 5 Cap 15",
+      "promedio": 7.69,
+      "votos": 34,
+      "date": "2025-12-07T02:17:55.036Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1765333961324",
+      "capitulo": "Temp 5 Cap 18",
+      "promedio": 7.66,
+      "votos": 40,
+      "date": "2025-12-10T02:32:41.324Z",
       "channel": "alecciss",
       "colId": "my-hero-academia"
     },
@@ -647,6 +755,15 @@
       "colId": "my-hero-academia"
     },
     {
+      "id": "1765507895119",
+      "capitulo": "Temp 5 Cap 25",
+      "promedio": 7.55,
+      "votos": 31,
+      "date": "2025-12-12T02:51:35.119Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
       "id": "1763174289576",
       "capitulo": "Temp 3 Cap 17",
       "promedio": 7.55,
@@ -710,6 +827,15 @@
       "colId": "my-hero-academia"
     },
     {
+      "id": "1765501269881",
+      "capitulo": "Temp 5 Cap 21",
+      "promedio": 7.47,
+      "votos": 23,
+      "date": "2025-12-12T01:01:09.881Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
       "id": "1763170983126",
       "capitulo": "Temp 3 Cap 15",
       "promedio": 7.45,
@@ -746,11 +872,29 @@
       "colId": "my-hero-academia"
     },
     {
+      "id": "1765072393007",
+      "capitulo": "Temp 5 Cap 14",
+      "promedio": 7.37,
+      "votos": 26,
+      "date": "2025-12-07T01:53:13.007Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
       "id": "1764816436363",
       "capitulo": "Temp 5 Cap 13",
       "promedio": 7.36,
       "votos": 35,
       "date": "2025-12-04T02:47:16.363Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1765332369427",
+      "capitulo": "Temp 5 Cap 17",
+      "promedio": 7.32,
+      "votos": 36,
+      "date": "2025-12-10T02:06:09.427Z",
       "channel": "alecciss",
       "colId": "my-hero-academia"
     },
@@ -958,6 +1102,15 @@
       "promedio": 6.72,
       "votos": 28,
       "date": "2025-12-03T02:15:33.887Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1765245865326",
+      "capitulo": "Temp 5 Cap 16",
+      "promedio": 6.67,
+      "votos": 37,
+      "date": "2025-12-09T02:04:25.326Z",
       "channel": "alecciss",
       "colId": "my-hero-academia"
     },
