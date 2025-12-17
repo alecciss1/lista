@@ -4,7 +4,7 @@
     "name": "My Hero Academia",
     "type": "series"
   },
-  "generatedAt": "2025-12-15T04:43:37.218Z",
+  "generatedAt": "2025-12-17T00:47:00.893Z",
   "scale": 1,
   "data": [
     {
@@ -31,6 +31,15 @@
       "promedio": 9.89,
       "votos": 87,
       "date": "2025-11-25T03:28:12.121Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1765852452218",
+      "capitulo": "Temp 6 Cap 9",
+      "promedio": 9.79,
+      "votos": 112,
+      "date": "2025-12-16T02:34:12.218Z",
       "channel": "alecciss",
       "colId": "my-hero-academia"
     },
@@ -89,6 +98,15 @@
       "colId": "my-hero-academia"
     },
     {
+      "id": "1765856043573",
+      "capitulo": "Temp 6 Cap 11",
+      "promedio": 9.46,
+      "votos": 92,
+      "date": "2025-12-16T03:34:03.573Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
       "id": "1761538530880",
       "capitulo": "Temp 1 Cap 11",
       "promedio": 9.43,
@@ -134,6 +152,15 @@
       "colId": "my-hero-academia"
     },
     {
+      "id": "1765857691606",
+      "capitulo": "Temp 6 Cap 12",
+      "promedio": 9.18,
+      "votos": 63,
+      "date": "2025-12-16T04:01:31.606Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
       "id": "1765506311110",
       "capitulo": "Temp 5 Cap 24",
       "promedio": 9.16,
@@ -168,6 +195,15 @@
       "date": "2025-10-26T02:13:35.673Z",
       "channel": "alecciss",
       "colId": "my-hero-academy"
+    },
+    {
+      "id": "1765850707149",
+      "capitulo": "Temp 6 Cap 8",
+      "promedio": 9.08,
+      "votos": 64,
+      "date": "2025-12-16T02:05:07.149Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
     },
     {
       "id": "1765772302999",
@@ -382,6 +418,15 @@
       "promedio": 8.47,
       "votos": 35,
       "date": "2025-11-03T03:28:50.496Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1765854167665",
+      "capitulo": "Temp 6 Cap 10",
+      "promedio": 8.46,
+      "votos": 58,
+      "date": "2025-12-16T03:02:47.665Z",
       "channel": "alecciss",
       "colId": "my-hero-academia"
     },
