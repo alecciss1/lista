@@ -4,9 +4,18 @@
     "name": "Peliculas",
     "type": "series"
   },
-  "generatedAt": "2025-12-22T00:41:06.512Z",
+  "generatedAt": "2025-12-27T00:47:55.101Z",
   "scale": 1,
   "data": [
+    {
+      "id": "1766378069428",
+      "capitulo": "Señor de los Anillos 3",
+      "promedio": 10,
+      "votos": 18,
+      "date": "2025-12-22T04:34:29.428Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
     {
       "id": "1765082991239",
       "capitulo": "Piratas del Caribe 2",
