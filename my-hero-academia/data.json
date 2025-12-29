@@ -4,7 +4,7 @@
     "name": "My Hero Academia",
     "type": "series"
   },
-  "generatedAt": "2025-12-27T04:03:24.641Z",
+  "generatedAt": "2025-12-28T04:26:43.019Z",
   "scale": 1,
   "data": [
     {
@@ -31,6 +31,24 @@
       "promedio": 9.89,
       "votos": 87,
       "date": "2025-11-25T03:28:12.121Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1766890092403",
+      "capitulo": "Temp 7 Cap 11",
+      "promedio": 9.88,
+      "votos": 112,
+      "date": "2025-12-28T02:48:12.403Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1766893672810",
+      "capitulo": "Temp 7 Cap 13",
+      "promedio": 9.84,
+      "votos": 107,
+      "date": "2025-12-28T03:47:52.810Z",
       "channel": "alecciss",
       "colId": "my-hero-academia"
     },
@@ -116,6 +134,15 @@
       "colId": "my-hero-academia"
     },
     {
+      "id": "1766891827016",
+      "capitulo": "Temp 7 Cap 12",
+      "promedio": 9.64,
+      "votos": 107,
+      "date": "2025-12-28T03:17:07.016Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
       "id": "1766725355437",
       "capitulo": "Pelicula 4",
       "promedio": 9.58,
@@ -184,6 +211,15 @@
       "promedio": 9.46,
       "votos": 92,
       "date": "2025-12-16T03:34:03.573Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1766888218987",
+      "capitulo": "Temp 7 Cap 10",
+      "promedio": 9.46,
+      "votos": 74,
+      "date": "2025-12-28T02:16:58.987Z",
       "channel": "alecciss",
       "colId": "my-hero-academia"
     },
@@ -463,6 +499,15 @@
       "promedio": 8.76,
       "votos": 46,
       "date": "2025-11-28T02:32:43.497Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1766896002997",
+      "capitulo": "Temp 7 Cap 14",
+      "promedio": 8.74,
+      "votos": 57,
+      "date": "2025-12-28T04:26:42.997Z",
       "channel": "alecciss",
       "colId": "my-hero-academia"
     },
