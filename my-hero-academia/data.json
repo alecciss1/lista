@@ -4,7 +4,7 @@
     "name": "My Hero Academia",
     "type": "series"
   },
-  "generatedAt": "2025-12-28T04:26:43.019Z",
+  "generatedAt": "2026-01-02T01:07:34.068Z",
   "scale": 1,
   "data": [
     {
@@ -143,6 +143,15 @@
       "colId": "my-hero-academia"
     },
     {
+      "id": "1766973763871",
+      "capitulo": "Temp 7 Cap 16",
+      "promedio": 9.63,
+      "votos": 81,
+      "date": "2025-12-29T02:02:43.871Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
       "id": "1766725355437",
       "capitulo": "Pelicula 4",
       "promedio": 9.58,
@@ -269,6 +278,15 @@
       "colId": "my-hero-academia"
     },
     {
+      "id": "1766975476378",
+      "capitulo": "Temp 7 Cap 17",
+      "promedio": 9.25,
+      "votos": 55,
+      "date": "2025-12-29T02:31:16.378Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
       "id": "1766716726724",
       "capitulo": "Temp 7 Cap 3",
       "promedio": 9.21,
@@ -283,6 +301,15 @@
       "promedio": 9.2,
       "votos": 45,
       "date": "2025-11-21T04:18:43.102Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1766977342207",
+      "capitulo": "Temp 7 Cap 18",
+      "promedio": 9.19,
+      "votos": 62,
+      "date": "2025-12-29T03:02:22.207Z",
       "channel": "alecciss",
       "colId": "my-hero-academia"
     },
@@ -580,6 +607,15 @@
       "promedio": 8.61,
       "votos": 54,
       "date": "2025-12-15T01:50:24.222Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1766972010835",
+      "capitulo": "Temp 7 Cap 15",
+      "promedio": 8.6,
+      "votos": 58,
+      "date": "2025-12-29T01:33:30.835Z",
       "channel": "alecciss",
       "colId": "my-hero-academia"
     },
