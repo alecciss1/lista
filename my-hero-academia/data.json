@@ -4,9 +4,18 @@
     "name": "My Hero Academia",
     "type": "series"
   },
-  "generatedAt": "2026-01-03T03:49:59.499Z",
+  "generatedAt": "2026-01-04T04:07:53.238Z",
   "scale": 1,
   "data": [
+    {
+      "id": "1767499673222",
+      "capitulo": "Temp 8 Cap 8",
+      "promedio": 9.97,
+      "votos": 213,
+      "date": "2026-01-04T04:07:53.222Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
     {
       "id": "1762999670237",
       "capitulo": "Temp 3 Cap 11",
@@ -67,6 +76,15 @@
       "promedio": 9.88,
       "votos": 112,
       "date": "2025-12-28T02:48:12.403Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1767497834969",
+      "capitulo": "Temp 8 Cap 7",
+      "promedio": 9.87,
+      "votos": 138,
+      "date": "2026-01-04T03:37:14.969Z",
       "channel": "alecciss",
       "colId": "my-hero-academia"
     },
@@ -197,11 +215,29 @@
       "colId": "my-hero-academia"
     },
     {
+      "id": "1767493009613",
+      "capitulo": "Temp 8 Cap 5",
+      "promedio": 9.59,
+      "votos": 103,
+      "date": "2026-01-04T02:16:49.613Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
       "id": "1766725355437",
       "capitulo": "Pelicula 4",
       "promedio": 9.58,
       "votos": 43,
       "date": "2025-12-26T05:02:35.437Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia"
+    },
+    {
+      "id": "1767495984219",
+      "capitulo": "Temp 8 Cap 6",
+      "promedio": 9.57,
+      "votos": 96,
+      "date": "2026-01-04T03:06:24.219Z",
       "channel": "alecciss",
       "colId": "my-hero-academia"
     },
