@@ -68,5 +68,15 @@
     "id": "my-hero-academia",
     "name": "My Hero Academia",
     "type": "series"
+  },
+  {
+    "id": "opening-my-hero-academia",
+    "name": "Opening My Hero Academia",
+    "type": "series"
+  },
+  {
+    "id": "yu-yu-hakusho",
+    "name": "Yu Yu Hakusho",
+    "type": "series"
   }
 ]
