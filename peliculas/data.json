@@ -4,7 +4,7 @@
     "name": "Peliculas",
     "type": "series"
   },
-  "generatedAt": "2026-01-17T05:06:10.123Z",
+  "generatedAt": "2026-01-23T00:27:26.566Z",
   "scale": 1,
   "data": [
     {
@@ -89,20 +89,20 @@
       "colId": "peliculas"
     },
     {
+      "id": "1768790246583",
+      "capitulo": "Piratas del Caribe 4",
+      "promedio": 8.45,
+      "votos": 10,
+      "date": "2026-01-19T02:37:26.583Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
       "id": "1761187431802",
       "capitulo": "Son Como Niños",
       "promedio": 8.32,
       "votos": 11,
       "date": "2025-10-23T02:43:51.803Z",
-      "channel": "alecciss",
-      "colId": "peliculas"
-    },
-    {
-      "id": "1768625944165",
-      "capitulo": "Capitulo 16",
-      "promedio": 8.25,
-      "votos": 8,
-      "date": "2026-01-17T04:59:04.165Z",
       "channel": "alecciss",
       "colId": "peliculas"
     }
