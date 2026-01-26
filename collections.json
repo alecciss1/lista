@@ -78,5 +78,10 @@
     "id": "yu-yu-hakusho",
     "name": "Yu Yu Hakusho",
     "type": "series"
+  },
+  {
+    "id": "welcome-to-derry",
+    "name": "Welcome To Derry",
+    "type": "series"
   }
 ]
