@@ -4,7 +4,7 @@
     "name": "Welcome To Derry",
     "type": "series"
   },
-  "generatedAt": "2026-01-23T00:27:26.606Z",
+  "generatedAt": "2026-01-31T19:33:58.543Z",
   "scale": 1,
   "data": [
     {
@@ -26,6 +26,24 @@
       "colId": "welcome-to-derry"
     },
     {
+      "id": "1769382938407",
+      "capitulo": "Temp 1 Capitulo 5",
+      "promedio": 9.5,
+      "votos": 1,
+      "date": "2026-01-25T23:15:38.407Z",
+      "channel": "alecciss",
+      "colId": "welcome-to-derry"
+    },
+    {
+      "id": "1769888038534",
+      "capitulo": "Temp 1 Capitulo 7",
+      "promedio": 9.5,
+      "votos": 1,
+      "date": "2026-01-31T19:33:58.534Z",
+      "channel": "alecciss",
+      "colId": "welcome-to-derry"
+    },
+    {
       "id": "1768840130343",
       "capitulo": "Temp 1 Capitulo 2",
       "promedio": 9,
@@ -40,6 +58,15 @@
       "promedio": 8.5,
       "votos": 1,
       "date": "2026-01-21T17:11:17.433Z",
+      "channel": "alecciss",
+      "colId": "welcome-to-derry"
+    },
+    {
+      "id": "1769467787461",
+      "capitulo": "Temp 1 Capitulo 6",
+      "promedio": 8,
+      "votos": 1,
+      "date": "2026-01-26T22:49:47.461Z",
       "channel": "alecciss",
       "colId": "welcome-to-derry"
     }
