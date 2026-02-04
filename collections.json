@@ -83,5 +83,10 @@
     "id": "welcome-to-derry",
     "name": "Welcome To Derry",
     "type": "series"
+  },
+  {
+    "id": "stranger-things",
+    "name": "Stranger Things",
+    "type": "series"
   }
 ]
