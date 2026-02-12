@@ -4,9 +4,27 @@
     "name": "Yu Yu Hakusho",
     "type": "series"
   },
-  "generatedAt": "2026-02-03T23:44:19.017Z",
+  "generatedAt": "2026-02-12T00:32:31.332Z",
   "scale": 1,
   "data": [
+    {
+      "id": "1770517144982",
+      "capitulo": "Capitulo 64",
+      "promedio": 9.82,
+      "votos": 9,
+      "date": "2026-02-08T02:19:04.982Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
+      "id": "1770247682265",
+      "capitulo": "Capitulo 62",
+      "promedio": 9.75,
+      "votos": 8,
+      "date": "2026-02-04T23:28:02.266Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
     {
       "id": "1769567145664",
       "capitulo": "Capitulo 42",
@@ -17,11 +35,38 @@
       "colId": "yu-yu-hakusho"
     },
     {
+      "id": "1770520258319",
+      "capitulo": "Capitulo 66",
+      "promedio": 9.65,
+      "votos": 10,
+      "date": "2026-02-08T03:10:58.319Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
       "id": "1770073295642",
       "capitulo": "Capitulo 52",
       "promedio": 9.57,
       "votos": 11,
       "date": "2026-02-02T23:01:35.642Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
+      "id": "1770515663145",
+      "capitulo": "Capitulo 63",
+      "promedio": 9.46,
+      "votos": 9,
+      "date": "2026-02-08T01:54:23.145Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
+      "id": "1770518656006",
+      "capitulo": "Capitulo 65",
+      "promedio": 9.22,
+      "votos": 10,
+      "date": "2026-02-08T02:44:16.006Z",
       "channel": "alecciss",
       "colId": "yu-yu-hakusho"
     },
@@ -40,6 +85,15 @@
       "promedio": 9.13,
       "votos": 6,
       "date": "2026-01-23T02:04:07.672Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
+      "id": "1770246195872",
+      "capitulo": "Capitulo 61",
+      "promedio": 9.11,
+      "votos": 11,
+      "date": "2026-02-04T23:03:15.872Z",
       "channel": "alecciss",
       "colId": "yu-yu-hakusho"
     },
@@ -67,6 +121,24 @@
       "promedio": 8.93,
       "votos": 7,
       "date": "2026-01-28T02:00:57.764Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
+      "id": "1770243133700",
+      "capitulo": "Capitulo 59",
+      "promedio": 8.93,
+      "votos": 7,
+      "date": "2026-02-04T22:12:13.700Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
+      "id": "1770241481162",
+      "capitulo": "Capitulo 58",
+      "promedio": 8.83,
+      "votos": 9,
+      "date": "2026-02-04T21:44:41.162Z",
       "channel": "alecciss",
       "colId": "yu-yu-hakusho"
     },
@@ -134,6 +206,15 @@
       "colId": "yu-yu-hakusho"
     },
     {
+      "id": "1770693207610",
+      "capitulo": "Capitulo 72",
+      "promedio": 8.56,
+      "votos": 8,
+      "date": "2026-02-10T03:13:27.610Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
       "id": "1769570882160",
       "capitulo": "Capitulo 44",
       "promedio": 8.54,
@@ -188,6 +269,15 @@
       "colId": "yu-yu-hakusho"
     },
     {
+      "id": "1770775283035",
+      "capitulo": "Capitulo 74",
+      "promedio": 8.37,
+      "votos": 7,
+      "date": "2026-02-11T02:01:23.035Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
       "id": "1768704105760",
       "capitulo": "Capitulo 19",
       "promedio": 8.33,
@@ -211,6 +301,15 @@
       "promedio": 8.31,
       "votos": 10,
       "date": "2026-01-28T02:50:19.057Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
+      "id": "1770244698548",
+      "capitulo": "Capitulo 60",
+      "promedio": 8.3,
+      "votos": 7,
+      "date": "2026-02-04T22:38:18.548Z",
       "channel": "alecciss",
       "colId": "yu-yu-hakusho"
     },
@@ -274,6 +373,15 @@
       "promedio": 8.17,
       "votos": 9,
       "date": "2026-01-27T03:27:08.807Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
+      "id": "1770688332321",
+      "capitulo": "Capitulo 69",
+      "promedio": 8.17,
+      "votos": 9,
+      "date": "2026-02-10T01:52:12.321Z",
       "channel": "alecciss",
       "colId": "yu-yu-hakusho"
     },
@@ -368,6 +476,15 @@
       "colId": "yu-yu-hakusho"
     },
     {
+      "id": "1770773835550",
+      "capitulo": "Capitulo 73",
+      "promedio": 8,
+      "votos": 9,
+      "date": "2026-02-11T01:37:15.550Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
       "id": "1769050845835",
       "capitulo": "Capitulo 33",
       "promedio": 8,
@@ -377,11 +494,29 @@
       "colId": "yu-yu-hakusho"
     },
     {
+      "id": "1770690008671",
+      "capitulo": "Capitulo 70",
+      "promedio": 7.94,
+      "votos": 10,
+      "date": "2026-02-10T02:20:08.671Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
       "id": "1768096670909",
       "capitulo": "Capitulo 5",
       "promedio": 7.9,
       "votos": 8,
       "date": "2026-01-11T01:57:50.909Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
+      "id": "1770523593690",
+      "capitulo": "Capitulo 68",
+      "promedio": 7.88,
+      "votos": 8,
+      "date": "2026-02-08T04:06:33.690Z",
       "channel": "alecciss",
       "colId": "yu-yu-hakusho"
     },
@@ -404,6 +539,15 @@
       "colId": "yu-yu-hakusho"
     },
     {
+      "id": "1770522006886",
+      "capitulo": "Capitulo 67",
+      "promedio": 7.79,
+      "votos": 7,
+      "date": "2026-02-08T03:40:06.886Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
       "id": "1770157393268",
       "capitulo": "Capitulo 54",
       "promedio": 7.75,
@@ -422,11 +566,29 @@
       "colId": "yu-yu-hakusho"
     },
     {
+      "id": "1770691758498",
+      "capitulo": "Capitulo 71",
+      "promedio": 7.66,
+      "votos": 8,
+      "date": "2026-02-10T02:49:18.498Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
       "id": "1768878664584",
       "capitulo": "Capitulo 26",
       "promedio": 7.64,
       "votos": 8,
       "date": "2026-01-20T03:11:04.584Z",
+      "channel": "alecciss",
+      "colId": "yu-yu-hakusho"
+    },
+    {
+      "id": "1770776690470",
+      "capitulo": "Capitulo 75",
+      "promedio": 7.64,
+      "votos": 7,
+      "date": "2026-02-11T02:24:50.470Z",
       "channel": "alecciss",
       "colId": "yu-yu-hakusho"
     },
