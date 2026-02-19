@@ -1,0 +1,20 @@
+{
+  "collection": {
+    "id": "demon-slayer",
+    "name": "Demon Slayer",
+    "type": "series"
+  },
+  "generatedAt": "2026-02-19T00:22:26.357Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1760730151782",
+      "capitulo": "SIN CALIFICAR",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2025-10-17T19:42:31.782Z",
+      "channel": "alecciss",
+      "colId": "demon-slayer"
+    }
+  ]
+}

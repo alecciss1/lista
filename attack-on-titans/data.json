@@ -1,0 +1,20 @@
+{
+  "collection": {
+    "id": "attack-on-titans",
+    "name": "Attack On Titans",
+    "type": "series"
+  },
+  "generatedAt": "2026-02-19T00:22:26.363Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1760730157665",
+      "capitulo": "SIN CALIFICAR",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2025-10-17T19:42:37.665Z",
+      "channel": "alecciss",
+      "colId": "attack-on-titans"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "collection": {
+    "id": "naruto",
+    "name": "Naruto",
+    "type": "series"
+  },
+  "generatedAt": "2026-02-19T00:22:26.337Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1760730108406",
+      "capitulo": "SIN CALIFICAR",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2025-10-17T19:41:48.406Z",
+      "channel": "alecciss",
+      "colId": "naruto"
+    }
+  ]
+}

@@ -1,0 +1,1358 @@
+{
+  "collection": {
+    "id": "black-clover",
+    "name": "Black Clover",
+    "type": "series"
+  },
+  "generatedAt": "2026-02-19T00:22:26.321Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1760666227785",
+      "capitulo": "Capitulo 167",
+      "promedio": 10,
+      "votos": 91,
+      "date": "2025-10-17T01:57:07.785Z",
+      "channel": "alecciss",
+      "colId": "default"
+    },
+    {
+      "id": "1760671531610",
+      "capitulo": "Capitulo 170",
+      "promedio": 9.97,
+      "votos": 88,
+      "date": "2025-10-17T03:25:31.610Z",
+      "channel": "alecciss",
+      "colId": "default"
+    },
+    {
+      "id": "1759031423390",
+      "capitulo": "Capitulo 119",
+      "promedio": 9.97,
+      "votos": 66,
+      "date": "2025-09-28T03:50:23.390Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760585197689",
+      "capitulo": "Capitulo 166",
+      "promedio": 9.95,
+      "votos": 105,
+      "date": "2025-10-16T03:26:37.689Z",
+      "channel": "alecciss",
+      "colId": "default"
+    },
+    {
+      "id": "1760757280203",
+      "capitulo": "Pelicula",
+      "promedio": 9.95,
+      "votos": 45,
+      "date": "2025-10-18T03:14:40.203Z",
+      "channel": "alecciss",
+      "colId": "black-clover"
+    },
+    {
+      "id": "1758683212397",
+      "capitulo": "Capitulo 93",
+      "promedio": 9.95,
+      "votos": 42,
+      "date": "2025-09-24T03:06:52.397Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758430495441",
+      "capitulo": "Capitlo 80",
+      "promedio": 9.95,
+      "votos": 28,
+      "date": "2025-09-21T04:54:55.441Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758768126656",
+      "capitulo": "Capitulo 100",
+      "promedio": 9.94,
+      "votos": 54,
+      "date": "2025-09-25T02:42:06.656Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758948200795",
+      "capitulo": "Capitulo 116",
+      "promedio": 9.93,
+      "votos": 53,
+      "date": "2025-09-27T04:43:20.795Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757562350472",
+      "capitulo": "Capitulo 49",
+      "promedio": 9.93,
+      "votos": 38,
+      "date": "2025-09-11T03:45:50.472Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758946264148",
+      "capitulo": "Capitulo 115",
+      "promedio": 9.92,
+      "votos": 45,
+      "date": "2025-09-27T04:11:04.148Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760499838795",
+      "capitulo": "Capitulo 162",
+      "promedio": 9.87,
+      "votos": 70,
+      "date": "2025-10-15T03:43:58.795Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757040647103",
+      "capitulo": "Capitulo 36",
+      "promedio": 9.78,
+      "votos": 18,
+      "date": "2025-09-05T02:50:47.103Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760498158558",
+      "capitulo": "Capitulo 161",
+      "promedio": 9.76,
+      "votos": 56,
+      "date": "2025-10-15T03:15:58.558Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758944518402",
+      "capitulo": "Capitulo 114",
+      "promedio": 9.74,
+      "votos": 52,
+      "date": "2025-09-27T03:41:58.402Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759029706405",
+      "capitulo": "Capitulo 118",
+      "promedio": 9.72,
+      "votos": 45,
+      "date": "2025-09-28T03:21:46.405Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758680676288",
+      "capitulo": "Capitulo 91",
+      "promedio": 9.67,
+      "votos": 26,
+      "date": "2025-09-24T02:24:36.288Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758681958987",
+      "capitulo": "Capitulo 92",
+      "promedio": 9.66,
+      "votos": 36,
+      "date": "2025-09-24T02:45:58.987Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758856549139",
+      "capitulo": "Capitulo 108",
+      "promedio": 9.65,
+      "votos": 35,
+      "date": "2025-09-26T03:15:49.139Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760583606442",
+      "capitulo": "Capitulo 165",
+      "promedio": 9.63,
+      "votos": 58,
+      "date": "2025-10-16T03:00:06.442Z",
+      "channel": "alecciss",
+      "colId": "default"
+    },
+    {
+      "id": "1759027795179",
+      "capitulo": "Capitulo 117",
+      "promedio": 9.59,
+      "votos": 34,
+      "date": "2025-09-28T02:49:55.179Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760669557343",
+      "capitulo": "Capitulo 169",
+      "promedio": 9.58,
+      "votos": 72,
+      "date": "2025-10-17T02:52:37.343Z",
+      "channel": "alecciss",
+      "colId": "default"
+    },
+    {
+      "id": "1758076276510",
+      "capitulo": "Capitulo 63",
+      "promedio": 9.48,
+      "votos": 33,
+      "date": "2025-09-17T02:31:16.510Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760667999312",
+      "capitulo": "Capitulo 168",
+      "promedio": 9.43,
+      "votos": 63,
+      "date": "2025-10-17T02:26:39.312Z",
+      "channel": "alecciss",
+      "colId": "default"
+    },
+    {
+      "id": "1759033298935",
+      "capitulo": "Capitulo 120",
+      "promedio": 9.4,
+      "votos": 37,
+      "date": "2025-09-28T04:21:38.935Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757558141248",
+      "capitulo": "Capitulo 46",
+      "promedio": 9.38,
+      "votos": 37,
+      "date": "2025-09-11T02:35:41.248Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758078468416",
+      "capitulo": "Capitulo 64",
+      "promedio": 9.33,
+      "votos": 27,
+      "date": "2025-09-17T03:07:48.416Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758509916185",
+      "capitulo": "Capitulo 84",
+      "promedio": 9.32,
+      "votos": 36,
+      "date": "2025-09-22T02:58:36.185Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758769615460",
+      "capitulo": "Capitulo 101",
+      "promedio": 9.23,
+      "votos": 34,
+      "date": "2025-09-25T03:06:55.460Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760496584104",
+      "capitulo": "Capitulo 160",
+      "promedio": 9.21,
+      "votos": 47,
+      "date": "2025-10-15T02:49:44.104Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759199620185",
+      "capitulo": "Capitulo 128",
+      "promedio": 9.18,
+      "votos": 22,
+      "date": "2025-09-30T02:33:40.185Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758684450182",
+      "capitulo": "Capitulo 94",
+      "promedio": 9.14,
+      "votos": 28,
+      "date": "2025-09-24T03:27:30.182Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758432101350",
+      "capitulo": "Capitlo 81",
+      "promedio": 9.13,
+      "votos": 24,
+      "date": "2025-09-21T05:21:41.350Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758943085015",
+      "capitulo": "Capitulo 113",
+      "promedio": 9.1,
+      "votos": 29,
+      "date": "2025-09-27T03:18:05.015Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760148496771",
+      "capitulo": "Capitulo 151",
+      "promedio": 9.09,
+      "votos": 28,
+      "date": "2025-10-11T02:08:16.771Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758857871215",
+      "capitulo": "Capitulo 109",
+      "promedio": 9.08,
+      "votos": 21,
+      "date": "2025-09-26T03:37:51.215Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757560991236",
+      "capitulo": "Capitulo 48",
+      "promedio": 9.04,
+      "votos": 32,
+      "date": "2025-09-11T03:23:11.236Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757556420538",
+      "capitulo": "Capitulo 45",
+      "promedio": 9.03,
+      "votos": 19,
+      "date": "2025-09-11T02:07:00.538Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757037745809",
+      "capitulo": "Capitulo 34",
+      "promedio": 9,
+      "votos": 18,
+      "date": "2025-09-05T02:02:25.809Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757039151182",
+      "capitulo": "Capitulo 35",
+      "promedio": 9,
+      "votos": 17,
+      "date": "2025-09-05T02:25:51.182Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760493463475",
+      "capitulo": "Capitulo 158",
+      "promedio": 8.94,
+      "votos": 37,
+      "date": "2025-10-15T01:57:43.475Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758773155481",
+      "capitulo": "Capitulo 104",
+      "promedio": 8.9,
+      "votos": 25,
+      "date": "2025-09-25T04:05:55.481Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758508279162",
+      "capitulo": "Capitulo 83",
+      "promedio": 8.86,
+      "votos": 21,
+      "date": "2025-09-22T02:31:19.162Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758766313322",
+      "capitulo": "Capitulo 99",
+      "promedio": 8.83,
+      "votos": 31,
+      "date": "2025-09-25T02:11:53.322Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759117505974",
+      "capitulo": "Capitulo 126",
+      "promedio": 8.83,
+      "votos": 15,
+      "date": "2025-09-29T03:45:05.974Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760580048639",
+      "capitulo": "Capitulo 163",
+      "promedio": 8.78,
+      "votos": 38,
+      "date": "2025-10-16T02:00:48.639Z",
+      "channel": "alecciss",
+      "colId": "default"
+    },
+    {
+      "id": "1759201375072",
+      "capitulo": "Capitulo 129",
+      "promedio": 8.73,
+      "votos": 26,
+      "date": "2025-09-30T03:02:55.072Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757559628693",
+      "capitulo": "Capitulo 47",
+      "promedio": 8.71,
+      "votos": 30,
+      "date": "2025-09-11T03:00:28.693Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758687301096",
+      "capitulo": "Capitulo 96",
+      "promedio": 8.71,
+      "votos": 22,
+      "date": "2025-09-24T04:15:01.096Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758166154865",
+      "capitulo": "Capitulo 69",
+      "promedio": 8.65,
+      "votos": 24,
+      "date": "2025-09-18T03:29:14.865Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756957754414",
+      "capitulo": "Capitulo 33",
+      "promedio": 8.64,
+      "votos": 18,
+      "date": "2025-09-04T03:49:14.414Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756779709008",
+      "capitulo": "Capitulo 20",
+      "promedio": 8.63,
+      "votos": 19,
+      "date": "2025-09-02T02:21:49.008Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757473505180",
+      "capitulo": "Capitulo 44",
+      "promedio": 8.61,
+      "votos": 24,
+      "date": "2025-09-10T03:05:05.180Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760581781653",
+      "capitulo": "Capitulo 164",
+      "promedio": 8.6,
+      "votos": 43,
+      "date": "2025-10-16T02:29:41.653Z",
+      "channel": "alecciss",
+      "colId": "default"
+    },
+    {
+      "id": "1758941504629",
+      "capitulo": "Capitulo 112",
+      "promedio": 8.58,
+      "votos": 28,
+      "date": "2025-09-27T02:51:44.629Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759112452299",
+      "capitulo": "Capitulo 121",
+      "promedio": 8.57,
+      "votos": 23,
+      "date": "2025-09-29T02:20:52.299Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759374662928",
+      "capitulo": "Capitulo 135",
+      "promedio": 8.57,
+      "votos": 21,
+      "date": "2025-10-02T03:11:02.928Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756866141006",
+      "capitulo": "Capitulo 26",
+      "promedio": 8.57,
+      "votos": 15,
+      "date": "2025-09-03T02:22:21.006Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760412451565",
+      "capitulo": "Capitulo 156",
+      "promedio": 8.55,
+      "votos": 33,
+      "date": "2025-10-14T03:27:31.565Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758679298753",
+      "capitulo": "Capitulo 90",
+      "promedio": 8.55,
+      "votos": 21,
+      "date": "2025-09-24T02:01:38.753Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758249010102",
+      "capitulo": "Capitulo 72",
+      "promedio": 8.54,
+      "votos": 27,
+      "date": "2025-09-19T02:30:10.102Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758426237616",
+      "capitulo": "Capitlo 77",
+      "promedio": 8.53,
+      "votos": 19,
+      "date": "2025-09-21T03:43:57.616Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758852056624",
+      "capitulo": "Capitulo 105",
+      "promedio": 8.52,
+      "votos": 24,
+      "date": "2025-09-26T02:00:56.624Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759197941794",
+      "capitulo": "Capitulo 127",
+      "promedio": 8.5,
+      "votos": 24,
+      "date": "2025-09-30T02:05:41.794Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758855062796",
+      "capitulo": "Capitulo 107",
+      "promedio": 8.41,
+      "votos": 32,
+      "date": "2025-09-26T02:51:02.796Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758685949991",
+      "capitulo": "Capitulo 95",
+      "promedio": 8.37,
+      "votos": 27,
+      "date": "2025-09-24T03:52:29.991Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758250941578",
+      "capitulo": "Capitulo 73",
+      "promedio": 8.37,
+      "votos": 18,
+      "date": "2025-09-19T03:02:21.578Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760495166617",
+      "capitulo": "Capitulo 159",
+      "promedio": 8.34,
+      "votos": 34,
+      "date": "2025-10-15T02:26:06.617Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758597172084",
+      "capitulo": "Capitulo 89",
+      "promedio": 8.33,
+      "votos": 18,
+      "date": "2025-09-23T03:12:52.084Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756260735013",
+      "capitulo": "Capitulo 1",
+      "promedio": 8.33,
+      "votos": 12,
+      "date": "2025-08-27T02:12:15.013Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756778061905",
+      "capitulo": "Capitulo 19",
+      "promedio": 8.33,
+      "votos": 9,
+      "date": "2025-09-02T01:54:21.905Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758763577380",
+      "capitulo": "Capitulo 97",
+      "promedio": 8.32,
+      "votos": 20,
+      "date": "2025-09-25T01:26:17.380Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756523098507",
+      "capitulo": "Capitulo 18",
+      "promedio": 8.32,
+      "votos": 11,
+      "date": "2025-08-30T03:04:58.507Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758764942141",
+      "capitulo": "Capitulo 98",
+      "promedio": 8.31,
+      "votos": 23,
+      "date": "2025-09-25T01:49:02.142Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756521921427",
+      "capitulo": "Capitulo 17",
+      "promedio": 8.3,
+      "votos": 10,
+      "date": "2025-08-30T02:45:21.427Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758427603054",
+      "capitulo": "Capitlo 78",
+      "promedio": 8.29,
+      "votos": 17,
+      "date": "2025-09-21T04:06:43.054Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758938777978",
+      "capitulo": "Capitulo 110",
+      "promedio": 8.29,
+      "votos": 14,
+      "date": "2025-09-27T02:06:17.978Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759114034623",
+      "capitulo": "Capitulo 122",
+      "promedio": 8.27,
+      "votos": 30,
+      "date": "2025-09-29T02:47:14.623Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758074673505",
+      "capitulo": "Capitulo 62",
+      "promedio": 8.27,
+      "votos": 21,
+      "date": "2025-09-17T02:04:33.505Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758595805783",
+      "capitulo": "Capitulo 88",
+      "promedio": 8.25,
+      "votos": 18,
+      "date": "2025-09-23T02:50:05.783Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756520330097",
+      "capitulo": "Capitulo 16",
+      "promedio": 8.25,
+      "votos": 11,
+      "date": "2025-08-30T02:18:50.097Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757383144562",
+      "capitulo": "Capitulo 37",
+      "promedio": 8.24,
+      "votos": 17,
+      "date": "2025-09-09T01:59:04.562Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758337375648",
+      "capitulo": "Capitulo 76",
+      "promedio": 8.2,
+      "votos": 28,
+      "date": "2025-09-20T03:02:55.648Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756784229509",
+      "capitulo": "Capitulo 23",
+      "promedio": 8.18,
+      "votos": 17,
+      "date": "2025-09-02T03:37:09.509Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756781234566",
+      "capitulo": "Capitulo 21",
+      "promedio": 8.14,
+      "votos": 18,
+      "date": "2025-09-02T02:47:14.566Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756785483075",
+      "capitulo": "Capitulo 24",
+      "promedio": 8.13,
+      "votos": 16,
+      "date": "2025-09-02T03:58:03.075Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759115749892",
+      "capitulo": "Capitulo 125",
+      "promedio": 8.09,
+      "votos": 23,
+      "date": "2025-09-29T03:15:49.892Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757990192594",
+      "capitulo": "Capitulo 59",
+      "promedio": 8.05,
+      "votos": 21,
+      "date": "2025-09-16T02:36:32.594Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758771724369",
+      "capitulo": "Capitulo 103",
+      "promedio": 8.03,
+      "votos": 22,
+      "date": "2025-09-25T03:42:04.369Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758335662080",
+      "capitulo": "Capitulo 75",
+      "promedio": 8.02,
+      "votos": 27,
+      "date": "2025-09-20T02:34:22.080Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758247489252",
+      "capitulo": "Capitulo 71",
+      "promedio": 8,
+      "votos": 23,
+      "date": "2025-09-19T02:04:49.252Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756782768458",
+      "capitulo": "Capitulo 22",
+      "promedio": 8,
+      "votos": 16,
+      "date": "2025-09-02T03:12:48.458Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756348338017",
+      "capitulo": "Capitulo 7",
+      "promedio": 8,
+      "votos": 13,
+      "date": "2025-08-28T02:32:18.017Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756266600278",
+      "capitulo": "Capitulo 5",
+      "promedio": 8,
+      "votos": 12,
+      "date": "2025-08-27T03:50:00.278Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756437689486",
+      "capitulo": "Capitulo 14",
+      "promedio": 8,
+      "votos": 8,
+      "date": "2025-08-29T03:21:29.486Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757993653867",
+      "capitulo": "Capitulo 61",
+      "promedio": 7.98,
+      "votos": 24,
+      "date": "2025-09-16T03:34:13.867Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757992032005",
+      "capitulo": "Capitulo 60",
+      "promedio": 7.97,
+      "votos": 19,
+      "date": "2025-09-16T03:07:12.005Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758940104308",
+      "capitulo": "Capitulo 111",
+      "promedio": 7.97,
+      "votos": 15,
+      "date": "2025-09-27T02:28:24.308Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759285161610",
+      "capitulo": "Capitulo 131",
+      "promedio": 7.94,
+      "votos": 25,
+      "date": "2025-10-01T02:19:21.610Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759287098951",
+      "capitulo": "Capitulo 132",
+      "promedio": 7.94,
+      "votos": 24,
+      "date": "2025-10-01T02:51:38.951Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757733599770",
+      "capitulo": "Capitulo 54",
+      "promedio": 7.94,
+      "votos": 16,
+      "date": "2025-09-13T03:19:59.770Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757730441317",
+      "capitulo": "Capitulo 52",
+      "promedio": 7.9,
+      "votos": 15,
+      "date": "2025-09-13T02:27:21.317Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757389202039",
+      "capitulo": "Capitulo 41",
+      "promedio": 7.89,
+      "votos": 14,
+      "date": "2025-09-09T03:40:02.039Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758428946576",
+      "capitulo": "Capitlo 79",
+      "promedio": 7.88,
+      "votos": 17,
+      "date": "2025-09-21T04:29:06.576Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758511474642",
+      "capitulo": "Capitulo 85",
+      "promedio": 7.84,
+      "votos": 16,
+      "date": "2025-09-22T03:24:34.642Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756864789952",
+      "capitulo": "Capitulo 25",
+      "promedio": 7.83,
+      "votos": 12,
+      "date": "2025-09-03T01:59:49.952Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757472087932",
+      "capitulo": "Capitulo 43",
+      "promedio": 7.82,
+      "votos": 19,
+      "date": "2025-09-10T02:41:27.932Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756518860578",
+      "capitulo": "Capitulo 15",
+      "promedio": 7.82,
+      "votos": 11,
+      "date": "2025-08-30T01:54:20.578Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759806029894",
+      "capitulo": "Capitulo 138",
+      "promedio": 7.76,
+      "votos": 15,
+      "date": "2025-10-07T03:00:29.894Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756954827400",
+      "capitulo": "Capitulo 31",
+      "promedio": 7.75,
+      "votos": 20,
+      "date": "2025-09-04T03:00:27.400Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756956329340",
+      "capitulo": "Capitulo 32",
+      "promedio": 7.71,
+      "votos": 17,
+      "date": "2025-09-04T03:25:29.340Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756265122275",
+      "capitulo": "Capitulo 4",
+      "promedio": 7.71,
+      "votos": 12,
+      "date": "2025-08-27T03:25:22.275Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758161713122",
+      "capitulo": "Capitulo 65",
+      "promedio": 7.66,
+      "votos": 19,
+      "date": "2025-09-18T02:15:13.122Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759894705288",
+      "capitulo": "Capitulo 142",
+      "promedio": 7.64,
+      "votos": 14,
+      "date": "2025-10-08T03:38:25.288Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756951586822",
+      "capitulo": "Capitulo 28",
+      "promedio": 7.63,
+      "votos": 20,
+      "date": "2025-09-04T02:06:26.822Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758163382935",
+      "capitulo": "Capitulo 67",
+      "promedio": 7.61,
+      "votos": 23,
+      "date": "2025-09-18T02:43:02.935Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759802762076",
+      "capitulo": "Capitulo 136",
+      "promedio": 7.6,
+      "votos": 21,
+      "date": "2025-10-07T02:06:02.076Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756350121699",
+      "capitulo": "Capitulo 8",
+      "promedio": 7.6,
+      "votos": 15,
+      "date": "2025-08-28T03:02:01.699Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757563685507",
+      "capitulo": "Capitulo 50",
+      "promedio": 7.59,
+      "votos": 23,
+      "date": "2025-09-11T04:08:05.507Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758770374686",
+      "capitulo": "Capitulo 102",
+      "promedio": 7.58,
+      "votos": 22,
+      "date": "2025-09-25T03:19:34.686Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759804455652",
+      "capitulo": "Capitulo 137",
+      "promedio": 7.54,
+      "votos": 17,
+      "date": "2025-10-07T02:34:15.652Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760410863305",
+      "capitulo": "Capitulo 155",
+      "promedio": 7.51,
+      "votos": 28,
+      "date": "2025-10-14T03:01:03.305Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756351555862",
+      "capitulo": "Capitulo 9",
+      "promedio": 7.5,
+      "votos": 14,
+      "date": "2025-08-28T03:25:55.862Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758594321608",
+      "capitulo": "Capitulo 87",
+      "promedio": 7.46,
+      "votos": 24,
+      "date": "2025-09-23T02:25:21.608Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757988218781",
+      "capitulo": "Capitulo 58",
+      "promedio": 7.43,
+      "votos": 14,
+      "date": "2025-09-16T02:03:38.781Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758853574053",
+      "capitulo": "Capitulo 106",
+      "promedio": 7.42,
+      "votos": 25,
+      "date": "2025-09-26T02:26:14.053Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757732143793",
+      "capitulo": "Capitulo 53",
+      "promedio": 7.4,
+      "votos": 15,
+      "date": "2025-09-13T02:55:43.793Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757384898340",
+      "capitulo": "Capitulo 38",
+      "promedio": 7.36,
+      "votos": 18,
+      "date": "2025-09-09T02:28:18.340Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756262136099",
+      "capitulo": "Capitulo 2",
+      "promedio": 7.33,
+      "votos": 12,
+      "date": "2025-08-27T02:35:36.099Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757819354453",
+      "capitulo": "Capitulo 57",
+      "promedio": 7.31,
+      "votos": 16,
+      "date": "2025-09-14T03:09:14.453Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760413256287",
+      "capitulo": "Capitulo 157",
+      "promedio": 7.3,
+      "votos": 25,
+      "date": "2025-10-14T03:40:56.287Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759372466950",
+      "capitulo": "Capitulo 134",
+      "promedio": 7.3,
+      "votos": 23,
+      "date": "2025-10-02T02:34:26.950Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758334051849",
+      "capitulo": "Capitulo 74",
+      "promedio": 7.29,
+      "votos": 29,
+      "date": "2025-09-20T02:07:31.849Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756346698365",
+      "capitulo": "Capitulo 6",
+      "promedio": 7.29,
+      "votos": 12,
+      "date": "2025-08-28T02:04:58.365Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757470555534",
+      "capitulo": "Capitulo 42",
+      "promedio": 7.22,
+      "votos": 18,
+      "date": "2025-09-10T02:15:55.534Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760150040567",
+      "capitulo": "Capitulo 152",
+      "promedio": 7.21,
+      "votos": 19,
+      "date": "2025-10-11T02:34:00.567Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760067368542",
+      "capitulo": "Capitulo 149",
+      "promedio": 7.21,
+      "votos": 17,
+      "date": "2025-10-10T03:36:08.542Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756434387931",
+      "capitulo": "Capitulo 11",
+      "promedio": 7.18,
+      "votos": 11,
+      "date": "2025-08-29T02:26:27.931Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760409421655",
+      "capitulo": "Capitulo 154",
+      "promedio": 7.16,
+      "votos": 28,
+      "date": "2025-10-14T02:37:01.655Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757386298811",
+      "capitulo": "Capitulo 39",
+      "promedio": 7.14,
+      "votos": 18,
+      "date": "2025-09-09T02:51:38.811Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760065850413",
+      "capitulo": "Capitulo 148",
+      "promedio": 7.14,
+      "votos": 18,
+      "date": "2025-10-10T03:10:50.413Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759893137904",
+      "capitulo": "Capitulo 141",
+      "promedio": 7.14,
+      "votos": 14,
+      "date": "2025-10-08T03:12:17.904Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756432887684",
+      "capitulo": "Capitulo 10",
+      "promedio": 7.13,
+      "votos": 8,
+      "date": "2025-08-29T02:01:27.684Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760146735758",
+      "capitulo": "Capitulo 150",
+      "promedio": 7.12,
+      "votos": 17,
+      "date": "2025-10-11T01:38:55.758Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758164814094",
+      "capitulo": "Capitulo 68",
+      "promedio": 7.09,
+      "votos": 17,
+      "date": "2025-09-18T03:06:54.094Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760407776804",
+      "capitulo": "Capitulo 153",
+      "promedio": 7.01,
+      "votos": 26,
+      "date": "2025-10-14T02:09:36.804Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757387849888",
+      "capitulo": "Capitulo 40",
+      "promedio": 7,
+      "votos": 13,
+      "date": "2025-09-09T03:17:29.888Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756435965978",
+      "capitulo": "Capitulo 12",
+      "promedio": 7,
+      "votos": 11,
+      "date": "2025-08-29T02:52:45.978Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759978808131",
+      "capitulo": "Capitulo 145",
+      "promedio": 6.97,
+      "votos": 18,
+      "date": "2025-10-09T03:00:08.131Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757728839740",
+      "capitulo": "Capitulo 51",
+      "promedio": 6.92,
+      "votos": 13,
+      "date": "2025-09-13T02:00:39.740Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756953318480",
+      "capitulo": "Capitulo 30",
+      "promedio": 6.9,
+      "votos": 20,
+      "date": "2025-09-04T02:35:18.480Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1758592762960",
+      "capitulo": "Capitulo 86",
+      "promedio": 6.83,
+      "votos": 18,
+      "date": "2025-09-23T01:59:22.960Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756437689486",
+      "capitulo": "Capitulo 13",
+      "promedio": 6.82,
+      "votos": 10,
+      "date": "2025-08-29T03:21:29.486Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760064122881",
+      "capitulo": "Capitulo 147",
+      "promedio": 6.76,
+      "votos": 19,
+      "date": "2025-10-10T02:42:02.881Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757816191878",
+      "capitulo": "Capitulo 55",
+      "promedio": 6.73,
+      "votos": 15,
+      "date": "2025-09-14T02:16:31.878Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1757817776669",
+      "capitulo": "Capitulo 56",
+      "promedio": 6.73,
+      "votos": 15,
+      "date": "2025-09-14T02:42:56.669Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759283451353",
+      "capitulo": "Capitulo 130",
+      "promedio": 6.68,
+      "votos": 19,
+      "date": "2025-10-01T01:50:51.353Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759891466598",
+      "capitulo": "Capitulo 140",
+      "promedio": 6.58,
+      "votos": 12,
+      "date": "2025-10-08T02:44:26.598Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756866141006",
+      "capitulo": "Capitulo 27",
+      "promedio": 6.53,
+      "votos": 15,
+      "date": "2025-09-03T02:22:21.006Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1756263646694",
+      "capitulo": "Capitulo 3",
+      "promedio": 6.33,
+      "votos": 12,
+      "date": "2025-08-27T03:00:46.695Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759975475619",
+      "capitulo": "Capitulo 143",
+      "promedio": 6,
+      "votos": 20,
+      "date": "2025-10-09T02:04:35.619Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759370739568",
+      "capitulo": "Capitulo 133",
+      "promedio": 5.5,
+      "votos": 14,
+      "date": "2025-10-02T02:05:39.568Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759889845019",
+      "capitulo": "Capitulo 139",
+      "promedio": 5.5,
+      "votos": 13,
+      "date": "2025-10-08T02:17:25.019Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1759977177240",
+      "capitulo": "Capitulo 144",
+      "promedio": 5.35,
+      "votos": 17,
+      "date": "2025-10-09T02:32:57.240Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760062446178",
+      "capitulo": "Capitulo 146",
+      "promedio": 5.19,
+      "votos": 18,
+      "date": "2025-10-10T02:14:06.178Z",
+      "channel": "alecciss"
+    },
+    {
+      "id": "1760728805588",
+      "capitulo": "Capitulo",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2025-10-17T19:20:05.588Z",
+      "channel": "alecciss",
+      "colId": "black-clover"
+    },
+    {
+      "id": "1760728816421",
+      "capitulo": "Capitulo",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2025-10-17T19:20:16.421Z",
+      "channel": "alecciss",
+      "colId": "black-clover"
+    }
+  ]
+}

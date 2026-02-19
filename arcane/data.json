@@ -1,0 +1,20 @@
+{
+  "collection": {
+    "id": "arcane",
+    "name": "Arcane",
+    "type": "series"
+  },
+  "generatedAt": "2026-02-19T00:22:26.370Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1760730163603",
+      "capitulo": "SIN CALIFICAR",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2025-10-17T19:42:43.603Z",
+      "channel": "alecciss",
+      "colId": "arcane"
+    }
+  ]
+}

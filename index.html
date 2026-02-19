@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Votos del canal — Colecciones</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<meta name="description" content="Explorá las colecciones (anime) del canal y mirá Top 10 y grilla por capítulo.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Votos del canal — Colecciones">
+<meta property="og:description" content="Top 10 y grilla por colección.">
+<style>
+  :root{
+    --bg:#090f1f;--bg2:#0b1226;--ink:#e8eefc;--muted:#a6b7e8;--line:#1a2444;--pri:#5b8cff;--acc:#ffd166;--glass:rgba(14,20,40,.6);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;color:var(--ink);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:
+    radial-gradient(1100px 600px at 80% -20%, rgba(91,140,255,.18), transparent 60%),
+    radial-gradient(800px 400px at -10% 110%, rgba(255,209,102,.12), transparent 60%),
+    linear-gradient(180deg,var(--bg),var(--bg2))}
+  .hero{position:relative;min-height:44vh;display:grid;place-items:center;overflow:hidden}
+  .hero::before,.hero::after{content:"";position:absolute;inset:-20%;filter:blur(60px);opacity:.35;pointer-events:none;background:conic-gradient(from 220deg at 40% 60%, #5b8cff33, #ffd16633, #00f5d433, #5b8cff33);animation:spin 22s linear infinite}
+  .hero::after{animation:spin 38s linear infinite reverse;opacity:.25}
+  @keyframes spin{to{transform:rotate(1turn)}}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 18px}
+  .glass{background:var(--glass);border:1px solid rgba(255,255,255,.12);border-radius:18px;backdrop-filter:blur(10px);box-shadow:0 30px 120px rgba(0,0,0,.35)}
+  .hero-inner{position:relative;z-index:2;margin:60px auto 22px; padding:22px; display:flex; gap:18px; align-items:flex-end; flex-wrap:wrap}
+  .logo{font-family:"Bebas Neue";font-size:68px;letter-spacing:.8px;margin:0;color:#fff;text-shadow:0 10px 40px rgba(0,0,0,.5)}
+  .lead{margin:0 0 8px; color:var(--muted)}
+  .social{margin-left:auto; display:flex; gap:10px; align-items:center; flex-wrap:wrap}
+  .sbtn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;border:1px solid #2a365e;background:#142045;color:#cfe0ff;text-decoration:none;font-weight:700}
+  .patreon{background:#ff424d;border-color:#ff6b74;color:white}
+  .toolbar{position:sticky;top:12px;z-index:5;margin-top:-14px}
+  .bar{display:flex;gap:10px;align-items:center;padding:12px}
+  .search{flex:1;min-width:240px;display:flex;align-items:center;gap:8px;background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));border:1px solid var(--line);border-radius:12px;padding:10px 12px}
+  .search input{all:unset;color:#fff;flex:1}
+  .kbd{font-size:11px;color:#bcd3ff;border:1px solid #2a365e;background:#17203c;padding:2px 6px;border-radius:6px}
+  .select,.btn{background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));border:1px solid var(--line);border-radius:12px;padding:10px 12px;color:#e7ecff;font-weight:600}
+  .select{min-width:160px}
+  .btn{cursor:pointer}
+  .pill{display:inline-flex;gap:6px;align-items:center;padding:6px 10px;border-radius:999px;background:#16203a;border:1px solid #223052;color:#cfe0ff;font-size:12px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px;margin:24px 0 60px}
+  .card{position:relative; overflow:hidden; border:1px solid var(--line); border-radius:16px;background:
+    radial-gradient(600px 220px at 120% -20%, rgba(91,140,255,.10), transparent 60%),
+    linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+    transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease, opacity .28s ease;
+    outline:0; text-decoration:none; color:inherit; display:block; opacity:0; transform:translateY(6px)}
+  .card.ready{opacity:1; transform:translateY(0)}
+  .card:hover{transform:translateY(-4px);box-shadow:0 16px 60px rgba(0,0,0,.38);border-color:#2a3a6b}
+  .card:focus-visible{outline:2px solid #2c5bff; outline-offset:2px}
+  .thumb{aspect-ratio:16/9;background:#0f1527;display:block;overflow:hidden;border-radius:12px;margin:10px;position:relative;border:1px solid #243158}
+  .thumb img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transform:scale(1.02);transition:opacity .4s ease, transform .5s ease}
+  .card:hover .thumb img{transform:scale(1.06)}
+  .thumb .fallback{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(135deg,#111b38,#0e1530);color:#9fb1df;font-weight:800;letter-spacing:.6px}
+  .tag{position:absolute;right:10px;top:10px;background:#1c2540;border:1px solid #2a365e;color:#bcd3ff;border-radius:10px;font-size:11px;padding:6px 8px}
+  .pad{padding:8px 14px 16px}
+  .title h3{margin:4px 0;font-family:"Bebas Neue";font-size:30px;color:#fff}
+  .chip{display:inline-block;padding:4px 8px;border-radius:999px;border:1px solid #263154;background:#18223d;color:#cfe0ff;font-size:12px;margin-right:6px}
+  .go{margin-top:12px;display:inline-flex;gap:10px;align-items:center;padding:10px 12px;border-radius:12px;background:#1d4ed8;color:#fff;text-decoration:none;font-weight:800;justify-content:center}
+  .foot{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:space-between;margin:10px 0 28px}
+  .small{color:#8da2dd;font-size:12px}
+  .kh{display:flex;gap:8px;align-items:center;color:#95a8db;font-size:12px;margin-left:auto}
+</style>
+</head>
+<body>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-inner glass">
+      <div>
+        <h1 class="logo">VOTOS DEL CANAL</h1>
+        <p class="lead">Explorá las colecciones (anime) y entrá a ver sus puntajes.</p>
+      </div>
+      <div class="social" style="margin-left:auto">
+        <a class="sbtn" href="https://twitch.tv/alecciss" target="_blank" rel="noopener">Twitch</a>
+        <a class="sbtn" href="https://youtube.com/@alecciss1" target="_blank" rel="noopener">YouTube</a>
+        <a class="sbtn" href="https://discord.gg/7NVwCU7RA9" target="_blank" rel="noopener">Discord</a>
+        <a class="sbtn patreon" href="https://www.patreon.com/Aleccis" target="_blank" rel="noopener">Apoyar en Patreon</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="toolbar glass">
+    <div class="bar">
+      <div class="search" title="Atajo: / para buscar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" stroke="#9fb1df" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="q" placeholder="Buscar por nombre o ID...">
+        <span class="kbd">/</span>
+      </div>
+      <select id="filterType" class="select">
+        <option value="">Tipo: todos</option>
+        <option value="series">Series</option>
+        <option value="pelicula">Películas</option>
+      </select>
+      <select id="sort" class="select">
+        <option value="name">Ordenar: nombre</option>
+        <option value="id">Ordenar: ID</option>
+        <option value="recent">Ordenar: actualizado</option>
+      </select>
+      <button id="clear" class="btn">Limpiar</button>
+      <span class="pill"><b id="count">0</b> colecciones</span>
+      <div class="kh"><span class="kbd">←</span><span class="kbd">→</span>&nbsp;<span style="font-size:12px">moverse</span>&nbsp;&nbsp;<span class="kbd">Enter</span><span style="font-size:12px"> abrir</span></div>
+    </div>
+  </div>
+
+  <div id="grid" class="grid"></div>
+
+  <div class="foot">
+    <span class="small">Generado automáticamente con cada votación.</span>
+    <a class="small" href="https://twitch.tv/alecciss" target="_blank" rel="noopener">Sugerencias o feedback bienvenidos ✨</a>
+  </div>
+</div>
+
+<script>
+const collections = [{"id":"black-clover","name":"Black Clover","type":"series","count":167,"avg":9.954000000000002},{"id":"opening-black-clover","name":"Opening Black Clover","type":"series","count":16,"avg":8.97},{"id":"naruto","name":"Naruto","type":"series","count":1,"avg":0},{"id":"naruto-shippuden","name":"Naruto Shippuden","type":"series","count":1,"avg":0},{"id":"dandadan","name":"Dandadan","type":"series","count":1,"avg":0},{"id":"demon-slayer","name":"Demon Slayer","type":"series","count":1,"avg":0},{"id":"attack-on-titans","name":"Attack On Titans","type":"series","count":1,"avg":0},{"id":"arcane","name":"Arcane","type":"series","count":1,"avg":0},{"id":"solo-leveling","name":"Solo Leveling","type":"series","count":1,"avg":0},{"id":"haikyuu","name":"Haikyuu!!","type":"series","count":1,"avg":0},{"id":"hunter-x-hunter","name":"Hunter x Hunter","type":"series","count":1,"avg":0},{"id":"fullmetal-alchemist-brotherhood","name":"Fullmetal Alchemist Brotherhood","type":"series","count":1,"avg":0},{"id":"peliculas","name":"Peliculas","type":"series","count":15,"avg":9.385},{"id":"my-hero-academia","name":"My Hero Academia","type":"series","count":178,"avg":9.908},{"id":"opening-my-hero-academia","name":"Opening My Hero Academia","type":"series","count":15,"avg":9.095},{"id":"yu-yu-hakusho","name":"Yu Yu Hakusho","type":"series","count":91,"avg":9.541},{"id":"welcome-to-derry","name":"Welcome To Derry","type":"series","count":8,"avg":9.25},{"id":"stranger-things","name":"Stranger Things","type":"series","count":9,"avg":8.166666666666666}]; // inyectado por el servidor
+const state = collections.map(c => ({ ...c, stats:{count:c.count, avg:c.avg}, last:null }));
+
+const grid = document.getElementById('grid');
+const q = document.getElementById('q');
+const filterType = document.getElementById('filterType');
+const sortSel = document.getElementById('sort');
+const count = document.getElementById('count');
+const esc = s => (s||'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(async ent=>{
+    if(!ent.isIntersecting) return;
+    io.unobserve(ent.target);
+    const id = ent.target.getAttribute('data-id');
+    const img = ent.target.querySelector('img[data-poster]');
+    const fallback = ent.target.querySelector('.fallback');
+    if (img){
+      img.onload = ()=>{ img.style.opacity='1'; fallback.style.display='none'; };
+      img.onerror = ()=>{ fallback.style.display='grid'; };
+      img.src = './'+encodeURIComponent(id)+'/poster.jpg';
+    }
+    try{
+      const r = await fetch('./'+encodeURIComponent(id)+'/data.json', {cache:'no-store'});
+      if(!r.ok) throw 0;
+      const j = await r.json();
+      const arr = Array.isArray(j.data)? j.data : [];
+      const countEps = arr.length;
+      const top10 = arr.slice(0,10);
+      const avg = top10.length ? top10.reduce((a,b)=>a+Number(b.promedio||0),0)/top10.length : 0;
+      const chipC = ent.target.querySelector('.chip.count');
+      const chipA = ent.target.querySelector('.chip.avg');
+      // Solo actualizar si no vino precargado (aunque exportIndex ya lo manda)
+      if (chipC && !chipC.innerHTML.includes('</b>')) chipC.innerHTML = '<b>'+String(countEps)+'</b> caps';
+      if (chipA && !chipA.innerHTML.includes('</b>')) chipA.innerHTML = '<b>'+avg.toFixed(2)+'</b> ⭐';
+      ent.target.querySelector('.chip.err').style.display='none';
+    }catch(e){
+      ent.target.querySelector('.chip.err').style.display='inline-block';
+    }
+  });
+},{rootMargin:'120px'});
+
+function cardHTML(c){
+  return `
+    <a class="card" href="./${encodeURIComponent(c.id)}/" data-id="${esc(c.id)}" tabindex="0" onclick="return pageTransition(this.href)">
+      <span class="tag">${esc(c.type||'series')}</span>
+      <div class="thumb"><img data-poster alt="" style="opacity:0"><div class="fallback">${esc(c.name)}</div></div>
+      <div class="pad">
+        <h3>${esc(c.name)}</h3>
+        <div class="chip count">${c.count ? '<b>'+c.count+'</b> caps' : 'Cargando…'}</div>
+        <div class="chip avg">${c.avg ? '<b>'+Number(c.avg).toFixed(2)+'</b> ⭐' : '—'}</div>
+        <div class="chip err" style="display:none">Sin datos aún</div>
+        <div class="go">Ver colección →</div>
+      </div>
+    </a>`;
+}
+
+function render(list){
+  grid.innerHTML='';
+  list.forEach(c=>{
+    const wrap=document.createElement('div');
+    wrap.innerHTML = cardHTML(c);
+    const card = wrap.firstElementChild;
+    grid.appendChild(card);
+    requestAnimationFrame(()=> card.classList.add('ready'));
+    io.observe(card);
+  });
+  count.textContent = String(list.length);
+  selIndex = -1;
+}
+
+function apply(){
+  const term=(q.value||'').toLowerCase().trim();
+  const ft=(filterType.value||'').toLowerCase();
+  const s = sortSel.value;
+  let list = state.filter(c=>{
+    const okT = !ft || String(c.type||'series').toLowerCase()===ft;
+    const okQ = !term || c.name.toLowerCase().includes(term) || c.id.toLowerCase().includes(term);
+    return okT && okQ;
+  });
+  if (s==='id') list.sort((a,b)=> a.id.localeCompare(b.id));
+  else if (s==='recent'){
+    list.sort((a,b)=>{
+      const ad = a.last? new Date(a.last).getTime():0;
+      const bd = b.last? new Date(b.last).getTime():0;
+      return bd - ad || a.name.localeCompare(b.name);
+    });
+  } else list.sort((a,b)=> a.name.localeCompare(b.name));
+  render(list);
+}
+
+let selIndex=-1;
+function moveSel(dir){
+  const cards=[...document.querySelectorAll('.card')];
+  if(!cards.length) return;
+  selIndex=(selIndex+dir+cards.length)%cards.length;
+  cards.forEach((c,i)=> c.style.outline = (i===selIndex)?'2px solid #2c5bff':'0');
+  cards[selIndex].focus();
+  cards[selIndex].scrollIntoView({block:'nearest',behavior:'smooth'});
+}
+window.addEventListener('keydown', e=>{
+  if (e.key==='/'){ e.preventDefault(); q.focus(); return; }
+  if (['ArrowLeft','ArrowRight'].includes(e.key)){ e.preventDefault(); moveSel(e.key==='ArrowRight'?1:-1); }
+  if (e.key==='Enter' && selIndex>=0){ const cards=[...document.querySelectorAll('.card')]; cards[selIndex]?.click(); }
+});
+
+q.addEventListener('input', apply);
+filterType.addEventListener('change', apply);
+sortSel.addEventListener('change', apply);
+document.getElementById('clear').onclick=()=>{ q.value=''; filterType.value=''; sortSel.value='name'; apply(); };
+
+apply();
+
+window.pageTransition = function(href){
+  if (document.startViewTransition){
+    document.startViewTransition(()=>{ window.location.href = href; });
+    return false;
+  }
+  document.body.style.opacity='0';
+  setTimeout(()=> window.location.href = href, 120);
+  return false;
+}
+</script>
+</body>
+</html>

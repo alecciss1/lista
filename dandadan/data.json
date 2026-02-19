@@ -1,0 +1,20 @@
+{
+  "collection": {
+    "id": "dandadan",
+    "name": "Dandadan",
+    "type": "series"
+  },
+  "generatedAt": "2026-02-19T00:22:26.351Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1760730143190",
+      "capitulo": "SIN CALIFICAR",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2025-10-17T19:42:23.190Z",
+      "channel": "alecciss",
+      "colId": "dandadan"
+    }
+  ]
+}

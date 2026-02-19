@@ -1,0 +1,146 @@
+{
+  "collection": {
+    "id": "peliculas",
+    "name": "Peliculas",
+    "type": "series"
+  },
+  "generatedAt": "2026-02-19T00:22:26.402Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1766378069428",
+      "capitulo": "Señor de los Anillos 3",
+      "promedio": 10,
+      "votos": 18,
+      "date": "2025-12-22T04:34:29.428Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1765082991239",
+      "capitulo": "Piratas del Caribe 2",
+      "promedio": 9.88,
+      "votos": 13,
+      "date": "2025-12-07T04:49:51.239Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1765168315930",
+      "capitulo": "Señor de los Anillos 2",
+      "promedio": 9.72,
+      "votos": 9,
+      "date": "2025-12-08T04:31:55.930Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1764218485017",
+      "capitulo": "Piratas del Caribe 1",
+      "promedio": 9.64,
+      "votos": 14,
+      "date": "2025-11-27T04:41:25.017Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1766293064768",
+      "capitulo": "Piratas del Caribe 3",
+      "promedio": 9.5,
+      "votos": 16,
+      "date": "2025-12-21T04:57:44.768Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1771210227905",
+      "capitulo": "Transformers 2",
+      "promedio": 9.28,
+      "votos": 12,
+      "date": "2026-02-16T02:50:27.905Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1764562312685",
+      "capitulo": "Señor de los Anillos 1",
+      "promedio": 9.27,
+      "votos": 13,
+      "date": "2025-12-01T04:11:52.685Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1769399308765",
+      "capitulo": "Piratas del Caribe 5",
+      "promedio": 9.14,
+      "votos": 14,
+      "date": "2026-01-26T03:48:28.765Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1768020584419",
+      "capitulo": "IT",
+      "promedio": 8.79,
+      "votos": 17,
+      "date": "2026-01-10T04:49:44.419Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1761105367784",
+      "capitulo": "Transformers 1",
+      "promedio": 8.63,
+      "votos": 16,
+      "date": "2025-10-22T03:56:07.784Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1768626370096",
+      "capitulo": "IT 2",
+      "promedio": 8.58,
+      "votos": 10,
+      "date": "2026-01-17T05:06:10.096Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1769988280520",
+      "capitulo": "Maze Runner 1",
+      "promedio": 8.47,
+      "votos": 15,
+      "date": "2026-02-01T23:24:40.520Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1768790246583",
+      "capitulo": "Piratas del Caribe 4",
+      "promedio": 8.45,
+      "votos": 10,
+      "date": "2026-01-19T02:37:26.583Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1761187431802",
+      "capitulo": "Son Como Niños",
+      "promedio": 8.32,
+      "votos": 11,
+      "date": "2025-10-23T02:43:51.803Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1770607451275",
+      "capitulo": "Resident Evil 1",
+      "promedio": 8.02,
+      "votos": 15,
+      "date": "2026-02-09T03:24:11.275Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "collection": {
+    "id": "opening-my-hero-academia",
+    "name": "Opening My Hero Academia",
+    "type": "series"
+  },
+  "generatedAt": "2026-02-19T00:22:26.419Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1768011832725",
+      "capitulo": "Hero Too",
+      "promedio": 9.85,
+      "votos": 24,
+      "date": "2026-01-10T02:23:52.725Z",
+      "channel": "alecciss",
+      "colId": "opening-my-hero-academia"
+    },
+    {
+      "id": "1768010645269",
+      "capitulo": "Opening 11",
+      "promedio": 9.7,
+      "votos": 38,
+      "date": "2026-01-10T02:04:05.269Z",
+      "channel": "alecciss",
+      "colId": "opening-my-hero-academia"
+    },
+    {
+      "id": "1768009585959",
+      "capitulo": "Opening 6",
+      "promedio": 9.52,
+      "votos": 35,
+      "date": "2026-01-10T01:46:25.959Z",
+      "channel": "alecciss",
+      "colId": "opening-my-hero-academia"
+    },
+    {
+      "id": "1768011386830",
+      "capitulo": "Opening 14",
+      "promedio": 9.47,
+      "votos": 35,
+      "date": "2026-01-10T02:16:26.830Z",
+      "channel": "alecciss",
+      "colId": "opening-my-hero-academia"
+    },
+    {
+      "id": "1768008368504",
+      "capitulo": "Opening 1",
+      "promedio": 9.16,
+      "votos": 19,
+      "date": "2026-01-10T01:26:08.504Z",
+      "channel": "alecciss",
+      "colId": "opening-my-hero-academia"
+    },
+    {
+      "id": "1768011173900",
+      "capitulo": "Opening 13",
+      "promedio": 8.91,
+      "votos": 39,
+      "date": "2026-01-10T02:12:53.900Z",
+      "channel": "alecciss",
+      "colId": "opening-my-hero-academia"
+    },
+    {
+      "id": "1768009139847",
+      "capitulo": "Opening 4",
+      "promedio": 8.7,
+      "votos": 30,
+      "date": "2026-01-10T01:38:59.847Z",
+      "channel": "alecciss",
+      "colId": "opening-my-hero-academia"
+    },
+    {
+      "id": "1768008668758",
+      "capitulo": "Opening 2",
+      "promedio": 8.66,
+      "votos": 25,
+      "date": "2026-01-10T01:31:08.758Z",
+      "channel": "alecciss",
+      "colId": "opening-my-hero-academia"
+    },
+    {
+      "id": "1768010466024",
+      "capitulo": "Opening 10",
+      "promedio": 8.51,
+      "votos": 34,
+      "date": "2026-01-10T02:01:06.024Z",
+      "channel": "alecciss",
+      "colId": "opening-my-hero-academia"
+    },
+    {
+      "id": "1768010266613",
+      "capitulo": "Opening 9",
+      "promedio": 8.47,
+      "votos": 30,
+      "date": "2026-01-10T01:57:46.613Z",
+      "channel": "alecciss",
+      "colId": "opening-my-hero-academia"
+    },
+    {
+      "id": "1768009786286",
+      "capitulo": "Opening 7",
+      "promedio": 8.13,
+      "votos": 32,
+      "date": "2026-01-10T01:49:46.286Z",
+      "channel": "alecciss",
+      "colId": "opening-my-hero-academia"
+    },
+    {
+      "id": "1768008903017",
+      "capitulo": "Opening 3",
+      "promedio": 8.05,
+      "votos": 27,
+      "date": "2026-01-10T01:35:03.017Z",
+      "channel": "alecciss",
+      "colId": "opening-my-hero-academia"
+    },
+    {
+      "id": "1768009390958",
+      "capitulo": "Opening 5",
+      "promedio": 7.83,
+      "votos": 26,
+      "date": "2026-01-10T01:43:10.958Z",
+      "channel": "alecciss",
+      "colId": "opening-my-hero-academia"
+    },
+    {
+      "id": "1768010023570",
+      "capitulo": "Opening 8",
+      "promedio": 7.8,
+      "votos": 33,
+      "date": "2026-01-10T01:53:43.570Z",
+      "channel": "alecciss",
+      "colId": "opening-my-hero-academia"
+    },
+    {
+      "id": "1768010855490",
+      "capitulo": "Opening 12",
+      "promedio": 7.62,
+      "votos": 36,
+      "date": "2026-01-10T02:07:35.490Z",
+      "channel": "alecciss",
+      "colId": "opening-my-hero-academia"
+    }
+  ]
+}

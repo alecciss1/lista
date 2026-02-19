@@ -1,0 +1,92 @@
+{
+  "collection": {
+    "id": "stranger-things",
+    "name": "Stranger Things",
+    "type": "series"
+  },
+  "generatedAt": "2026-02-19T00:22:26.442Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1770641796638",
+      "capitulo": "Temp 1 Capitulo 4",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-02-09T12:56:36.638Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1770921181329",
+      "capitulo": "Temp 1 Capitulo 6",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-02-12T18:33:01.329Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1770924336601",
+      "capitulo": "Temp 1 Capitulo 7",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-02-12T19:25:36.601Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1770558357925",
+      "capitulo": "Temp 1 Capitulo 3",
+      "promedio": 8.5,
+      "votos": 1,
+      "date": "2026-02-08T13:45:57.925Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1770090806586",
+      "capitulo": "Temp 1 Capitulo 2",
+      "promedio": 8,
+      "votos": 1,
+      "date": "2026-02-03T03:53:26.586Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1771251232123",
+      "capitulo": "Temp 1 Capitulo 8",
+      "promedio": 8,
+      "votos": 1,
+      "date": "2026-02-16T14:13:52.123Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1770836305297",
+      "capitulo": "Temp 1 Capitulo 5",
+      "promedio": 7.5,
+      "votos": 1,
+      "date": "2026-02-11T18:58:25.297Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1771424395316",
+      "capitulo": "Temp 2 Capitulo 1",
+      "promedio": 7.5,
+      "votos": 1,
+      "date": "2026-02-18T14:19:55.316Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1770039797640",
+      "capitulo": "Temp 1 Capitulo 1",
+      "promedio": 7,
+      "votos": 1,
+      "date": "2026-02-02T13:43:17.640Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    }
+  ]
+}

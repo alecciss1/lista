@@ -1,0 +1,155 @@
+{
+  "collection": {
+    "id": "opening-black-clover",
+    "name": "Opening Black Clover",
+    "type": "series"
+  },
+  "generatedAt": "2026-02-19T00:22:26.330Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1761010145919",
+      "capitulo": "Opening 10",
+      "promedio": 9.82,
+      "votos": 30,
+      "date": "2025-10-21T01:29:05.919Z",
+      "channel": "alecciss",
+      "colId": "opening-black-clover"
+    },
+    {
+      "id": "1761010953377",
+      "capitulo": "Opening 13",
+      "promedio": 9.66,
+      "votos": 31,
+      "date": "2025-10-21T01:42:33.377Z",
+      "channel": "alecciss",
+      "colId": "opening-black-clover"
+    },
+    {
+      "id": "1761008653377",
+      "capitulo": "Opening 3",
+      "promedio": 9.58,
+      "votos": 26,
+      "date": "2025-10-21T01:04:13.377Z",
+      "channel": "alecciss",
+      "colId": "opening-black-clover"
+    },
+    {
+      "id": "1761008218744",
+      "capitulo": "Opening 1",
+      "promedio": 9.05,
+      "votos": 20,
+      "date": "2025-10-21T00:56:58.744Z",
+      "channel": "alecciss",
+      "colId": "opening-black-clover"
+    },
+    {
+      "id": "1761010757186",
+      "capitulo": "Opening 12",
+      "promedio": 9.02,
+      "votos": 30,
+      "date": "2025-10-21T01:39:17.186Z",
+      "channel": "alecciss",
+      "colId": "opening-black-clover"
+    },
+    {
+      "id": "1761008880428",
+      "capitulo": "Opening 4",
+      "promedio": 8.86,
+      "votos": 21,
+      "date": "2025-10-21T01:08:00.428Z",
+      "channel": "alecciss",
+      "colId": "opening-black-clover"
+    },
+    {
+      "id": "1761009480823",
+      "capitulo": "Opening 7",
+      "promedio": 8.7,
+      "votos": 25,
+      "date": "2025-10-21T01:18:00.823Z",
+      "channel": "alecciss",
+      "colId": "opening-black-clover"
+    },
+    {
+      "id": "1761010566745",
+      "capitulo": "Opening 11",
+      "promedio": 8.66,
+      "votos": 27,
+      "date": "2025-10-21T01:36:06.745Z",
+      "channel": "alecciss",
+      "colId": "opening-black-clover"
+    },
+    {
+      "id": "1761008433206",
+      "capitulo": "Opening 2",
+      "promedio": 8.43,
+      "votos": 20,
+      "date": "2025-10-21T01:00:33.206Z",
+      "channel": "alecciss",
+      "colId": "opening-black-clover"
+    },
+    {
+      "id": "1761009084891",
+      "capitulo": "Opening 5",
+      "promedio": 7.92,
+      "votos": 25,
+      "date": "2025-10-21T01:11:24.891Z",
+      "channel": "alecciss",
+      "colId": "opening-black-clover"
+    },
+    {
+      "id": "1761009920686",
+      "capitulo": "Opening 9",
+      "promedio": 7.83,
+      "votos": 23,
+      "date": "2025-10-21T01:25:20.686Z",
+      "channel": "alecciss",
+      "colId": "opening-black-clover"
+    },
+    {
+      "id": "1761009693978",
+      "capitulo": "Opening 8",
+      "promedio": 7.52,
+      "votos": 24,
+      "date": "2025-10-21T01:21:33.978Z",
+      "channel": "alecciss",
+      "colId": "opening-black-clover"
+    },
+    {
+      "id": "1761009269952",
+      "capitulo": "Opening 6",
+      "promedio": 7.21,
+      "votos": 21,
+      "date": "2025-10-21T01:14:29.952Z",
+      "channel": "alecciss",
+      "colId": "opening-black-clover"
+    },
+    {
+      "id": "1760728827631",
+      "capitulo": "Capitulo",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2025-10-17T19:20:27.631Z",
+      "channel": "alecciss",
+      "colId": "opening-black-clover"
+    },
+    {
+      "id": "1760728839631",
+      "capitulo": "Capitulo",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2025-10-17T19:20:39.631Z",
+      "channel": "alecciss",
+      "colId": "opening-black-clover"
+    },
+    {
+      "id": "1761010354255",
+      "capitulo": "Opening 10 v3",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2025-10-21T01:32:34.255Z",
+      "channel": "alecciss",
+      "colId": "opening-black-clover"
+    }
+  ]
+}

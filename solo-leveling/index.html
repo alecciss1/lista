@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Solo Leveling — Top & Grilla</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0b1222;--card:#0f1527;--line:#1b2440;--ink:#e8eefc;--muted:#9fb1df;--acc:#ffd166;--cell:42px;--gap:6px}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:radial-gradient(1200px 600px at 70% -10%, rgba(255,255,255,.04), transparent 50%) , var(--bg);color:var(--ink);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+  .wrap{max-width:1150px;margin:30px auto;padding:0 16px;opacity:0;transform:translateY(6px);transition:opacity .35s ease, transform .35s ease}
+  .wrap.ready{opacity:1;transform:translateY(0)}
+  h1{font-family:"Bebas Neue"; font-size:54px; margin:0; letter-spacing:.8px; color:#fff}
+  .muted{color:var(--muted)}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:18px 0;opacity:0;transform:translateY(10px);transition:opacity .4s ease, transform .4s ease}
+  .stats.show{opacity:1;transform:translateY(0)}
+  .stat-card{background:linear-gradient(135deg, rgba(91,140,255,.08), rgba(91,140,255,.03));border:1px solid rgba(91,140,255,.2);border-radius:12px;padding:14px;backdrop-filter:blur(10px)}
+  .stat-label{font-size:11px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin-bottom:6px}
+  .stat-value{font-size:28px;font-weight:800;color:#fff;font-family:"Bebas Neue"}
+  .stat-sub{font-size:12px;color:var(--muted);margin-top:4px}
+  .tabs{display:flex;gap:8px;margin-top:18px;position:sticky;top:0;z-index:5;flex-wrap:wrap}
+  .tab{padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02)); cursor:pointer; font-weight:700; position:relative;transition:all .2s ease}
+  .tab:hover{transform:translateY(-2px);border-color:#2c5bff;box-shadow:0 4px 12px rgba(44,91,255,.3)}
+  .tab.active{outline:2px solid #2c5bff; background:rgba(44,91,255,.1)}
+  .tab.active::after{content:""; position:absolute; left:10px; right:10px; bottom:6px; height:2px; background:#2c5bff; border-radius:99px}
+  .panel{margin-top:14px;border:1px solid var(--line);background:var(--card);border-radius:14px;padding:14px;will-change:opacity,transform; opacity:0; transform:scale(.98); transition:opacity .3s ease, transform .3s ease}
+  .panel.show{opacity:1; transform:scale(1)}
+  table{width:100%;border-collapse:collapse}
+  th,td{padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.08)}
+  th{font-weight:600;color:#A8B2D1;font-size:13px}
+  td{font-size:15px}
+  .badge{padding:3px 8px;border-radius:999px;background:#18223d;border:1px solid #263154;color:#cfe0ff;font-size:12px}
+  .gold{color:#ffd166}.silver{color:#cfd8dc}.bronze{color:#ffb080}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--cell),1fr));gap:var(--gap)}
+  .season-sep{grid-column:1/-1;display:flex;align-items:center;gap:10px;margin:6px 0 2px;font-size:12px;font-weight:700;color:#7a90c4;letter-spacing:.8px;text-transform:uppercase}
+  .season-sep::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(91,140,255,.3),transparent)}
+  .cell{position:relative;height:var(--cell);display:flex;align-items:center;justify-content:center;border-radius:8px;font-weight:700;border:1px solid #1f2740;font-size:calc(var(--cell)*0.28);line-height:1;color:#fff;transform:translateY(4px);opacity:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:0 4px;transition:all .2s ease;cursor:pointer}
+  .cell.show{transform:translateY(0);opacity:1;transition:transform .18s ease, opacity .18s ease}
+  .cell:hover{transform:scale(1.15);box-shadow:0 4px 16px rgba(0,0,0,.4);z-index:10}
+  .cell.perfect{animation:pulse 2s ease-in-out infinite}
+  .cell.perfect:hover{box-shadow:0 0 20px rgba(15,109,47,.8), 0 4px 16px rgba(0,0,0,.4)}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 rgba(15,109,47,.4)}50%{box-shadow:0 0 12px rgba(15,109,47,.6)}}
+  .star{position:absolute;top:2px;right:2px;font-size:calc(var(--cell)*0.32);line-height:1;filter:drop-shadow(0 1px 2px rgba(0,0,0,.6));pointer-events:none}
+  .tip{position:fixed;left:0;top:0;transform:translate(-9999px,-9999px);background:rgba(10,15,28,.96);color:var(--ink);border:1px solid #2a324a;border-radius:10px;padding:8px 10px;font-size:13px;pointer-events:none;z-index:999999;box-shadow:0 6px 24px rgba(0,0,0,.35);white-space:nowrap}
+  .share-btn{background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);border:none;color:#fff;padding:10px 16px;border-radius:10px;font-weight:700;cursor:pointer;transition:all .2s ease;display:inline-flex;align-items:center;gap:8px}
+  .share-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(102,126,234,.4)}
+  .share-btn:active{transform:scale(.95)}
+  .legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;padding:10px 12px;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:10px}
+  .legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:#9fb1df}
+  .legend-dot{width:14px;height:14px;border-radius:4px;flex-shrink:0}
+  .chart-wrap{margin-top:20px;padding:16px;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:12px}
+  .chart-title{font-size:13px;text-transform:uppercase;letter-spacing:.8px;color:var(--muted);margin-bottom:12px;font-weight:700}
+  .bars{display:flex;align-items:flex-end;gap:6px;height:100px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+  .bar-col{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px}
+  .bar{width:100%;background:#2c5bff;border-radius:4px 4px 0 0;min-height:2px;position:relative;transition:all .2s ease}
+  .bar:hover{filter:brightness(1.2)}
+  .bar-lbl{font-size:10px;color:var(--muted)}
+  .bar-val{font-size:11px;font-weight:700;color:#fff}
+</style>
+</head>
+<body>
+<div class="wrap" id="wrap">
+  <h1>Solo Leveling</h1>
+  <div class="muted">Colección ID: <code>solo-leveling</code></div>
+
+  <div class="stats" id="stats">
+    <div class="stat-card">
+      <div class="stat-label">Promedio General</div>
+      <div class="stat-value" id="stat-avg">-</div>
+      <div class="stat-sub">de 10</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Total Episodios</div>
+      <div class="stat-value" id="stat-total">-</div>
+      <div class="stat-sub">votados</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Episodios CINE</div>
+      <div class="stat-value" id="stat-cine">-</div>
+      <div class="stat-sub">puntuación 9+</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-label">Mejor Episodio</div>
+      <div class="stat-value" id="stat-best" style="font-size:18px">-</div>
+      <div class="stat-sub" id="stat-best-score">-</div>
+    </div>
+    </div>
+  </div>
+
+  <div class="chart-wrap">
+    <div class="chart-title">Distribución de Puntajes</div>
+    <div class="bars" id="distBars"></div>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" data-tab="top">Top 10</div>
+    <div class="tab" data-tab="grid">Grilla</div>
+    <button class="share-btn" id="shareBtn" title="Generar imagen del Top 10">📸 Compartir Top 10</button>
+    <a href="../" class="tab" style="text-decoration:none" onclick="return pageBackTransition(this.href)">Volver</a>
+  </div>
+
+  <div class="panel show" id="panel-top">
+    <table>
+      <thead><tr><th>#</th><th>Capítulo</th><th>Promedio</th><th>Votos</th><th>Fecha</th></tr></thead>
+      <tbody id="tbodyTop"></tbody>
+    </table>
+  </div>
+
+  <div class="panel" id="panel-grid">
+    <div class="grid" id="grid"></div>
+    <div class="legend" id="legend" style="display:none">
+      <div class="legend-item"><div class="legend-dot" style="background:#0f6d2f"></div>CINE (9-10)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#22c55e"></div>MUY BUENO (8-9)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#facc15"></div>BUENO (7-8)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#fb923c"></div>REGULAR (6-7)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#ef4444"></div>MALO (4-6)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#111827"></div>MALÍSIMO (&lt;4)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:#6b7280"></div>SIN VOTOS</div>
+    </div>
+  </div>
+</div>
+<div class="tip" id="tip"></div>
+
+<script>
+const fmtNum = n => Number(n||0).toLocaleString('es-AR',{minimumFractionDigits:2,maximumFractionDigits:2});
+const fmtDate = iso => { try{ return new Date(iso).toLocaleDateString('es-AR'); }catch{ return '' } };
+const esc = s => (s||'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+function color(v){ if(v>=9)return'#0f6d2f'; if(v>=8)return'#22c55e'; if(v>=7)return'#facc15'; if(v>=6)return'#fb923c'; if(v>=4)return'#ef4444'; if(v>0)return'#111827'; return'#6b7280'; }
+function label(v){ if(v>=9)return'CINE'; if(v>=8)return'MUY BUENO'; if(v>=7)return'BUENO'; if(v>=6)return'REGULAR'; if(v>=4)return'MALO'; if(v>0)return'MALISIMO'; return'SIN VOTOS'; }
+function epNum(t,i){
+  // Devuelve el número de episodio *real* buscando todos los números en el texto
+  // y tomando el último (ej: "Temp 1 Cap 4" -> 4). Si no hay números, usa i+1.
+  const m = (t||'').match(/\d+/g);
+  return m ? Number(m[m.length - 1]) : (i + 1);
+}
+
+function getKey(r, counters) {
+  const t = (r.capitulo || '').toLowerCase().trim();
+  
+  // Pelicula
+  if (t.includes('pelicula') || t.includes('movie')) {
+     const p = t.match(/\d+/);
+     if (p) return 'P' + p[0];
+     counters.p++;
+     return 'P' + counters.p;
+  }
+
+  // Temp X Cap Y / Temp X Capitulo Y
+  const m = t.match(/temp\s*(\d+).*(?:cap|capitulo)\s*(\d+)/i);
+  if (m) return 'T' + m[1] + 'C' + m[2];
+
+  // OVA
+  const o = t.match(/ova\s*(\d+)/i);
+  if (o) return 'OVA' + o[1];
+
+  // Solo Capitulo (sin temp)
+  const nums = t.match(/\d+/g);
+  if (nums) return 'C' + nums[nums.length-1];
+  
+  // Fallback
+  return 'C' + counters.i; // Usamos un contador global si no hay nada
+}
+
+function prepareData(arr) {
+  // 1. Ordenar por fecha para consistencia cronológica
+  const sorted = [...(arr||[])].sort((a,b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+  
+  // 2. Asignar claves secuenciales para items sin número
+  const counters = { p: 0, i: 0 };
+  
+  return sorted.map((r, i) => {
+    counters.i = i + 1;
+    return { ...r, _key: getKey(r, counters) };
+  });
+}
+
+function renderDist(arr){
+  const counts = Array(11).fill(0); // índices 0-10
+  let max = 0;
+  arr.forEach(r => {
+    const v = Math.round(Number(r.promedio||0));
+    if (v >= 1 && v <= 10) counts[v]++;
+    else if (v > 10) counts[10]++;
+  });
+  max = Math.max(...counts) || 1;
+  const c = document.getElementById('distBars');
+  c.innerHTML = counts.slice(1).map((val, i) => {
+    const score = i + 1;
+    const h = Math.round((val / max) * 100);
+    const color = score>=9?'#0f6d2f':score>=8?'#22c55e':score>=7?'#facc15':score>=6?'#fb923c':score>=4?'#ef4444':'#111827';
+    return `
+    <div class="bar-col" title="${val} episodios con ${score}">
+      <div class="bar-val">${val||''}</div>
+      <div class="bar" style="height:${h}%;background:${color}"></div>
+      <div class="bar-lbl">${score}</div>
+    </div>`;
+  }).join('');
+}
+
+// === Top 3 episodios para marcar con estrellas ===
+function topOrder(preparedArr){
+  // Usamos el array ya preparado que tiene _key
+  const items = preparedArr.map(r => ({
+    key: r._key,
+    prom: +((r.promedio||0)),
+    votos: +((r.votos||0))
+  }));
+  items.sort((a,b)=> b.prom - a.prom || b.votos - a.votos);
+  return items.slice(0,3).map(x=>x.key);
+}
+
+
+function renderTop(list){
+  const tbody=document.getElementById('tbodyTop'); tbody.innerHTML='';
+  const rows=(list||[]).slice(0,10);
+  rows.forEach((e,i)=>{
+    const medal=i===0?'🥇':i===1?'🥈':i===2?'🥉':(i+1)+'.';
+    const tr=document.createElement('tr');
+    tr.innerHTML=`<td class="${i===0?'gold':i===1?'silver':i===2?'bronze':''}">${medal}</td>
+      <td>${esc(e.capitulo||'')}</td>
+      <td><b>${fmtNum(e.promedio)}</b></td>
+      <td><span class="badge">${e.votos||0}</span></td>
+      <td>${fmtDate(e.date)}</td>`;
+    tbody.appendChild(tr);
+  });
+}
+
+function renderGrid(arr, scale){
+  const g=document.getElementById('grid'); g.innerHTML='';
+  const tip=document.getElementById('tip');
+  const legend=document.getElementById('legend');
+  if (scale){
+    document.documentElement.style.setProperty('--cell', (Math.round(42*Number(scale))||42)+'px');
+  }
+
+  renderDist(arr); // Render charts
+
+  // 1. Preparar datos (ordenar por fecha y generar claves P1, P2...)
+  const data = prepareData(arr);
+  const setTop = new Set(topOrder(data));
+
+  // 2. Agrupar por clave (manejo de duplicados)
+  const map = new Map();
+  data.forEach(r => {
+    const key = r._key;
+    const prev = map.get(key);
+    if (!prev || (Number(r.votos||0) > Number(prev.votos||0))) {
+      map.set(key, r);
+    }
+  });
+
+  // 3. Ordenar cronológicamente
+  const order = Array.from(map.entries()).sort((a,b)=>{
+    return new Date(a[1].date).getTime() - new Date(b[1].date).getTime();
+  });
+
+  // 4. Detectar si hay temporadas (claves T1C1, T2C1, etc.)
+  const hasSeasons = order.some(([key]) => /^T\d+C\d+$/i.test(key));
+  let currentSeason = null;
+
+  // render
+  let delay=0;
+  for (const [key, r] of order){
+    const v = Number(r.promedio||0);
+    const votos = Number(r.votos||0);
+
+    // Separador de temporada
+    if (hasSeasons) {
+      const seasonMatch = key.match(/^T(\d+)C/i);
+      if (seasonMatch) {
+        const season = Number(seasonMatch[1]);
+        if (season !== currentSeason) {
+          currentSeason = season;
+          const sep = document.createElement('div');
+          sep.className = 'season-sep';
+          sep.textContent = 'Temporada ' + season;
+          g.appendChild(sep);
+        }
+      }
+    }
+
+    const d = document.createElement('div');
+    d.className = 'cell';
+    if (v >= 9.95) d.classList.add('perfect'); // Episodios con 10/10
+    d.textContent = key
+      .replace(/^T(\d+)C(\d+)$/i, '$1.$2') // T1C2 -> 1.2
+      .replace(/^OVA(\d+)$/i, 'O$1')        // OVA1 -> O1
+      .replace(/^P(\d+)$/i, 'P$1')          // P1 -> P1
+      .replace(/^C(\d+)$/i, '$1');          // C10 -> 10
+    d.style.background = color(v);
+
+    if (setTop.has(key)){
+      const star = document.createElement('span');
+      star.className='star';
+      star.textContent='★';
+      d.appendChild(star);
+    }
+
+    d.onmousemove = function(e){
+      const scoreColor = color(v);
+      tip.innerHTML = '<b>' + r.capitulo + '</b><br><span style="color:' + scoreColor + ';font-weight:700">' + label(v) + '</span> — ' + fmtNum(v) + '/10 · ' + votos + ' votos';
+      const w = tip.offsetWidth;
+      const h = tip.offsetHeight;
+      let x = e.clientX + 14;
+      let y = e.clientY + 14;
+      if (x + w > window.innerWidth - 10) x = e.clientX - w - 10;
+      if (y + h > window.innerHeight - 10) y = e.clientY - h - 10;
+      tip.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+    };
+    d.onmouseleave = function(){
+      tip.style.transform = 'translate(-9999px,-9999px)';
+    };
+
+    g.appendChild(d);
+    setTimeout(()=>d.classList.add('show'), delay);
+    delay += 12;
+  }
+
+  // Mostrar leyenda
+  if (legend && order.length > 0) legend.style.display = 'flex';
+}
+
+
+function showTab(id){
+  const topP=document.getElementById('panel-top');
+  const gridP=document.getElementById('panel-grid');
+  const toShow = (id==='top')? topP : gridP;
+  const toHide = (id==='top')? gridP : topP;
+  toHide.classList.remove('show');
+  setTimeout(()=>{ toHide.style.display='none'; toShow.style.display='block'; requestAnimationFrame(()=> toShow.classList.add('show')); }, 180);
+  document.querySelectorAll('.tab').forEach(el=> el.classList.toggle('active', el.dataset.tab===id));
+}
+document.querySelectorAll('.tab[data-tab]').forEach(t=> t.onclick=()=> showTab(t.dataset.tab));
+
+function calculateStats(arr){
+  if(!arr || !arr.length) return;
+  const total = arr.length;
+  const sum = arr.reduce((a,b)=> a + Number(b.promedio||0), 0);
+  const avg = sum / total;
+  const cine = arr.filter(e=> Number(e.promedio||0) >= 9).length;
+  const best = arr.reduce((a,b)=> Number(b.promedio||0) > Number(a.promedio||0) ? b : a, arr[0]);
+  
+  document.getElementById('stat-avg').textContent = avg.toFixed(2);
+  document.getElementById('stat-total').textContent = total;
+  document.getElementById('stat-cine').textContent = cine;
+  document.getElementById('stat-best').textContent = best.capitulo || '-';
+  document.getElementById('stat-best-score').textContent = fmtNum(best.promedio) + '/10';
+  
+  setTimeout(()=> document.getElementById('stats').classList.add('show'), 200);
+}
+
+async function shareTop10(){
+  const btn = document.getElementById('shareBtn');
+  const originalText = btn.innerHTML;
+  btn.innerHTML = '⏳ Generando...';
+  btn.disabled = true;
+  
+  try{
+    const html2canvas = window.html2canvas;
+    if(!html2canvas){
+      alert('Cargando librería... Intentá de nuevo en un momento.');
+      return;
+    }
+    
+    const panel = document.getElementById('panel-top');
+    const canvas = await html2canvas(panel, {
+      backgroundColor: '#0f1527',
+      scale: 2,
+      logging: false
+    });
+    
+    canvas.toBlob(blob=>{
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'top10-' + (document.title.split('—')[0].trim().replace(/\s+/g,'-').toLowerCase()) + '.png';
+      a.click();
+      URL.revokeObjectURL(url);
+      btn.innerHTML = '✅ ¡Descargado!';
+      setTimeout(()=> btn.innerHTML = originalText, 2000);
+    });
+  }catch(e){
+    console.error(e);
+    alert('Error al generar imagen');
+    btn.innerHTML = originalText;
+  }finally{
+    btn.disabled = false;
+  }
+}
+
+document.getElementById('shareBtn').onclick = shareTop10;
+
+fetch('./data.json').then(r=>r.json()).then(j=>{
+  document.getElementById('wrap').classList.add('ready');
+  document.title = (j.collection?.name || 'Colección') + ' — Top & Grilla';
+  renderTop(j.data);
+  renderGrid(j.data, j.scale);
+  calculateStats(j.data);
+});
+
+function pageBackTransition(href){
+  if (document.startViewTransition){
+    document.startViewTransition(()=> { window.location.href = href; });
+    return false;
+  }
+  document.getElementById('wrap').style.opacity='0';
+  setTimeout(()=> window.location.href = href, 120);
+  return false;
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+</body>
+</html>

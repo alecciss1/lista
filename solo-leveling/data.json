@@ -1,0 +1,20 @@
+{
+  "collection": {
+    "id": "solo-leveling",
+    "name": "Solo Leveling",
+    "type": "series"
+  },
+  "generatedAt": "2026-02-19T00:22:26.376Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1760730173012",
+      "capitulo": "SIN CALIFICAR",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2025-10-17T19:42:53.012Z",
+      "channel": "alecciss",
+      "colId": "solo-leveling"
+    }
+  ]
+}

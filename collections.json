@@ -1,0 +1,128 @@
+[
+  {
+    "id": "black-clover",
+    "name": "Black Clover",
+    "type": "series",
+    "count": 167,
+    "avg": 9.954000000000002
+  },
+  {
+    "id": "opening-black-clover",
+    "name": "Opening Black Clover",
+    "type": "series",
+    "count": 16,
+    "avg": 8.97
+  },
+  {
+    "id": "naruto",
+    "name": "Naruto",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "naruto-shippuden",
+    "name": "Naruto Shippuden",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "dandadan",
+    "name": "Dandadan",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "demon-slayer",
+    "name": "Demon Slayer",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "attack-on-titans",
+    "name": "Attack On Titans",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "arcane",
+    "name": "Arcane",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "solo-leveling",
+    "name": "Solo Leveling",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "haikyuu",
+    "name": "Haikyuu!!",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "hunter-x-hunter",
+    "name": "Hunter x Hunter",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "fullmetal-alchemist-brotherhood",
+    "name": "Fullmetal Alchemist Brotherhood",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "peliculas",
+    "name": "Peliculas",
+    "type": "series",
+    "count": 15,
+    "avg": 9.385
+  },
+  {
+    "id": "my-hero-academia",
+    "name": "My Hero Academia",
+    "type": "series",
+    "count": 178,
+    "avg": 9.908
+  },
+  {
+    "id": "opening-my-hero-academia",
+    "name": "Opening My Hero Academia",
+    "type": "series",
+    "count": 15,
+    "avg": 9.095
+  },
+  {
+    "id": "yu-yu-hakusho",
+    "name": "Yu Yu Hakusho",
+    "type": "series",
+    "count": 91,
+    "avg": 9.541
+  },
+  {
+    "id": "welcome-to-derry",
+    "name": "Welcome To Derry",
+    "type": "series",
+    "count": 8,
+    "avg": 9.25
+  },
+  {
+    "id": "stranger-things",
+    "name": "Stranger Things",
+    "type": "series",
+    "count": 9,
+    "avg": 8.166666666666666
+  }
+]

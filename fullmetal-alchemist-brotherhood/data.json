@@ -1,0 +1,20 @@
+{
+  "collection": {
+    "id": "fullmetal-alchemist-brotherhood",
+    "name": "Fullmetal Alchemist Brotherhood",
+    "type": "series"
+  },
+  "generatedAt": "2026-02-19T00:22:26.395Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1760730204458",
+      "capitulo": "SIN CALIFICAR",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2025-10-17T19:43:24.458Z",
+      "channel": "alecciss",
+      "colId": "fullmetal-alchemist-brotherhood"
+    }
+  ]
+}

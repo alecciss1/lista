@@ -1,0 +1,20 @@
+{
+  "collection": {
+    "id": "hunter-x-hunter",
+    "name": "Hunter x Hunter",
+    "type": "series"
+  },
+  "generatedAt": "2026-02-19T00:22:26.389Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1760730194803",
+      "capitulo": "SIN CALIFICAR",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2025-10-17T19:43:14.803Z",
+      "channel": "alecciss",
+      "colId": "hunter-x-hunter"
+    }
+  ]
+}
