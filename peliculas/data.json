@@ -4,7 +4,7 @@
     "name": "Peliculas",
     "type": "series"
   },
-  "generatedAt": "2026-02-19T00:22:26.402Z",
+  "generatedAt": "2026-02-25T13:05:39.862Z",
   "scale": 1,
   "data": [
     {
@@ -121,6 +121,15 @@
       "promedio": 8.45,
       "votos": 10,
       "date": "2026-01-19T02:37:26.583Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1771818768227",
+      "capitulo": "Maze Runner 2",
+      "promedio": 8.35,
+      "votos": 8,
+      "date": "2026-02-23T03:52:48.227Z",
       "channel": "alecciss",
       "colId": "peliculas"
     },
