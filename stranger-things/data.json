@@ -4,7 +4,7 @@
     "name": "Stranger Things",
     "type": "series"
   },
-  "generatedAt": "2026-02-19T00:22:26.442Z",
+  "generatedAt": "2026-02-25T13:10:42.738Z",
   "scale": 1,
   "data": [
     {
@@ -44,6 +44,15 @@
       "colId": "stranger-things"
     },
     {
+      "id": "1772025042727",
+      "capitulo": "Temp 2 Capitulo 4",
+      "promedio": 8.5,
+      "votos": 1,
+      "date": "2026-02-25T13:10:42.727Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
       "id": "1770090806586",
       "capitulo": "Temp 1 Capitulo 2",
       "promedio": 8,
@@ -62,6 +71,15 @@
       "colId": "stranger-things"
     },
     {
+      "id": "1771939736119",
+      "capitulo": "Temp 2 Capitulo 3",
+      "promedio": 8,
+      "votos": 1,
+      "date": "2026-02-24T13:28:56.119Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
       "id": "1770836305297",
       "capitulo": "Temp 1 Capitulo 5",
       "promedio": 7.5,
@@ -76,6 +94,15 @@
       "promedio": 7.5,
       "votos": 1,
       "date": "2026-02-18T14:19:55.316Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1771803363483",
+      "capitulo": "Temp 2 Capitulo 2",
+      "promedio": 7.5,
+      "votos": 1,
+      "date": "2026-02-22T23:36:03.483Z",
       "channel": "alecciss",
       "colId": "stranger-things"
     },
