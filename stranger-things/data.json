@@ -4,7 +4,7 @@
     "name": "Stranger Things",
     "type": "series"
   },
-  "generatedAt": "2026-02-25T13:10:42.738Z",
+  "generatedAt": "2026-03-02T00:48:42.274Z",
   "scale": 1,
   "data": [
     {
@@ -76,6 +76,15 @@
       "promedio": 8,
       "votos": 1,
       "date": "2026-02-24T13:28:56.119Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1772114854630",
+      "capitulo": "Temp 2 Capitulo 5",
+      "promedio": 8,
+      "votos": 1,
+      "date": "2026-02-26T14:07:34.630Z",
       "channel": "alecciss",
       "colId": "stranger-things"
     },
