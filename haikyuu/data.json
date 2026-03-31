@@ -1,0 +1,20 @@
+{
+  "collection": {
+    "id": "haikyuu",
+    "name": "Haikyuu!!",
+    "type": "series"
+  },
+  "generatedAt": "2026-03-31T10:17:27.481Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1760730181115",
+      "capitulo": "SIN CALIFICAR",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2025-10-17T19:43:01.115Z",
+      "channel": "alecciss",
+      "colId": "haikyuu"
+    }
+  ]
+}
