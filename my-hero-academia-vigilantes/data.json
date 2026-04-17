@@ -1,0 +1,254 @@
+{
+  "collection": {
+    "id": "my-hero-academia-vigilantes",
+    "name": "My Hero Academia Vigilantes",
+    "type": "series"
+  },
+  "generatedAt": "2026-04-17T04:54:59.037Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1775615650472",
+      "capitulo": "Temp 2 Capitulo 8",
+      "promedio": 9.66,
+      "votos": 16,
+      "date": "2026-04-08T02:34:10.472Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1775702670905",
+      "capitulo": "Temp 2 Capitulo 12",
+      "promedio": 9.47,
+      "votos": 12,
+      "date": "2026-04-09T02:44:30.905Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1775096636850",
+      "capitulo": "Temp 1 Capitulo 12",
+      "promedio": 9.29,
+      "votos": 9,
+      "date": "2026-04-02T02:23:56.850Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1774751543907",
+      "capitulo": "Temp 1 Capitulo 6",
+      "promedio": 9.24,
+      "votos": 9,
+      "date": "2026-03-29T02:32:23.907Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1774923431494",
+      "capitulo": "Temp 1 Capitulo 9",
+      "promedio": 9.19,
+      "votos": 8,
+      "date": "2026-03-31T02:17:11.494Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1775701098868",
+      "capitulo": "Temp 2 Capitulo 11",
+      "promedio": 9.18,
+      "votos": 11,
+      "date": "2026-04-09T02:18:18.868Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1775530431371",
+      "capitulo": "Temp 2 Capitulo 6",
+      "promedio": 9.03,
+      "votos": 9,
+      "date": "2026-04-07T02:53:51.371Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1775528861012",
+      "capitulo": "Temp 2 Capitulo 5",
+      "promedio": 9.02,
+      "votos": 9,
+      "date": "2026-04-07T02:27:41.012Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1775613904708",
+      "capitulo": "Temp 2 Capitulo 7",
+      "promedio": 8.86,
+      "votos": 10,
+      "date": "2026-04-08T02:05:04.708Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1774665049381",
+      "capitulo": "Temp 1 Capitulo 4",
+      "promedio": 8.65,
+      "votos": 11,
+      "date": "2026-03-28T02:30:49.381Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1775181317505",
+      "capitulo": "Temp 2 Capitulo 3",
+      "promedio": 8.4,
+      "votos": 11,
+      "date": "2026-04-03T01:55:17.505Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1774921808077",
+      "capitulo": "Temp 1 Capitulo 8",
+      "promedio": 8.36,
+      "votos": 9,
+      "date": "2026-03-31T01:50:08.077Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1774749749377",
+      "capitulo": "Temp 1 Capitulo 5",
+      "promedio": 8.34,
+      "votos": 10,
+      "date": "2026-03-29T02:02:29.377Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1775527312308",
+      "capitulo": "Temp 2 Capitulo 4",
+      "promedio": 8.33,
+      "votos": 7,
+      "date": "2026-04-07T02:01:52.308Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1775704177898",
+      "capitulo": "Temp 2 Capitulo 13",
+      "promedio": 8.31,
+      "votos": 9,
+      "date": "2026-04-09T03:09:37.898Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1775699538341",
+      "capitulo": "Temp 2 Capitulo 10",
+      "promedio": 8.22,
+      "votos": 10,
+      "date": "2026-04-09T01:52:18.341Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1775179733543",
+      "capitulo": "Temp 2 Capitulo 2",
+      "promedio": 8.16,
+      "votos": 8,
+      "date": "2026-04-03T01:28:53.543Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1775617477381",
+      "capitulo": "Temp 2 Capitulo 9",
+      "promedio": 8.14,
+      "votos": 9,
+      "date": "2026-04-08T03:04:37.381Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1774577112504",
+      "capitulo": "Temp 1 Capitulo 1",
+      "promedio": 8.09,
+      "votos": 10,
+      "date": "2026-03-27T02:05:12.504Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1775098338766",
+      "capitulo": "Temp 1 Capitulo 13",
+      "promedio": 8.08,
+      "votos": 9,
+      "date": "2026-04-02T02:52:18.766Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1775094904054",
+      "capitulo": "Temp 1 Capitulo 11",
+      "promedio": 8.06,
+      "votos": 8,
+      "date": "2026-04-02T01:55:04.054Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1774753081770",
+      "capitulo": "Temp 1 Capitulo 7",
+      "promedio": 7.92,
+      "votos": 8,
+      "date": "2026-03-29T02:58:01.771Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1775178103693",
+      "capitulo": "Temp 2 Capitulo 1",
+      "promedio": 7.87,
+      "votos": 9,
+      "date": "2026-04-03T01:01:43.693Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1774578689154",
+      "capitulo": "Temp 1 Capitulo 2",
+      "promedio": 7.85,
+      "votos": 10,
+      "date": "2026-03-27T02:31:29.155Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1774663263820",
+      "capitulo": "Temp 1 Capitulo 3",
+      "promedio": 7.78,
+      "votos": 13,
+      "date": "2026-03-28T02:01:03.820Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1774925151054",
+      "capitulo": "Temp 1 Capitulo  10",
+      "promedio": 7.26,
+      "votos": 8,
+      "date": "2026-03-31T02:45:51.054Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    },
+    {
+      "id": "1775094724830",
+      "capitulo": "Temp 1 Capitulo 11",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2026-04-02T01:52:04.830Z",
+      "channel": "alecciss",
+      "colId": "my-hero-academia-vigilantes"
+    }
+  ]
+}

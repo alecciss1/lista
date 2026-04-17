@@ -1,0 +1,218 @@
+{
+  "collection": {
+    "id": "stranger-things",
+    "name": "Stranger Things",
+    "type": "series"
+  },
+  "generatedAt": "2026-04-17T04:54:59.034Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1773669442148",
+      "capitulo": "Temp 2 Capitulo 9",
+      "promedio": 9.5,
+      "votos": 1,
+      "date": "2026-03-16T13:57:22.148Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1770641796638",
+      "capitulo": "Temp 1 Capitulo 4",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-02-09T12:56:36.638Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1770921181329",
+      "capitulo": "Temp 1 Capitulo 6",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-02-12T18:33:01.329Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1770924336601",
+      "capitulo": "Temp 1 Capitulo 7",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-02-12T19:25:36.601Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1773320125374",
+      "capitulo": "Temp 2 Capitulo 8",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-03-12T12:55:25.374Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1775830871669",
+      "capitulo": "Temp 3 Capitulo 4",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-04-10T14:21:11.669Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1776340728788",
+      "capitulo": "Temp 3 Capitulo 5",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-04-16T11:58:48.788Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1776344450151",
+      "capitulo": "Temp 3 Capitulo 6",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-04-16T13:00:50.151Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1770558357925",
+      "capitulo": "Temp 1 Capitulo 3",
+      "promedio": 8.5,
+      "votos": 1,
+      "date": "2026-02-08T13:45:57.925Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1772025042727",
+      "capitulo": "Temp 2 Capitulo 4",
+      "promedio": 8.5,
+      "votos": 1,
+      "date": "2026-02-25T13:10:42.727Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1772666744173",
+      "capitulo": "Temp 2 Capitulo 6",
+      "promedio": 8.5,
+      "votos": 1,
+      "date": "2026-03-04T23:25:44.173Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1773014360287",
+      "capitulo": "Temp 2 Capitulo 7",
+      "promedio": 8.5,
+      "votos": 1,
+      "date": "2026-03-08T23:59:20.287Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1775573627191",
+      "capitulo": "Temp 3 Capitulo 3",
+      "promedio": 8.5,
+      "votos": 1,
+      "date": "2026-04-07T14:53:47.191Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1770090806586",
+      "capitulo": "Temp 1 Capitulo 2",
+      "promedio": 8,
+      "votos": 1,
+      "date": "2026-02-03T03:53:26.586Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1771251232123",
+      "capitulo": "Temp 1 Capitulo 8",
+      "promedio": 8,
+      "votos": 1,
+      "date": "2026-02-16T14:13:52.123Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1771939736119",
+      "capitulo": "Temp 2 Capitulo 3",
+      "promedio": 8,
+      "votos": 1,
+      "date": "2026-02-24T13:28:56.119Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1772114854630",
+      "capitulo": "Temp 2 Capitulo 5",
+      "promedio": 8,
+      "votos": 1,
+      "date": "2026-02-26T14:07:34.630Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1774956863006",
+      "capitulo": "Temp 3 Capitulo 2",
+      "promedio": 8,
+      "votos": 1,
+      "date": "2026-03-31T11:34:23.006Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1770836305297",
+      "capitulo": "Temp 1 Capitulo 5",
+      "promedio": 7.5,
+      "votos": 1,
+      "date": "2026-02-11T18:58:25.297Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1771424395316",
+      "capitulo": "Temp 2 Capitulo 1",
+      "promedio": 7.5,
+      "votos": 1,
+      "date": "2026-02-18T14:19:55.316Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1771803363483",
+      "capitulo": "Temp 2 Capitulo 2",
+      "promedio": 7.5,
+      "votos": 1,
+      "date": "2026-02-22T23:36:03.483Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1774358396152",
+      "capitulo": "Temp 3 Capitulo 1",
+      "promedio": 7.5,
+      "votos": 1,
+      "date": "2026-03-24T13:19:56.152Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1770039797640",
+      "capitulo": "Temp 1 Capitulo 1",
+      "promedio": 7,
+      "votos": 1,
+      "date": "2026-02-02T13:43:17.640Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    }
+  ]
+}
