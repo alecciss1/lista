@@ -149,41 +149,25 @@
       pointer-events: auto;
     }
 
-    /* ── Overlays para ocultar UI de Kick ── */
-    /* Barra inferior de Kick (progreso, bits, botones) */
-    .stream-cover-bottom {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 80px;
-      background: linear-gradient(0deg, rgba(3,7,18,1) 40%, transparent 100%);
-      z-index: 25;
-      pointer-events: none;
-    }
-
-    /* Tapa la marca de agua y el nombre del canal (esquina inferior derecha) */
+    /* Marca de agua Kick: bloquea clicks pero sin tapar video */
     .stream-cover-watermark {
       position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 260px;
-      height: 80px;
-      background: var(--bg);
-      z-index: 30;
-      pointer-events: none;
+      bottom: 44px;
+      right: 10px;
+      width: 220px;
+      height: 42px;
+      background: transparent;
+      z-index: 25;
+      pointer-events: auto;
     }
 
-    /* Tapa la info de viewers / canal (esquina superior izquierda del embed) */
-    .stream-cover-topleft {
-      position: absolute;
-      top: 64px;
-      left: 0;
-      width: 280px;
-      height: 50px;
-      background: linear-gradient(90deg, rgba(3,7,18,0.98) 60%, transparent 100%);
-      z-index: 26;
-      pointer-events: none;
+    @media (max-width: 600px) {
+      .stream-cover-watermark {
+        bottom: 35px;
+        width: 140px;
+        height: 35px;
+        right: 5px;
+      }
     }
 
     /* ── Header elements ── */
@@ -438,7 +422,6 @@
         opacity: 0;
       }
 
-      .stream-cover-watermark { width: 180px; height: 70px; }
       .footer-right { gap: 4px; }
       .sbtn { padding: 5px 10px; font-size: 11px; }
 
@@ -485,8 +468,6 @@
         </div>
 
         <!-- Overlays para tapar UI de Kick -->
-        <div class="stream-cover-topleft"></div>
-        <div class="stream-cover-bottom"></div>
         <div class="stream-cover-watermark"></div>
 
         <!-- Contenedor del player -->
