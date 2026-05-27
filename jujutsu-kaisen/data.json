@@ -1,0 +1,569 @@
+{
+  "collection": {
+    "id": "jujutsu-kaisen",
+    "name": "Jujutsu Kaisen",
+    "type": "series"
+  },
+  "generatedAt": "2026-05-26T01:28:39.943Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1779758919942",
+      "capitulo": "Temp 3 Capitulo 12",
+      "promedio": 10,
+      "votos": 13,
+      "date": "2026-05-26T01:28:39.942Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778639694399",
+      "capitulo": "Temp 2 Capitulo 17",
+      "promedio": 9.86,
+      "votos": 42,
+      "date": "2026-05-13T02:34:54.399Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1779159430839",
+      "capitulo": "Temp 3 Capitulo 4",
+      "promedio": 9.86,
+      "votos": 41,
+      "date": "2026-05-19T02:57:10.839Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778038057340",
+      "capitulo": "Temp 2 Capitulo 4",
+      "promedio": 9.85,
+      "votos": 38,
+      "date": "2026-05-06T03:27:37.340Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778726716883",
+      "capitulo": "Temp 2 Capitulo 21",
+      "promedio": 9.75,
+      "votos": 40,
+      "date": "2026-05-14T02:45:16.883Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778124600757",
+      "capitulo": "Temp 2 Capitulo 9",
+      "promedio": 9.75,
+      "votos": 29,
+      "date": "2026-05-07T03:30:00.757Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778036554352",
+      "capitulo": "Temp 2 Capitulo 3",
+      "promedio": 9.7,
+      "votos": 41,
+      "date": "2026-05-06T03:02:34.352Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778040071265",
+      "capitulo": "Temp 2 Capitulo 5",
+      "promedio": 9.7,
+      "votos": 32,
+      "date": "2026-05-06T04:01:11.265Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777952324124",
+      "capitulo": "Pelicula 0",
+      "promedio": 9.65,
+      "votos": 27,
+      "date": "2026-05-05T03:38:44.124Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778637830414",
+      "capitulo": "Temp 2 Capitulo 16",
+      "promedio": 9.63,
+      "votos": 32,
+      "date": "2026-05-13T02:03:50.414Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1779332911511",
+      "capitulo": "Temp 3 Capitulo 9",
+      "promedio": 9.6,
+      "votos": 26,
+      "date": "2026-05-21T03:08:31.511Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778724917224",
+      "capitulo": "Temp 2 Capitulo 20",
+      "promedio": 9.52,
+      "votos": 31,
+      "date": "2026-05-14T02:15:17.224Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1779334590878",
+      "capitulo": "Temp 3 Capitulo 10",
+      "promedio": 9.49,
+      "votos": 23,
+      "date": "2026-05-21T03:36:30.878Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778730611880",
+      "capitulo": "Temp 2 Capitulo 23",
+      "promedio": 9.48,
+      "votos": 27,
+      "date": "2026-05-14T03:50:11.880Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777690466389",
+      "capitulo": "Temp 1 Capitulo 24",
+      "promedio": 9.46,
+      "votos": 16,
+      "date": "2026-05-02T02:54:26.389Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777521133534",
+      "capitulo": "Temp 1 Capitulo 20",
+      "promedio": 9.33,
+      "votos": 17,
+      "date": "2026-04-30T03:52:13.534Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778728500054",
+      "capitulo": "Temp 2 Capitulo 22",
+      "promedio": 9.28,
+      "votos": 27,
+      "date": "2026-05-14T03:15:00.054Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778557762719",
+      "capitulo": "Temp 2 Capitulo 15",
+      "promedio": 9.22,
+      "votos": 33,
+      "date": "2026-05-12T03:49:22.719Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1777433104167",
+      "capitulo": "Temp 1 Capitulo 13",
+      "promedio": 9.19,
+      "votos": 20,
+      "date": "2026-04-29T03:25:04.167Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1779500129921",
+      "capitulo": "Temp 3 Capitulo 11",
+      "promedio": 9.18,
+      "votos": 35,
+      "date": "2026-05-23T01:35:29.921Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777431454329",
+      "capitulo": "Temp 1 Capitulo 12",
+      "promedio": 9.11,
+      "votos": 17,
+      "date": "2026-04-29T02:57:34.329Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778641347911",
+      "capitulo": "Temp 2 Capitulo 18",
+      "promedio": 9.06,
+      "votos": 29,
+      "date": "2026-05-13T03:02:27.911Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778642930035",
+      "capitulo": "Temp 2 Capitulo 19",
+      "promedio": 8.99,
+      "votos": 31,
+      "date": "2026-05-13T03:28:50.035Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778556039022",
+      "capitulo": "Temp 2 Capitulo 14",
+      "promedio": 8.97,
+      "votos": 27,
+      "date": "2026-05-12T03:20:39.022Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1778894042553",
+      "capitulo": "Temp 3 Capitulo 1",
+      "promedio": 8.96,
+      "votos": 31,
+      "date": "2026-05-16T01:14:02.553Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777341414368",
+      "capitulo": "Temp 1 Capitulo 7",
+      "promedio": 8.93,
+      "votos": 16,
+      "date": "2026-04-28T01:56:54.368Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778554281873",
+      "capitulo": "Temp 2 Capitulo 13",
+      "promedio": 8.91,
+      "votos": 28,
+      "date": "2026-05-12T02:51:21.873Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1779161438880",
+      "capitulo": "Temp 3 Capitulo 5",
+      "promedio": 8.84,
+      "votos": 29,
+      "date": "2026-05-19T03:30:38.880Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777519485170",
+      "capitulo": "Temp 1 Capitulo 19",
+      "promedio": 8.81,
+      "votos": 25,
+      "date": "2026-04-30T03:24:45.170Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778034965432",
+      "capitulo": "Temp 2 Capitulo 2",
+      "promedio": 8.75,
+      "votos": 24,
+      "date": "2026-05-06T02:36:05.432Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778033095245",
+      "capitulo": "Temp 2 Capitulo 1",
+      "promedio": 8.74,
+      "votos": 26,
+      "date": "2026-05-06T02:04:55.245Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1779245050526",
+      "capitulo": "Temp 3 Capitulo 8",
+      "promedio": 8.67,
+      "votos": 31,
+      "date": "2026-05-20T02:44:10.526Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777343057686",
+      "capitulo": "Temp 1 Capitulo 8",
+      "promedio": 8.61,
+      "votos": 15,
+      "date": "2026-04-28T02:24:17.686Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777688710978",
+      "capitulo": "Temp 1 Capitulo 23",
+      "promedio": 8.59,
+      "votos": 15,
+      "date": "2026-05-02T02:25:10.978Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778122855852",
+      "capitulo": "Temp 2 Capitulo 8",
+      "promedio": 8.58,
+      "votos": 19,
+      "date": "2026-05-07T03:00:55.852Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778552576333",
+      "capitulo": "Temp 2 Capitulo 12",
+      "promedio": 8.54,
+      "votos": 22,
+      "date": "2026-05-12T02:22:56.333Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1778896013101",
+      "capitulo": "Temp 3 Capitulo 2",
+      "promedio": 8.48,
+      "votos": 16,
+      "date": "2026-05-16T01:46:53.101Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777428062487",
+      "capitulo": "Temp 1 Capitulo 10",
+      "promedio": 8.45,
+      "votos": 15,
+      "date": "2026-04-29T02:01:02.487Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777429800981",
+      "capitulo": "Temp 1 Capitulo 11",
+      "promedio": 8.44,
+      "votos": 14,
+      "date": "2026-04-29T02:30:00.981Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1776914639374",
+      "capitulo": "Temp 1 Capitulo 4",
+      "promedio": 8.44,
+      "votos": 13,
+      "date": "2026-04-23T03:23:59.374Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1779163270313",
+      "capitulo": "Temp 3 Capitulo 6",
+      "promedio": 8.35,
+      "votos": 20,
+      "date": "2026-05-19T04:01:10.313Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777436100230",
+      "capitulo": "Temp 1 Capitulo 15",
+      "promedio": 8.21,
+      "votos": 15,
+      "date": "2026-04-29T04:15:00.230Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778126291198",
+      "capitulo": "Temp 2 Capitulo 10",
+      "promedio": 8.19,
+      "votos": 24,
+      "date": "2026-05-07T03:58:11.198Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1776909688249",
+      "capitulo": "Temp 1 Capitulo 1",
+      "promedio": 8.19,
+      "votos": 18,
+      "date": "2026-04-23T02:01:28.249Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778121301440",
+      "capitulo": "Temp 2 Capitulo 7",
+      "promedio": 8.15,
+      "votos": 24,
+      "date": "2026-05-07T02:35:01.440Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777517798287",
+      "capitulo": "Temp 1 Capitulo 18",
+      "promedio": 8.05,
+      "votos": 22,
+      "date": "2026-04-30T02:56:38.287Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778550718994",
+      "capitulo": "Temp 2 Capitulo 11",
+      "promedio": 7.94,
+      "votos": 21,
+      "date": "2026-05-12T01:51:58.994Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1777516046265",
+      "capitulo": "Temp 1 Capitulo 17",
+      "promedio": 7.93,
+      "votos": 18,
+      "date": "2026-04-30T02:27:26.265Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1776911375230",
+      "capitulo": "Temp 1 Capitulo 2",
+      "promedio": 7.81,
+      "votos": 14,
+      "date": "2026-04-23T02:29:35.230Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777514473604",
+      "capitulo": "Temp 1 Capitulo 16",
+      "promedio": 7.81,
+      "votos": 14,
+      "date": "2026-04-30T02:01:13.604Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777434631427",
+      "capitulo": "Temp 1 Capitulo 14",
+      "promedio": 7.7,
+      "votos": 14,
+      "date": "2026-04-29T03:50:31.427Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1778119804744",
+      "capitulo": "Temp 2 Capitulo 6",
+      "promedio": 7.68,
+      "votos": 20,
+      "date": "2026-05-07T02:10:04.744Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777687045647",
+      "capitulo": "Temp 1 Capitulo 22",
+      "promedio": 7.61,
+      "votos": 14,
+      "date": "2026-05-02T01:57:25.647Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777344979008",
+      "capitulo": "Temp 1 Capitulo 9",
+      "promedio": 7.52,
+      "votos": 13,
+      "date": "2026-04-28T02:56:19.008Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1776912962755",
+      "capitulo": "Temp 1 Capitulo 3",
+      "promedio": 7.49,
+      "votos": 9,
+      "date": "2026-04-23T02:56:02.755Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777083627910",
+      "capitulo": "Temp 1 Capitulo 6",
+      "promedio": 7.46,
+      "votos": 17,
+      "date": "2026-04-25T02:20:27.910Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777081947650",
+      "capitulo": "Temp 1 Capitulo 5",
+      "promedio": 7.45,
+      "votos": 11,
+      "date": "2026-04-25T01:52:27.650Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1779157271482",
+      "capitulo": "Temp 3 Capitulo 3",
+      "promedio": 7.37,
+      "votos": 32,
+      "date": "2026-05-19T02:21:11.482Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1779159146331",
+      "capitulo": "Temp 3 Capitulo 3",
+      "promedio": 7.37,
+      "votos": 32,
+      "date": "2026-05-19T02:52:26.331Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1777685509972",
+      "capitulo": "Temp 1 Capitulo 21",
+      "promedio": 7.08,
+      "votos": 13,
+      "date": "2026-05-02T01:31:49.972Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1779243197744",
+      "capitulo": "Temp 3 Capitulo 7",
+      "promedio": 6.99,
+      "votos": 21,
+      "date": "2026-05-20T02:13:17.744Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    },
+    {
+      "id": "1779502342547",
+      "capitulo": "Temp 3 Capitulo 12",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2026-05-23T02:12:22.547Z",
+      "channel": "alecciss",
+      "colId": "jujutsu-kaisen"
+    }
+  ]
+}

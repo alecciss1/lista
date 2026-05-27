@@ -1,0 +1,101 @@
+{
+  "collection": {
+    "id": "opening-jjk",
+    "name": "Opening JJK",
+    "type": "series"
+  },
+  "generatedAt": "2026-05-26T02:01:28.515Z",
+  "scale": 1.5,
+  "data": [
+    {
+      "id": "1779760265211",
+      "capitulo": "ENDING 1",
+      "promedio": 9.58,
+      "votos": 19,
+      "date": "2026-05-26T01:51:05.211Z",
+      "channel": "alecciss",
+      "colId": "opening-jjk"
+    },
+    {
+      "id": "1779760567446",
+      "capitulo": "ENDING 3",
+      "promedio": 9.12,
+      "votos": 16,
+      "date": "2026-05-26T01:56:07.446Z",
+      "channel": "alecciss",
+      "colId": "opening-jjk"
+    },
+    {
+      "id": "1779759946201",
+      "capitulo": "OPENING 4",
+      "promedio": 8.97,
+      "votos": 19,
+      "date": "2026-05-26T01:45:46.201Z",
+      "channel": "alecciss",
+      "colId": "opening-jjk"
+    },
+    {
+      "id": "1779759784123",
+      "capitulo": "OPENING 3",
+      "promedio": 8.76,
+      "votos": 18,
+      "date": "2026-05-26T01:43:04.123Z",
+      "channel": "alecciss",
+      "colId": "opening-jjk"
+    },
+    {
+      "id": "1779760096795",
+      "capitulo": "OPENING 5",
+      "promedio": 8.62,
+      "votos": 20,
+      "date": "2026-05-26T01:48:16.795Z",
+      "channel": "alecciss",
+      "colId": "opening-jjk"
+    },
+    {
+      "id": "1779759429710",
+      "capitulo": "OPENING 1",
+      "promedio": 8.54,
+      "votos": 18,
+      "date": "2026-05-26T01:37:09.710Z",
+      "channel": "alecciss",
+      "colId": "opening-jjk"
+    },
+    {
+      "id": "1779760412369",
+      "capitulo": "ENDING 2",
+      "promedio": 8.31,
+      "votos": 14,
+      "date": "2026-05-26T01:53:32.369Z",
+      "channel": "alecciss",
+      "colId": "opening-jjk"
+    },
+    {
+      "id": "1779760888514",
+      "capitulo": "ENDING 5",
+      "promedio": 8.22,
+      "votos": 16,
+      "date": "2026-05-26T02:01:28.514Z",
+      "channel": "alecciss",
+      "colId": "opening-jjk"
+    },
+    {
+      "id": "1779760721468",
+      "capitulo": "ENDING 4",
+      "promedio": 7.64,
+      "votos": 14,
+      "date": "2026-05-26T01:58:41.468Z",
+      "channel": "alecciss",
+      "colId": "opening-jjk"
+    },
+    {
+      "id": "1779759592127",
+      "capitulo": "OPENING 2",
+      "promedio": 6.52,
+      "votos": 18,
+      "date": "2026-05-26T01:39:52.127Z",
+      "channel": "alecciss",
+      "colId": "opening-jjk"
+    }
+  ]
+}
