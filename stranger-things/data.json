@@ -4,7 +4,7 @@
     "name": "Stranger Things",
     "type": "series"
   },
-  "generatedAt": "2026-05-26T01:22:55.072Z",
+  "generatedAt": "2026-06-03T12:29:57.972Z",
   "scale": 1,
   "data": [
     {
@@ -85,6 +85,24 @@
       "promedio": 9,
       "votos": 1,
       "date": "2026-04-16T13:00:50.151Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1779978497963",
+      "capitulo": "Temp 4 Capitulo 1",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-05-28T14:28:17.963Z",
+      "channel": "alecciss",
+      "colId": "stranger-things"
+    },
+    {
+      "id": "1780489797970",
+      "capitulo": "Temp 4 Capitulo 2",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-06-03T12:29:57.970Z",
       "channel": "alecciss",
       "colId": "stranger-things"
     },
