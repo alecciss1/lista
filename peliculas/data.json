@@ -4,7 +4,7 @@
     "name": "Peliculas",
     "type": "series"
   },
-  "generatedAt": "2026-05-26T01:22:55.063Z",
+  "generatedAt": "2026-06-03T11:05:56.985Z",
   "scale": 1,
   "data": [
     {
@@ -94,6 +94,15 @@
       "promedio": 8.79,
       "votos": 17,
       "date": "2026-01-10T04:49:44.419Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1780103649088",
+      "capitulo": "Full Metal Jacket",
+      "promedio": 8.76,
+      "votos": 5,
+      "date": "2026-05-30T01:14:09.088Z",
       "channel": "alecciss",
       "colId": "peliculas"
     },
