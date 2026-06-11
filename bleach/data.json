@@ -4,7 +4,7 @@
     "name": "Bleach",
     "type": "series"
   },
-  "generatedAt": "2026-06-03T11:05:57.004Z",
+  "generatedAt": "2026-06-10T03:20:28.333Z",
   "scale": 1,
   "data": [
     {
@@ -17,11 +17,47 @@
       "colId": "bleach"
     },
     {
+      "id": "1780972018826",
+      "capitulo": "Capitulo 32",
+      "promedio": 9.16,
+      "votos": 13,
+      "date": "2026-06-09T02:26:58.826Z",
+      "channel": "alecciss",
+      "colId": "bleach"
+    },
+    {
       "id": "1779936891664",
       "capitulo": "Capitulo 9",
       "promedio": 8.68,
       "votos": 8,
       "date": "2026-05-28T02:54:51.664Z",
+      "channel": "alecciss",
+      "colId": "bleach"
+    },
+    {
+      "id": "1780970248037",
+      "capitulo": "Capitulo 31",
+      "promedio": 8.66,
+      "votos": 16,
+      "date": "2026-06-09T01:57:28.037Z",
+      "channel": "alecciss",
+      "colId": "bleach"
+    },
+    {
+      "id": "1781061628331",
+      "capitulo": "Capitulo 36",
+      "promedio": 8.54,
+      "votos": 14,
+      "date": "2026-06-10T03:20:28.331Z",
+      "channel": "alecciss",
+      "colId": "bleach"
+    },
+    {
+      "id": "1780542064261",
+      "capitulo": "Capitulo 25",
+      "promedio": 8.51,
+      "votos": 14,
+      "date": "2026-06-04T03:01:04.261Z",
       "channel": "alecciss",
       "colId": "bleach"
     },
@@ -62,6 +98,42 @@
       "colId": "bleach"
     },
     {
+      "id": "1781058313043",
+      "capitulo": "Capitulo 34",
+      "promedio": 8.45,
+      "votos": 12,
+      "date": "2026-06-10T02:25:13.043Z",
+      "channel": "alecciss",
+      "colId": "bleach"
+    },
+    {
+      "id": "1780705773620",
+      "capitulo": "Capitulo 27",
+      "promedio": 8.41,
+      "votos": 10,
+      "date": "2026-06-06T00:29:33.620Z",
+      "channel": "alecciss",
+      "colId": "bleach"
+    },
+    {
+      "id": "1780707402793",
+      "capitulo": "Capitulo 28",
+      "promedio": 8.34,
+      "votos": 14,
+      "date": "2026-06-06T00:56:42.793Z",
+      "channel": "alecciss",
+      "colId": "bleach"
+    },
+    {
+      "id": "1780540492722",
+      "capitulo": "Capitulo 24",
+      "promedio": 8.32,
+      "votos": 13,
+      "date": "2026-06-04T02:34:52.722Z",
+      "channel": "alecciss",
+      "colId": "bleach"
+    },
+    {
       "id": "1780106998085",
       "capitulo": "Capitulo 14",
       "promedio": 8.3,
@@ -89,6 +161,15 @@
       "colId": "bleach"
     },
     {
+      "id": "1780710924433",
+      "capitulo": "Capitulo 30",
+      "promedio": 8.17,
+      "votos": 12,
+      "date": "2026-06-06T01:55:24.433Z",
+      "channel": "alecciss",
+      "colId": "bleach"
+    },
+    {
       "id": "1780024152248",
       "capitulo": "Capitulo 11",
       "promedio": 8.17,
@@ -112,6 +193,24 @@
       "promedio": 8.09,
       "votos": 8,
       "date": "2026-06-03T02:30:21.441Z",
+      "channel": "alecciss",
+      "colId": "bleach"
+    },
+    {
+      "id": "1781059929027",
+      "capitulo": "Capitulo 35",
+      "promedio": 8.06,
+      "votos": 13,
+      "date": "2026-06-10T02:52:09.027Z",
+      "channel": "alecciss",
+      "colId": "bleach"
+    },
+    {
+      "id": "1780709176192",
+      "capitulo": "Capitulo 29",
+      "promedio": 8.02,
+      "votos": 11,
+      "date": "2026-06-06T01:26:16.192Z",
       "channel": "alecciss",
       "colId": "bleach"
     },
@@ -157,6 +256,24 @@
       "promedio": 7.71,
       "votos": 8,
       "date": "2026-05-26T02:55:39.767Z",
+      "channel": "alecciss",
+      "colId": "bleach"
+    },
+    {
+      "id": "1780538756048",
+      "capitulo": "Capitulo 23",
+      "promedio": 7.63,
+      "votos": 14,
+      "date": "2026-06-04T02:05:56.048Z",
+      "channel": "alecciss",
+      "colId": "bleach"
+    },
+    {
+      "id": "1780630889793",
+      "capitulo": "Capitulo 26",
+      "promedio": 7.57,
+      "votos": 9,
+      "date": "2026-06-05T03:41:29.793Z",
       "channel": "alecciss",
       "colId": "bleach"
     },
