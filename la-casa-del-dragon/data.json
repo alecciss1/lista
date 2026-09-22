@@ -4,7 +4,143 @@
     "name": "La Casa del Dragon",
     "type": "series"
   },
-  "generatedAt": "2026-09-22T01:08:45.068Z",
+  "generatedAt": "2026-09-20T04:59:10.667Z",
   "scale": 1,
-  "data": []
+  "data": [
+    {
+      "id": "1785931941488",
+      "capitulo": "Temp 1 Capitulo 1",
+      "promedio": 10,
+      "votos": 1,
+      "date": "2026-08-05T12:12:21.488Z",
+      "channel": "alecciss",
+      "colId": "la-casa-del-dragon"
+    },
+    {
+      "id": "1787788133861",
+      "capitulo": "Temp 1 Capitulo 7",
+      "promedio": 10,
+      "votos": 1,
+      "date": "2026-08-26T23:48:53.861Z",
+      "channel": "alecciss",
+      "colId": "la-casa-del-dragon"
+    },
+    {
+      "id": "1789082736140",
+      "capitulo": "Temp 1 Capitulo 10",
+      "promedio": 10,
+      "votos": 1,
+      "date": "2026-09-10T23:25:36.140Z",
+      "channel": "alecciss",
+      "colId": "la-casa-del-dragon"
+    },
+    {
+      "id": "1788816321060",
+      "capitulo": "Temp 1 Capitulo 9",
+      "promedio": 9.5,
+      "votos": 1,
+      "date": "2026-09-07T21:25:21.060Z",
+      "channel": "alecciss",
+      "colId": "la-casa-del-dragon"
+    },
+    {
+      "id": "1789863430577",
+      "capitulo": "Temp 2 Capitulo 4",
+      "promedio": 9.5,
+      "votos": 1,
+      "date": "2026-09-20T00:17:10.577Z",
+      "channel": "alecciss",
+      "colId": "la-casa-del-dragon"
+    },
+    {
+      "id": "1785931959234",
+      "capitulo": "Temp 1 Capitulo 2",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-08-05T12:12:39.234Z",
+      "channel": "alecciss",
+      "colId": "la-casa-del-dragon"
+    },
+    {
+      "id": "1786391945482",
+      "capitulo": "Temp 1 Capitulo 4",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-08-10T19:59:05.482Z",
+      "channel": "alecciss",
+      "colId": "la-casa-del-dragon"
+    },
+    {
+      "id": "1786715429116",
+      "capitulo": "Temp 1 Capitulo 5",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-08-14T13:50:29.116Z",
+      "channel": "alecciss",
+      "colId": "la-casa-del-dragon"
+    },
+    {
+      "id": "1787266953652",
+      "capitulo": "Temp 1 Capitulo 6",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-08-20T23:02:33.652Z",
+      "channel": "alecciss",
+      "colId": "la-casa-del-dragon"
+    },
+    {
+      "id": "1787926423082",
+      "capitulo": "Temp 1 Capitulo 8",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-08-28T14:13:43.082Z",
+      "channel": "alecciss",
+      "colId": "la-casa-del-dragon"
+    },
+    {
+      "id": "1789264686611",
+      "capitulo": "Temp 2 Capitulo 1",
+      "promedio": 8.5,
+      "votos": 1,
+      "date": "2026-09-13T01:58:06.611Z",
+      "channel": "alecciss",
+      "colId": "la-casa-del-dragon"
+    },
+    {
+      "id": "1785935821300",
+      "capitulo": "Temp 1 Capitulo 3",
+      "promedio": 8,
+      "votos": 1,
+      "date": "2026-08-05T13:17:01.300Z",
+      "channel": "alecciss",
+      "colId": "la-casa-del-dragon"
+    },
+    {
+      "id": "1789880350664",
+      "capitulo": "Temp 2 Capitulo 5",
+      "promedio": 8,
+      "votos": 1,
+      "date": "2026-09-20T04:59:10.664Z",
+      "channel": "alecciss",
+      "colId": "la-casa-del-dragon"
+    },
+    {
+      "id": "1789313120392",
+      "capitulo": "Temp 2 Capitulo 2",
+      "promedio": 7.5,
+      "votos": 1,
+      "date": "2026-09-13T15:25:20.392Z",
+      "channel": "alecciss",
+      "colId": "la-casa-del-dragon"
+    },
+    {
+      "id": "1789580478761",
+      "capitulo": "Temp 2 Capitulo 3",
+      "promedio": 6.5,
+      "votos": 1,
+      "date": "2026-09-16T17:41:18.761Z",
+      "channel": "alecciss",
+      "colId": "la-casa-del-dragon"
+    }
+  ]
 }
