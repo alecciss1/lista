@@ -4,7 +4,134 @@
     "name": "The Boys",
     "type": "series"
   },
-  "generatedAt": "2026-09-22T01:08:45.066Z",
+  "generatedAt": "2026-09-19T22:34:13.028Z",
   "scale": 1,
-  "data": []
+  "data": [
+    {
+      "id": "1787922255970",
+      "capitulo": "Temp 1 Capitulo 8",
+      "promedio": 10,
+      "votos": 1,
+      "date": "2026-08-28T13:04:15.970Z",
+      "channel": "alecciss",
+      "colId": "the-boys"
+    },
+    {
+      "id": "1785927967038",
+      "capitulo": "Temp 1 Capitulo 1",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-08-05T11:06:07.038Z",
+      "channel": "alecciss",
+      "colId": "the-boys"
+    },
+    {
+      "id": "1786711095883",
+      "capitulo": "Temp 1 Capitulo 5",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-08-14T12:38:15.883Z",
+      "channel": "alecciss",
+      "colId": "the-boys"
+    },
+    {
+      "id": "1787356895045",
+      "capitulo": "Temp 1 Capitulo 7",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-08-22T00:01:35.045Z",
+      "channel": "alecciss",
+      "colId": "the-boys"
+    },
+    {
+      "id": "1788442863284",
+      "capitulo": "Temp 2 Capitulo 1",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-09-03T13:41:03.284Z",
+      "channel": "alecciss",
+      "colId": "the-boys"
+    },
+    {
+      "id": "1789509798897",
+      "capitulo": "Temp 2 Capitulo 5",
+      "promedio": 9,
+      "votos": 1,
+      "date": "2026-09-15T22:03:18.897Z",
+      "channel": "alecciss",
+      "colId": "the-boys"
+    },
+    {
+      "id": "1789258888691",
+      "capitulo": "Temp 2 Capitulo 3",
+      "promedio": 8.5,
+      "votos": 1,
+      "date": "2026-09-13T00:21:28.691Z",
+      "channel": "alecciss",
+      "colId": "the-boys"
+    },
+    {
+      "id": "1789857253025",
+      "capitulo": "Temp 2 Capitulo 6",
+      "promedio": 8.5,
+      "votos": 1,
+      "date": "2026-09-19T22:34:13.025Z",
+      "channel": "alecciss",
+      "colId": "the-boys"
+    },
+    {
+      "id": "1786108154868",
+      "capitulo": "Temp 1 Capitulo 4",
+      "promedio": 8,
+      "votos": 1,
+      "date": "2026-08-07T13:09:14.868Z",
+      "channel": "alecciss",
+      "colId": "the-boys"
+    },
+    {
+      "id": "1787167405363",
+      "capitulo": "Temp 1 Capitulo 6",
+      "promedio": 8,
+      "votos": 1,
+      "date": "2026-08-19T19:23:25.363Z",
+      "channel": "alecciss",
+      "colId": "the-boys"
+    },
+    {
+      "id": "1785927987284",
+      "capitulo": "Temp 1 Capitulo 2",
+      "promedio": 7.5,
+      "votos": 1,
+      "date": "2026-08-05T11:06:27.284Z",
+      "channel": "alecciss",
+      "colId": "the-boys"
+    },
+    {
+      "id": "1785931915987",
+      "capitulo": "Temp 1 Capitulo 3",
+      "promedio": 7.5,
+      "votos": 1,
+      "date": "2026-08-05T12:11:55.987Z",
+      "channel": "alecciss",
+      "colId": "the-boys"
+    },
+    {
+      "id": "1789307065543",
+      "capitulo": "Temp 2 Capitulo 4",
+      "promedio": 7.5,
+      "votos": 1,
+      "date": "2026-09-13T13:44:25.543Z",
+      "channel": "alecciss",
+      "colId": "the-boys"
+    },
+    {
+      "id": "1788990465875",
+      "capitulo": "Temp 2 Capitulo 2",
+      "promedio": 7,
+      "votos": 1,
+      "date": "2026-09-09T21:47:45.875Z",
+      "channel": "alecciss",
+      "colId": "the-boys"
+    }
+  ]
 }
