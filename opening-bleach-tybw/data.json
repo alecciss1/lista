@@ -1,0 +1,47 @@
+{
+  "collection": {
+    "id": "opening-bleach-tybw",
+    "name": "Opening Bleach TYBW",
+    "type": "series"
+  },
+  "generatedAt": "2026-09-22T01:42:00.764Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1789436379986",
+      "capitulo": "Opening 1",
+      "promedio": 8.91,
+      "votos": 16,
+      "date": "2026-09-15T01:39:39.986Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach-tybw"
+    },
+    {
+      "id": "1790041320761",
+      "capitulo": "Ending 2",
+      "promedio": 8.74,
+      "votos": 17,
+      "date": "2026-09-22T01:42:00.761Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach-tybw"
+    },
+    {
+      "id": "1789436638443",
+      "capitulo": "Ending 1",
+      "promedio": 8.41,
+      "votos": 20,
+      "date": "2026-09-15T01:43:58.443Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach-tybw"
+    },
+    {
+      "id": "1790041084403",
+      "capitulo": "Opening 2",
+      "promedio": 7.31,
+      "votos": 17,
+      "date": "2026-09-22T01:38:04.403Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach-tybw"
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+[
+  {
+    "id": "black-clover",
+    "name": "Black Clover",
+    "type": "series",
+    "count": 167,
+    "avg": 9.954000000000002
+  },
+  {
+    "id": "opening-black-clover",
+    "name": "Opening Black Clover",
+    "type": "series",
+    "count": 16,
+    "avg": 8.97
+  },
+  {
+    "id": "naruto",
+    "name": "Naruto",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "naruto-shippuden",
+    "name": "Naruto Shippuden",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "dandadan",
+    "name": "Dandadan",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "demon-slayer",
+    "name": "Demon Slayer",
+    "type": "series",
+    "count": 2,
+    "avg": 4.8
+  },
+  {
+    "id": "attack-on-titans",
+    "name": "Attack On Titans",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "arcane",
+    "name": "Arcane",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "solo-leveling",
+    "name": "Solo Leveling",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "haikyuu",
+    "name": "Haikyuu!!",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "hunter-x-hunter",
+    "name": "Hunter x Hunter",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "fullmetal-alchemist-brotherhood",
+    "name": "Fullmetal Alchemist Brotherhood",
+    "type": "series",
+    "count": 1,
+    "avg": 0
+  },
+  {
+    "id": "peliculas",
+    "name": "Peliculas",
+    "type": "series",
+    "count": 53,
+    "avg": 9.766000000000002
+  },
+  {
+    "id": "my-hero-academia",
+    "name": "My Hero Academia",
+    "type": "series",
+    "count": 179,
+    "avg": 9.908
+  },
+  {
+    "id": "opening-my-hero-academia",
+    "name": "Opening My Hero Academia",
+    "type": "series",
+    "count": 15,
+    "avg": 9.095
+  },
+  {
+    "id": "yu-yu-hakusho",
+    "name": "Yu Yu Hakusho",
+    "type": "series",
+    "count": 116,
+    "avg": 9.7
+  },
+  {
+    "id": "welcome-to-derry",
+    "name": "Welcome To Derry",
+    "type": "series",
+    "count": 8,
+    "avg": 9.25
+  },
+  {
+    "id": "stranger-things",
+    "name": "Stranger Things",
+    "type": "series",
+    "count": 27,
+    "avg": 9.15
+  },
+  {
+    "id": "akame-ga-kill",
+    "name": "Akame Ga Kill",
+    "type": "series",
+    "count": 24,
+    "avg": 8.978
+  },
+  {
+    "id": "my-hero-academia-vigilantes",
+    "name": "My Hero Academia Vigilantes",
+    "type": "series",
+    "count": 27,
+    "avg": 9.159
+  },
+  {
+    "id": "your-lie-in-april",
+    "name": "Your Lie In April",
+    "type": "series",
+    "count": 22,
+    "avg": 9.456
+  },
+  {
+    "id": "jujutsu-kaisen",
+    "name": "Jujutsu Kaisen",
+    "type": "series",
+    "count": 62,
+    "avg": 9.775
+  },
+  {
+    "id": "opening-jjk",
+    "name": "Opening JJK",
+    "type": "series",
+    "count": 10,
+    "avg": 8.428
+  },
+  {
+    "id": "bleach",
+    "name": "Bleach",
+    "type": "series",
+    "count": 203,
+    "avg": 9.744
+  },
+  {
+    "id": "opening-bleach",
+    "name": "Opening Bleach",
+    "type": "series",
+    "count": 24,
+    "avg": 8.953999999999999
+  },
+  {
+    "id": "the-boys",
+    "name": "The Boys",
+    "type": "series",
+    "count": 0,
+    "avg": 0
+  },
+  {
+    "id": "la-casa-del-dragon",
+    "name": "La Casa del Dragon",
+    "type": "series",
+    "count": 0,
+    "avg": 0
+  },
+  {
+    "id": "malcolm-in-the-middle",
+    "name": "Malcolm In The Middle",
+    "type": "series",
+    "count": 0,
+    "avg": 0
+  },
+  {
+    "id": "bleach-tybw",
+    "name": "Bleach TYBW",
+    "type": "series",
+    "count": 36,
+    "avg": 9.759
+  },
+  {
+    "id": "opening-bleach-tybw",
+    "name": "Opening Bleach TYBW",
+    "type": "series",
+    "count": 4,
+    "avg": 8.3425
+  }
+]

@@ -1,0 +1,227 @@
+{
+  "collection": {
+    "id": "opening-bleach",
+    "name": "Opening Bleach",
+    "type": "series"
+  },
+  "generatedAt": "2026-09-22T01:08:45.064Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1787189797725",
+      "capitulo": "Opening 12",
+      "promedio": 9.54,
+      "votos": 14,
+      "date": "2026-08-20T01:36:37.726Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1787794262212",
+      "capitulo": "Opening 12",
+      "promedio": 9.44,
+      "votos": 14,
+      "date": "2026-08-27T01:31:02.212Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1789008056846",
+      "capitulo": "Opening 15",
+      "promedio": 9.2,
+      "votos": 23,
+      "date": "2026-09-10T02:40:56.846Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1783480099402",
+      "capitulo": "Opening 6",
+      "promedio": 9.09,
+      "votos": 8,
+      "date": "2026-07-08T03:08:19.402Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1780703682326",
+      "capitulo": "Opening 1",
+      "promedio": 9.04,
+      "votos": 9,
+      "date": "2026-06-05T23:54:42.326Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1787794495170",
+      "capitulo": "Ending 11",
+      "promedio": 8.97,
+      "votos": 10,
+      "date": "2026-08-27T01:34:55.170Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1785551338866",
+      "capitulo": "Opening 9",
+      "promedio": 8.78,
+      "votos": 13,
+      "date": "2026-08-01T02:28:58.866Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1782266517813",
+      "capitulo": "Opening 5",
+      "promedio": 8.76,
+      "votos": 13,
+      "date": "2026-06-24T02:01:57.813Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1787190008012",
+      "capitulo": "Ending 10",
+      "promedio": 8.43,
+      "votos": 11,
+      "date": "2026-08-20T01:40:08.012Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1780968094556",
+      "capitulo": "Ending 2",
+      "promedio": 8.29,
+      "votos": 8,
+      "date": "2026-06-09T01:21:34.556Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1786411985298",
+      "capitulo": "Opening 10",
+      "promedio": 8.04,
+      "votos": 7,
+      "date": "2026-08-11T01:33:05.298Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1780703970539",
+      "capitulo": "Ending 1",
+      "promedio": 7.86,
+      "votos": 9,
+      "date": "2026-06-05T23:59:30.539Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1781312938631",
+      "capitulo": "Opening 2",
+      "promedio": 7.86,
+      "votos": 7,
+      "date": "2026-06-13T01:08:58.631Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1781313151876",
+      "capitulo": "Ending 3",
+      "promedio": 7.43,
+      "votos": 7,
+      "date": "2026-06-13T01:12:31.876Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1782266251325",
+      "capitulo": "Opening 4",
+      "promedio": 7.32,
+      "votos": 13,
+      "date": "2026-06-24T01:57:31.325Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1782182267978",
+      "capitulo": "Opening 3",
+      "promedio": 7.28,
+      "votos": 12,
+      "date": "2026-06-23T02:37:47.978Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1785375690362",
+      "capitulo": "Ending 8",
+      "promedio": 7.26,
+      "votos": 5,
+      "date": "2026-07-30T01:41:30.362Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1783480365692",
+      "capitulo": "Ending 7",
+      "promedio": 7.07,
+      "votos": 7,
+      "date": "2026-07-08T03:12:45.692Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1782265983841",
+      "capitulo": "Ending 5",
+      "promedio": 7.03,
+      "votos": 7,
+      "date": "2026-06-24T01:53:03.841Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1785375486747",
+      "capitulo": "Opening 8",
+      "promedio": 6.72,
+      "votos": 8,
+      "date": "2026-07-30T01:38:06.747Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1782266704537",
+      "capitulo": "Ending 6",
+      "promedio": 6.48,
+      "votos": 10,
+      "date": "2026-06-24T02:05:04.537Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1786412277021",
+      "capitulo": "Opening 11",
+      "promedio": 5.7,
+      "votos": 10,
+      "date": "2026-08-11T01:37:57.021Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1781313320437",
+      "capitulo": "Ending 4",
+      "promedio": 5.64,
+      "votos": 7,
+      "date": "2026-06-13T01:15:20.437Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    },
+    {
+      "id": "1785375957100",
+      "capitulo": "Ending 9",
+      "promedio": 4.4,
+      "votos": 5,
+      "date": "2026-07-30T01:45:57.100Z",
+      "channel": "alecciss",
+      "colId": "opening-bleach"
+    }
+  ]
+}
