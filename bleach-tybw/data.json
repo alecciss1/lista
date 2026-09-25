@@ -4,7 +4,7 @@
     "name": "Bleach TYBW",
     "type": "series"
   },
-  "generatedAt": "2026-09-22T04:30:29.695Z",
+  "generatedAt": "2026-09-25T03:45:49.051Z",
   "scale": 1,
   "data": [
     {
@@ -40,6 +40,15 @@
       "promedio": 9.84,
       "votos": 49,
       "date": "2026-09-17T02:41:42.077Z",
+      "channel": "alecciss",
+      "colId": "bleach-tybw"
+    },
+    {
+      "id": "1790307949047",
+      "capitulo": "Capitulo 41",
+      "promedio": 9.75,
+      "votos": 40,
+      "date": "2026-09-25T03:45:49.047Z",
       "channel": "alecciss",
       "colId": "bleach-tybw"
     },
@@ -179,6 +188,15 @@
       "colId": "bleach-tybw"
     },
     {
+      "id": "1790216036906",
+      "capitulo": "Capitulo 36",
+      "promedio": 9.19,
+      "votos": 34,
+      "date": "2026-09-24T02:13:56.906Z",
+      "channel": "alecciss",
+      "colId": "bleach-tybw"
+    },
+    {
       "id": "1789787766858",
       "capitulo": "Capitulo 27",
       "promedio": 9.13,
@@ -215,6 +233,15 @@
       "colId": "bleach-tybw"
     },
     {
+      "id": "1790217709535",
+      "capitulo": "Capitulo 37",
+      "promedio": 8.96,
+      "votos": 38,
+      "date": "2026-09-24T02:41:49.535Z",
+      "channel": "alecciss",
+      "colId": "bleach-tybw"
+    },
+    {
       "id": "1789610991983",
       "capitulo": "Capitulo 18",
       "promedio": 8.93,
@@ -229,6 +256,24 @@
       "promedio": 8.92,
       "votos": 36,
       "date": "2026-09-11T03:40:08.550Z",
+      "channel": "alecciss",
+      "colId": "bleach-tybw"
+    },
+    {
+      "id": "1790220996208",
+      "capitulo": "Capitulo 39",
+      "promedio": 8.87,
+      "votos": 28,
+      "date": "2026-09-24T03:36:36.208Z",
+      "channel": "alecciss",
+      "colId": "bleach-tybw"
+    },
+    {
+      "id": "1790219327641",
+      "capitulo": "Capitulo 38",
+      "promedio": 8.82,
+      "votos": 27,
+      "date": "2026-09-24T03:08:47.641Z",
       "channel": "alecciss",
       "colId": "bleach-tybw"
     },
@@ -256,6 +301,15 @@
       "promedio": 8.74,
       "votos": 26,
       "date": "2026-09-15T03:13:59.663Z",
+      "channel": "alecciss",
+      "colId": "bleach-tybw"
+    },
+    {
+      "id": "1790305898387",
+      "capitulo": "Capitulo 40",
+      "promedio": 8.71,
+      "votos": 13,
+      "date": "2026-09-25T03:11:38.387Z",
       "channel": "alecciss",
       "colId": "bleach-tybw"
     },
