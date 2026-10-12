@@ -1,0 +1,164 @@
+{
+  "collection": {
+    "id": "hajime-no-ippo",
+    "name": "Hajime no Ippo",
+    "type": "series"
+  },
+  "generatedAt": "2026-10-12T23:34:39.976Z",
+  "scale": 1,
+  "data": [
+    {
+      "id": "1790822367386",
+      "capitulo": "Capitulo 6",
+      "promedio": 8.89,
+      "votos": 18,
+      "date": "2026-10-01T02:39:27.386Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1791426769317",
+      "capitulo": "Capitulo 12",
+      "promedio": 8.88,
+      "votos": 13,
+      "date": "2026-10-08T02:32:49.317Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1791429959149",
+      "capitulo": "Capitulo 14",
+      "promedio": 8.69,
+      "votos": 12,
+      "date": "2026-10-08T03:25:59.149Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1790649765928",
+      "capitulo": "Capitulo 3",
+      "promedio": 8.6,
+      "votos": 17,
+      "date": "2026-09-29T02:42:45.928Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1790646533657",
+      "capitulo": "Capitulo 1",
+      "promedio": 8.58,
+      "votos": 17,
+      "date": "2026-09-29T01:48:53.657Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1791428277463",
+      "capitulo": "Capitulo 13",
+      "promedio": 8.34,
+      "votos": 12,
+      "date": "2026-10-08T02:57:57.463Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1790823952334",
+      "capitulo": "Capitulo 7",
+      "promedio": 8.29,
+      "votos": 13,
+      "date": "2026-10-01T03:05:52.334Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1790648115833",
+      "capitulo": "Capitulo 2",
+      "promedio": 8.24,
+      "votos": 14,
+      "date": "2026-09-29T02:15:15.833Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1791425292662",
+      "capitulo": "Capitulo 11",
+      "promedio": 8.24,
+      "votos": 10,
+      "date": "2026-10-08T02:08:12.662Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1790820861035",
+      "capitulo": "Capitulo 5",
+      "promedio": 8.21,
+      "votos": 18,
+      "date": "2026-10-01T02:14:21.035Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1791597507196",
+      "capitulo": "Capitulo 15",
+      "promedio": 8.17,
+      "votos": 13,
+      "date": "2026-10-10T01:58:27.196Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1790825573887",
+      "capitulo": "Capitulo 8",
+      "promedio": 8.07,
+      "votos": 15,
+      "date": "2026-10-01T03:32:53.887Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1791600440644",
+      "capitulo": "Capitulo 17",
+      "promedio": 7.81,
+      "votos": 15,
+      "date": "2026-10-10T02:47:20.644Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1791598967434",
+      "capitulo": "Capitulo 16",
+      "promedio": 7.57,
+      "votos": 9,
+      "date": "2026-10-10T02:22:47.434Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1790651283790",
+      "capitulo": "Capitulo 4",
+      "promedio": 7.34,
+      "votos": 17,
+      "date": "2026-09-29T03:08:03.790Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1791255134442",
+      "capitulo": "Capitulo 10",
+      "promedio": 7.33,
+      "votos": 12,
+      "date": "2026-10-06T02:52:14.442Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1791253680631",
+      "capitulo": "Capitulo 9",
+      "promedio": 7.04,
+      "votos": 11,
+      "date": "2026-10-06T02:28:00.631Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    }
+  ]
+}
