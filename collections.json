@@ -3,7 +3,7 @@
     "id": "black-clover",
     "name": "Black Clover",
     "type": "series",
-    "count": 167,
+    "count": 168,
     "avg": 9.954000000000002
   },
   {
@@ -87,7 +87,7 @@
     "id": "peliculas",
     "name": "Peliculas",
     "type": "series",
-    "count": 53,
+    "count": 58,
     "avg": 9.766000000000002
   },
   {
@@ -199,14 +199,28 @@
     "id": "bleach-tybw",
     "name": "Bleach TYBW",
     "type": "series",
-    "count": 36,
-    "avg": 9.759
+    "count": 49,
+    "avg": 9.846
   },
   {
     "id": "opening-bleach-tybw",
     "name": "Opening Bleach TYBW",
     "type": "series",
-    "count": 4,
-    "avg": 8.3425
+    "count": 8,
+    "avg": 8.69125
+  },
+  {
+    "id": "hajime-no-ippo",
+    "name": "Hajime no Ippo",
+    "type": "series",
+    "count": 17,
+    "avg": 8.496
+  },
+  {
+    "id": "mob-psycho",
+    "name": "Mob Psycho",
+    "type": "series",
+    "count": 8,
+    "avg": 8.5775
   }
 ]
