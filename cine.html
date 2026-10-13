@@ -110,6 +110,12 @@
   .chat-wrap { position: absolute; inset: 0; width: 100%; height: 100%; display: none; }
   .chat-wrap.active { display: block; }
   .chat-wrap iframe { width: 100%; height: 100%; border: none; }
+  .chat-open-link {
+    display: block; padding: 7px 12px; text-align: right; font-size: 11px;
+    background: #101827; color: #a7f98b; text-decoration: none;
+    border-bottom: 1px solid var(--line);
+  }
+  .chat-open-link:hover { text-decoration: underline; }
 
   @media (max-width: 900px) {
     .layout { flex-direction: column; }
@@ -249,6 +255,22 @@
     transform: scale(1.12);
     box-shadow: 0 0 0 3px rgba(255,255,255,0.25);
   }
+  .vw-manual-label { margin-top: 12px; font-size: 12px; font-weight: 600; color: #cbd5e1; }
+  .vw-manual-form { display: flex; gap: 8px; margin-top: 7px; }
+  .vw-manual-input {
+    width: 0; min-width: 0; flex: 1; border: 1px solid rgba(255,255,255,.18);
+    background: rgba(255,255,255,.08); color: #fff; border-radius: 9px;
+    padding: 10px 12px; font: 700 15px Inter, system-ui, sans-serif;
+    outline: none;
+  }
+  .vw-manual-input:focus { border-color: #10b981; }
+  .vw-manual-input::placeholder { color: #94a3b8; font-weight: 400; }
+  .vw-manual-submit {
+    border: 0; border-radius: 9px; padding: 9px 12px;
+    background: #10b981; color: #03120b; font-weight: 800; cursor: pointer;
+  }
+  .vw-manual-submit:disabled { opacity: .55; cursor: wait; }
+  .vw-manual-error { min-height: 16px; margin-top: 5px; font-size: 11px; color: #fca5a5; }
   /* Paso 3: confirmación */
   #vw-step-confirm { display: none; text-align: center; }
   .vw-check {
@@ -314,6 +336,7 @@
       <div class="chat-tab active" data-target="chatKick">KICK</div>
       <div class="chat-tab" data-target="chatTwitch">TWITCH</div>
     </div>
+    <a id="kick-chat-open" class="chat-open-link" href="https://kick.com/alecciss" target="_blank" rel="noopener noreferrer">Abrir chat en Kick ↗</a>
     <div class="chat-content">
       <div class="chat-wrap active" id="chatKick"></div>
       <div class="chat-wrap" id="chatTwitch"></div>
@@ -353,6 +376,12 @@
   <div id="vw-step-vote">
     <div class="vw-who">Votando como: <span id="vw-who-name"></span></div>
     <div class="vw-scores" id="vw-scores"></div>
+    <div class="vw-manual-label">O escribí tu nota (ejemplo: 8.5)</div>
+    <form class="vw-manual-form" id="vw-manual-form">
+      <input class="vw-manual-input" id="vw-manual-input" type="text" inputmode="decimal" maxlength="4" placeholder="8.5 o 8,5" aria-label="Nota de 1 a 10 con un decimal" autocomplete="off" spellcheck="false">
+      <button class="vw-manual-submit" id="vw-manual-submit" type="submit">Votar</button>
+    </form>
+    <div class="vw-manual-error" id="vw-manual-error" role="status" aria-live="polite"></div>
   </div>
 
   <!-- Paso 3: confirmación -->
@@ -385,6 +414,11 @@
     const confirmScore= document.getElementById('vw-confirm-score');
     const btnChange   = document.getElementById('vw-btn-change');
     const epTitle     = document.getElementById('vw-episode-title');
+    const manualForm  = document.getElementById('vw-manual-form');
+    const manualInput = document.getElementById('vw-manual-input');
+    const manualSubmit = document.getElementById('vw-manual-submit');
+    const manualError = document.getElementById('vw-manual-error');
+    let sendingVote = false;
 
     // Generar o recuperar sessionId único por sesión del navegador
     let sessionId = sessionStorage.getItem('vw_session');
@@ -428,35 +462,58 @@
     }
     buildScoreButtons();
 
-    // Enviar voto al servidor
-    async function sendVote(score, clickedBtn) {
-      // Feedback visual inmediato
-      document.querySelectorAll('.vw-score-btn').forEach(b => b.classList.remove('selected'));
-      clickedBtn.classList.add('selected');
-
-      if (!LIVE_API) {
-        alert('La votación pública aún no está conectada al servidor. Consultá al administrador.');
+    // Los botones conservan su comportamiento. El campo manual acepta punto
+    // o coma, con un decimal, de 1 a 10. No redondear votos silenciosamente.
+    manualForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const raw = manualInput.value.trim();
+      if (!/^(?:10(?:[.,]0)?|[1-9](?:[.,][0-9])?)$/.test(raw)) {
+        manualError.textContent = 'Ingresá un número del 1 al 10 con hasta un decimal (ej.: 8.5).';
+        manualInput.focus();
         return;
       }
+      manualError.textContent = '';
+      sendVote(Number(raw.replace(',', '.')));
+    });
+    manualInput.addEventListener('input', () => { manualError.textContent = ''; });
+
+    // Enviar voto al servidor; ambos métodos usan la misma sesión de usuario.
+    async function sendVote(score, clickedBtn = null) {
+      if (sendingVote) return;
+      if (!LIVE_API) {
+        manualError.textContent = 'La votación pública no está conectada al servidor.';
+        return;
+      }
+      sendingVote = true;
+      manualSubmit.disabled = true;
+      const buttons = document.querySelectorAll('.vw-score-btn');
+      buttons.forEach(b => { b.disabled = true; b.classList.remove('selected'); });
+      if (clickedBtn) clickedBtn.classList.add('selected');
+      manualError.textContent = '';
       try {
         const res = await fetch(LIVE_API + '/api/vote', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ score, sessionId, username })
         });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
         const data = await res.json();
         if (data.ok) {
           currentVote = score;
           showConfirm(score);
         } else if (data.reason === 'closed') {
           hideWidget();
-          alert('La votación ya se cerró.');
+          manualError.textContent = 'La votación ya se cerró.';
         } else {
-          alert('No se pudo registrar el voto: ' + (data.reason || 'error del servidor'));
+          manualError.textContent = 'No se pudo registrar: ' + (data.reason || 'error del servidor');
         }
-      } catch(e) {
-        console.error('Error al enviar voto:', e);
-        alert('No hay conexión con el servidor de votos. Revisá la conexión e intentá nuevamente.');
+      } catch (err) {
+        console.error('Error al votar:', err);
+        manualError.textContent = 'Error de conexión. Probá nuevamente.';
+      } finally {
+        sendingVote = false;
+        manualSubmit.disabled = false;
+        buttons.forEach(b => { b.disabled = false; });
       }
     }
 
@@ -488,6 +545,8 @@
     function hideWidget() {
       widget.classList.remove('visible');
       currentVote = null;
+      manualError.textContent = '';
+      manualInput.value = '';
     }
 
     // Botón Continuar (paso de nombre)
@@ -505,8 +564,11 @@
     // Botón Cambiar voto
     btnChange.addEventListener('click', () => {
       currentVote = null;
+      manualInput.value = '';
+      manualError.textContent = '';
       document.querySelectorAll('.vw-score-btn').forEach(b => b.classList.remove('selected'));
       showStep('vote');
+      manualInput.focus();
     });
 
     // Estado de votación: consulta HTTPS independiente del hosting del sitio.
@@ -573,7 +635,14 @@
     }
 
     if(j.chatUrl) {
-      document.getElementById('chatKick').innerHTML = `<iframe src="${j.chatUrl}"></iframe>`;
+      const chatContainer = document.getElementById('chatKick');
+      chatContainer.innerHTML = '';
+      const chatFrame = document.createElement('iframe');
+      chatFrame.src = j.chatUrl;
+      chatFrame.title = 'Chat de Kick en vivo';
+      chatFrame.setAttribute('loading', 'lazy');
+      chatContainer.appendChild(chatFrame);
+      document.getElementById('kick-chat-open').href = j.chatUrl;
     } else {
       document.getElementById('chatKick').innerHTML = '<div style="padding:20px;text-align:center;color:#a6b7e8">Chat de Kick no configurado.</div>';
     }
