@@ -4,7 +4,7 @@
     "name": "Haikyuu!!",
     "type": "series"
   },
-  "generatedAt": "2026-10-13T12:19:31.608Z",
+  "generatedAt": "2026-10-13T13:29:18.324Z",
   "scale": 1,
   "data": [
     {
@@ -22,6 +22,15 @@
       "promedio": 0,
       "votos": 0,
       "date": "2026-10-13T12:11:04.596Z",
+      "channel": "alecciss",
+      "colId": "haikyuu"
+    },
+    {
+      "id": "1791895107730",
+      "capitulo": "Capitulo",
+      "promedio": 0,
+      "votos": 0,
+      "date": "2026-10-13T12:38:27.730Z",
       "channel": "alecciss",
       "colId": "haikyuu"
     }
