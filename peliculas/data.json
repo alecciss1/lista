@@ -4,7 +4,7 @@
     "name": "Peliculas",
     "type": "series"
   },
-  "generatedAt": "2026-09-25T02:45:20.149Z",
+  "generatedAt": "2026-10-13T11:12:17.124Z",
   "scale": 1,
   "data": [
     {
@@ -157,6 +157,15 @@
       "promedio": 9.14,
       "votos": 14,
       "date": "2026-01-26T03:48:28.765Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1790741746208",
+      "capitulo": "Constantine",
+      "promedio": 9.02,
+      "votos": 12,
+      "date": "2026-09-30T04:15:46.208Z",
       "channel": "alecciss",
       "colId": "peliculas"
     },
@@ -422,6 +431,15 @@
       "colId": "peliculas"
     },
     {
+      "id": "1791519274417",
+      "capitulo": "XMEN ORIGINS: WOLVERINE",
+      "promedio": 7.43,
+      "votos": 10,
+      "date": "2026-10-09T04:14:34.417Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
       "id": "1786678452414",
       "capitulo": "Daredevil",
       "promedio": 7.29,
@@ -490,6 +508,15 @@
       "promedio": 5.17,
       "votos": 11,
       "date": "2026-05-22T03:16:08.238Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1791344446687",
+      "capitulo": "Asi en la tierra como en el infierno",
+      "promedio": 4.67,
+      "votos": 16,
+      "date": "2026-10-07T03:40:46.687Z",
       "channel": "alecciss",
       "colId": "peliculas"
     },
