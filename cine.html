@@ -27,6 +27,28 @@
   .main-col { flex: 1; display: flex; flex-direction: column; background: #000; position: relative; }
   .chat-col { width: 350px; background: var(--sidebar); border-left: 1px solid var(--line); display: flex; flex-direction: column; box-shadow: -4px 0 20px rgba(0,0,0,0.5); z-index: 5; }
   
+  /* ALECCISS_CINE_CHAT_TOGGLE_V1: comportamiento de ocultar/mostrar chats */
+  .layout, .main-col { min-width: 0; min-height: 0; }
+  body.chat-hidden .chat-col { display: none !important; }
+  .header-right { display: flex; align-items: center; gap: 10px; }
+  .chat-toggle-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-height: 36px; padding: 8px 13px; border-radius: 9px;
+    border: 1px solid rgba(16,185,129,.55);
+    background: rgba(3,18,13,.88); color: #c8ffe9;
+    font: 700 12px/1.2 Inter,system-ui,sans-serif;
+    cursor: pointer; white-space: nowrap;
+    transition: background .2s, color .2s;
+  }
+  .chat-toggle-btn:hover { background: rgba(16,185,129,.25); color: #fff; }
+  .chat-toggle-btn:focus-visible { outline: 2px solid #6ee7b7; outline-offset: 3px; }
+  @media (max-width: 600px) {
+    .stream-cover-top { gap: 8px; padding: 0 10px; }
+    .stream-title, .live-indicator { display: none; }
+    .btn-back { padding: 8px 11px; }
+    .chat-toggle-btn { padding: 8px 10px; }
+  }
+
   /* Reproductor */
   .player-wrap { flex: 1; position: relative; width: 100%; height: 100%; background: #000; }
   .player-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
@@ -317,7 +339,10 @@
           Volver al Inicio
         </a>
         <div class="stream-title">CINE EN VIVO</div>
-        <div class="live-indicator"><div class="live-dot"></div> DIRECTO</div>
+        <div class="header-right">
+          <button type="button" id="chat-toggle-btn" class="chat-toggle-btn" aria-controls="chatSidebar" aria-expanded="true">💬 Ocultar chats</button>
+          <div class="live-indicator"><div class="live-dot"></div> DIRECTO</div>
+        </div>
       </div>
       
       <!-- CUBRE MARCA DE AGUA KICK -->
@@ -331,7 +356,7 @@
       </div>
     </div>
   </div>
-  <div class="chat-col">
+  <div class="chat-col" id="chatSidebar">
     <div class="chat-header">
       <div class="chat-tab active" data-target="chatKick">KICK</div>
       <div class="chat-tab" data-target="chatTwitch">TWITCH</div>
@@ -398,7 +423,7 @@
 <script>
   // El sitio está en GitHub Pages, pero la API debe ser un servidor HTTPS público.
   // localhost se permite únicamente para probar el preview local.
-  const configuredApiUrl = "https://inc-chassis-wma-gore.trycloudflare.com";
+  const configuredApiUrl = "https://reviewing-listing-productions-exec.trycloudflare.com";
   const LIVE_API = configuredApiUrl || ((location.hostname === 'localhost' || location.hostname === '127.0.0.1') ? location.origin : '');
 
   // ============ WIDGET DE VOTACIÓN ============
@@ -622,6 +647,29 @@
     setInterval(syncVotingState, 2000);
 
   })(); // fin IIFE widget
+
+  // ALECCISS_CINE_CHAT_TOGGLE_V1: preferencia privada del espectador, guardada en su navegador.
+  (function () {
+    const btn = document.getElementById('chat-toggle-btn');
+    const sidebar = document.getElementById('chatSidebar');
+    if (!btn || !sidebar) return;
+    const preferenceKey = 'alecciss_cine_chats_ocultos_v1';
+    let chatsHidden = false;
+    try { chatsHidden = localStorage.getItem(preferenceKey) === '1'; } catch (e) { /* almacenamiento no disponible */ }
+    function updateChats() {
+      document.body.classList.toggle('chat-hidden', chatsHidden);
+      sidebar.setAttribute('aria-hidden', chatsHidden ? 'true' : 'false');
+      btn.setAttribute('aria-expanded', chatsHidden ? 'false' : 'true');
+      btn.setAttribute('aria-label', chatsHidden ? 'Mostrar chats' : 'Ocultar chats');
+      btn.textContent = chatsHidden ? '💬 Mostrar chats' : '💬 Ocultar chats';
+    }
+    updateChats();
+    btn.addEventListener('click', function () {
+      chatsHidden = !chatsHidden;
+      updateChats();
+      try { localStorage.setItem(preferenceKey, chatsHidden ? '1' : '0'); } catch (e) { /* navegador privado */ }
+    });
+  })();
 
   // ============ CARGA DEL STREAM Y CHATS ============
   let originalStreamUrl = "";
