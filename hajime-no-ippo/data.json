@@ -4,7 +4,7 @@
     "name": "Hajime no Ippo",
     "type": "series"
   },
-  "generatedAt": "2026-10-14T00:16:31.159Z",
+  "generatedAt": "2026-10-14T02:00:53.668Z",
   "scale": 1,
   "data": [
     {
@@ -58,6 +58,15 @@
       "promedio": 8.34,
       "votos": 12,
       "date": "2026-10-08T02:57:57.463Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1791941539950",
+      "capitulo": "Capitulo 18",
+      "promedio": 8.32,
+      "votos": 11,
+      "date": "2026-10-14T01:32:19.950Z",
       "channel": "alecciss",
       "colId": "hajime-no-ippo"
     },
