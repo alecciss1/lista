@@ -57,10 +57,8 @@
     transform: scale(.77);
     transform-origin: center center;
   }
-  /* El contador compacto queda debajo del encabezado en móviles. */
-  @media (max-width: 900px) {
-    .cine-viewers-widget { position: absolute; top: 73px; right: 9px; z-index: 26; }
-  }
+  /* Contador en el pie: lejos del video y de los botones del encabezado. */
+  .footer .cine-viewers-widget { position: static; z-index: auto; justify-self: center; }
   .chat-toggle-btn {
     display: inline-flex; align-items: center; justify-content: center;
     min-height: 36px; padding: 8px 13px; border-radius: 9px;
@@ -138,9 +136,20 @@
   }
   
   .f-right { display: flex; gap: 12px; align-items: center; justify-content: flex-end; width: 100%; }
-  /* Redes centradas bajo Cine solamente en escritorio. */
+  /* PC: redes exactamente centradas, contador a su derecha sin taparlas. */
   @media (min-width: 901px) {
-    .footer .f-right { justify-content: center; }
+    .footer { display: grid; grid-template-columns: 114px minmax(0, 1fr) 114px; gap: 6px; }
+    .footer .f-right { grid-column: 2; width: 100%; justify-content: center; gap: 8px; }
+    .footer .cine-viewers-widget { grid-column: 3; }
+  }
+  @media (min-width: 901px) and (max-width: 1199px) {
+    .footer .f-right { gap: 6px; }
+    .footer .sbtn { padding: 8px 10px; font-size: 12px; }
+  }
+  /* Celular y tablet: widget debajo de los enlaces, sin superponer el video. */
+  @media (max-width: 900px) {
+    .footer { height: auto; min-height: 60px; flex-wrap: wrap; justify-content: center; padding: 10px 12px; gap: 8px; }
+    .footer .f-right { width: 100%; justify-content: center; }
   }
   .sbtn {
     display: inline-flex; align-items: center; justify-content: center; padding: 8px 16px;
@@ -362,11 +371,6 @@
         <div class="header-right">
           <button type="button" id="chat-toggle-btn" class="chat-toggle-btn" aria-controls="chatSidebar" aria-expanded="true">💬 Ocultar chats</button>
           <div class="live-indicator"><div class="live-dot"></div> DIRECTO</div>
-          <!-- Contador compacto de visitantes activos; se mantiene íntegro el widget
-               oficial de whos.amung.us y el mismo ID de estadísticas. -->
-          <div class="cine-viewers-widget" aria-label="Visitantes conectados a Cine" title="Visitantes conectados a esta página de Cine">
-            <span class="cine-viewers-provider"><script id="_wauac1">var _wau = _wau || []; _wau.push(["dynamic", "h8p2a6lc26", "ac1", "111827ffffff", "small"]);</script><script async src="https://waust.at/d.js"></script></span>
-          </div>
         </div>
       </div>
       
@@ -402,6 +406,10 @@
     <a class="sbtn" href="https://discord.gg/7NVwCU7RA9" target="_blank" rel="noopener">Discord</a>
     <a class="sbtn patreon" href="https://www.patreon.com/Aleccis" target="_blank" rel="noopener">Patreon</a>
   </div>
+    <!-- Visitantes activos de Cine (mismo contador real, movido al pie). -->
+    <div class="cine-viewers-widget" aria-label="Visitantes conectados a Cine" title="Visitantes conectados a esta página de Cine">
+      <span class="cine-viewers-provider"><script id="_wauac1">var _wau = _wau || []; _wau.push(["dynamic", "h8p2a6lc26", "ac1", "111827ffffff", "small"]);</script><script async src="https://waust.at/d.js"></script></span>
+    </div>
 </div>
 
 <div id="hiddenPlayer" style="position: absolute; width: 1px; height: 1px; opacity: 0.01; pointer-events: none; z-index: -999;"></div>
