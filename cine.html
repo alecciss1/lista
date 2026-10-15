@@ -25,7 +25,7 @@
   /* Layout principal */
   .layout { display: flex; flex: 1; height: calc(100vh - 60px); }
   .main-col { flex: 1; display: flex; flex-direction: column; background: #000; position: relative; }
-  .chat-col { width: 350px; background: var(--sidebar); border-left: 1px solid var(--line); display: flex; flex-direction: column; box-shadow: -4px 0 20px rgba(0,0,0,0.5); z-index: 5; }
+  .chat-col { width: 350px; background: var(--sidebar); border-left: 1px solid var(--line); display: flex; flex-direction: column; box-shadow: -4px 0 20px rgba(0,0,0,0.5); position: relative; z-index: 40; isolation: isolate; }
   
   /* ALECCISS_CINE_CHAT_TOGGLE_V1: comportamiento de ocultar/mostrar chats */
   .layout, .main-col { min-width: 0; min-height: 0; }
@@ -676,6 +676,21 @@
   // ============ CARGA DEL STREAM Y CHATS ============
   let originalStreamUrl = "";
   let twitchChatConfig = null;
+  let kickChatExternalUrl = 'https://kick.com/alecciss';
+
+  function updateChatExternalLink(target) {
+    const link = document.getElementById('kick-chat-open');
+    if (target === 'chatTwitch') {
+      const channel = twitchChatConfig ? twitchChatConfig.channel : 'alecciss';
+      link.href = 'https://www.twitch.tv/popout/' + encodeURIComponent(channel) + '/chat?popout=';
+      link.textContent = 'Abrir chat de Twitch para escribir ↗';
+      link.style.color = '#d5b8ff';
+    } else {
+      link.href = kickChatExternalUrl;
+      link.textContent = 'Abrir chat en KickCX ↗';
+      link.style.color = '';
+    }
+  }
 
   function mountVisibleTwitchChat() {
     const panel = document.getElementById('chatTwitch');
@@ -709,7 +724,8 @@
       chatFrame.title = 'Chat de Kick en vivo';
       chatFrame.setAttribute('loading', 'lazy');
       chatContainer.appendChild(chatFrame);
-      document.getElementById('kick-chat-open').href = j.chatUrl;
+      kickChatExternalUrl = j.chatUrl;
+      if (document.getElementById('chatKick').classList.contains('active')) updateChatExternalLink('chatKick');
     } else {
       document.getElementById('chatKick').innerHTML = '<div style="padding:20px;text-align:center;color:#a6b7e8">Chat de Kick no configurado.</div>';
     }
@@ -743,6 +759,7 @@
       document.querySelectorAll('.chat-wrap').forEach(c => c.classList.remove('active'));
       tab.classList.add('active');
       document.getElementById(target).classList.add('active');
+      updateChatExternalLink(target);
       if (target === 'chatTwitch') mountVisibleTwitchChat();
     });
   });
