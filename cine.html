@@ -108,6 +108,10 @@
   }
   
   .f-right { display: flex; gap: 12px; align-items: center; justify-content: flex-end; width: 100%; }
+  /* Redes centradas bajo Cine solamente en escritorio. */
+  @media (min-width: 901px) {
+    .footer .f-right { justify-content: center; }
+  }
   .sbtn {
     display: inline-flex; align-items: center; justify-content: center; padding: 8px 16px;
     border-radius: 8px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
@@ -134,13 +138,6 @@
   .chat-wrap { position: absolute; inset: 0; width: 100%; height: 100%; display: none; }
   .chat-wrap.active { display: block; }
   .chat-wrap iframe { width: 100%; height: 100%; border: none; }
-  .chat-open-link {
-    display: block; padding: 7px 12px; text-align: right; font-size: 11px;
-    background: #101827; color: #a7f98b; text-decoration: none;
-    border-bottom: 1px solid var(--line);
-  }
-  .chat-open-link:hover { text-decoration: underline; }
-
   @media (max-width: 900px) {
     .layout { flex-direction: column; }
     .chat-col { width: 100%; height: 400px; border-left: none; border-top: 1px solid var(--line); }
@@ -165,15 +162,6 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.35s cubic-bezier(0.4,0,0.2,1), transform 0.35s cubic-bezier(0.4,0,0.2,1);
-  }
-  #vw-server-status {
-    position: fixed; bottom: 12px; left: 12px; z-index: 110;
-    max-width: min(360px, calc(100vw - 24px));
-    padding: 9px 12px; border-radius: 10px;
-    background: rgba(27, 33, 46, .94); color: #e2e8f0;
-    border: 1px solid rgba(245, 158, 11, .45);
-    font: 12px/1.5 Inter, system-ui, sans-serif;
-    display: none;
   }
   #vote-widget.visible {
     opacity: 1;
@@ -363,7 +351,6 @@
       <div class="chat-tab active" data-target="chatKick">KICK</div>
       <div class="chat-tab" data-target="chatTwitch">TWITCH</div>
     </div>
-    <a id="kick-chat-open" class="chat-open-link" href="https://kick.com/alecciss" target="_blank" rel="noopener noreferrer">Abrir chat en Kick ↗</a>
     <div class="chat-content">
       <div class="chat-wrap active" id="chatKick"></div>
       <div class="chat-wrap" id="chatTwitch"></div>
@@ -420,7 +407,6 @@
   </div>
 </div>
 <!-- /WIDGET DE VOTACIÓN -->
-<div id="vw-server-status" role="status" aria-live="polite"></div>
 
 <script>
   // El sitio está en GitHub Pages, pero la API debe ser un servidor HTTPS público.
@@ -600,17 +586,14 @@
 
     // Estado de votación: consulta HTTPS independiente del hosting del sitio.
     // GitHub Pages no ofrece Socket.IO ni API: los datos vienen del servidor público.
-    const serverStatus = document.getElementById('vw-server-status');
     let wasOpen = false;
     let checkedOnce = false;
     let checking = false;
-    function statusMessage(message) {
-      serverStatus.textContent = message;
-      serverStatus.style.display = message ? 'block' : 'none';
-    }
+    let connectionWarningLogged = false;
     async function syncVotingState() {
       if (!LIVE_API) {
-        statusMessage('La votación pública no está configurada. El administrador debe conectar el servidor.');
+        hideWidget();
+        wasOpen = false;
         return;
       }
       if (checking) return;
@@ -624,7 +607,7 @@
         if (!response.ok) throw new Error('HTTP ' + response.status);
         const state = await response.json();
         if (typeof state.votingOpen !== 'boolean') throw new Error('Estado incorrecto');
-        statusMessage('');
+        connectionWarningLogged = false;
         if (state.votingOpen) {
           if (!wasOpen || !widget.classList.contains('visible')) {
             currentVote = null;
@@ -638,8 +621,14 @@
         wasOpen = state.votingOpen;
         checkedOnce = true;
       } catch (error) {
-        statusMessage('Sin conexión con la votación. El servidor público debe estar encendido.');
-        console.warn('Error de sincronización con la API:', error);
+        // Sin votación o con servidor apagado, no molestamos al espectador.
+        // El widget se recupera automáticamente cuando el servidor vuelve.
+        if (wasOpen || widget.classList.contains('visible')) hideWidget();
+        wasOpen = false;
+        if (!connectionWarningLogged) {
+          console.warn('Votación no disponible (sin aviso visual):', error);
+          connectionWarningLogged = true;
+        }
       } finally {
         clearTimeout(timeout);
         checking = false;
@@ -676,21 +665,6 @@
   // ============ CARGA DEL STREAM Y CHATS ============
   let originalStreamUrl = "";
   let twitchChatConfig = null;
-  let kickChatExternalUrl = 'https://kick.com/alecciss';
-
-  function updateChatExternalLink(target) {
-    const link = document.getElementById('kick-chat-open');
-    if (target === 'chatTwitch') {
-      const channel = twitchChatConfig ? twitchChatConfig.channel : 'alecciss';
-      link.href = 'https://www.twitch.tv/popout/' + encodeURIComponent(channel) + '/chat?popout=';
-      link.textContent = 'Abrir chat de Twitch para escribir ↗';
-      link.style.color = '#d5b8ff';
-    } else {
-      link.href = kickChatExternalUrl;
-      link.textContent = 'Abrir chat en KickCX ↗';
-      link.style.color = '';
-    }
-  }
 
   function mountVisibleTwitchChat() {
     const panel = document.getElementById('chatTwitch');
@@ -724,8 +698,6 @@
       chatFrame.title = 'Chat de Kick en vivo';
       chatFrame.setAttribute('loading', 'lazy');
       chatContainer.appendChild(chatFrame);
-      kickChatExternalUrl = j.chatUrl;
-      if (document.getElementById('chatKick').classList.contains('active')) updateChatExternalLink('chatKick');
     } else {
       document.getElementById('chatKick').innerHTML = '<div style="padding:20px;text-align:center;color:#a6b7e8">Chat de Kick no configurado.</div>';
     }
@@ -759,7 +731,6 @@
       document.querySelectorAll('.chat-wrap').forEach(c => c.classList.remove('active'));
       tab.classList.add('active');
       document.getElementById(target).classList.add('active');
-      updateChatExternalLink(target);
       if (target === 'chatTwitch') mountVisibleTwitchChat();
     });
   });
