@@ -31,19 +31,33 @@
   .layout, .main-col { min-width: 0; min-height: 0; }
   body.chat-hidden .chat-col { display: none !important; }
   .header-right { display: flex; align-items: center; gap: 10px; }
-  /* ALECCISS_CINE_CONTADOR_WAU_V1 - contador de visitantes actuales (sin VPS) */
+  /* ALECCISS_CINE_CONTADOR_WAU_V3: widget original completo, tamaño visual compacto
+     respetando iconos y marcas del proveedor. Sin marco ni emoji duplicados. */
   .cine-viewers-widget {
-    display: inline-flex; align-items: center; justify-content: center; gap: 5px;
-    flex-shrink: 0; min-height: 25px; padding: 3px 6px;
-    border: 1px solid rgba(148,163,184,.24); border-radius: 999px;
-    background: rgba(15,23,42,.88); color: #f8fafc;
-    font: 700 13px/1 Inter,system-ui,sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 114px;
+    width: 114px;
+    height: 34px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: transparent;
+    overflow: visible;
     pointer-events: auto;
   }
-  .cine-viewers-widget .cine-viewers-icon { font-size: 13px; }
-  .cine-viewers-widget .cine-viewers-provider { display: inline-flex; align-items: center; min-height: 15px; }
-  /* En pantallas compactas, colocar el contador debajo de la cabecera
-     para no tapar los botones ni cubrir los controles del reproductor. */
+  .cine-viewers-provider {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 146px;
+    min-width: 146px;
+    height: 40px;
+    transform: scale(.77);
+    transform-origin: center center;
+  }
+  /* El contador compacto queda debajo del encabezado en móviles. */
   @media (max-width: 900px) {
     .cine-viewers-widget { position: absolute; top: 73px; right: 9px; z-index: 26; }
   }
@@ -348,11 +362,10 @@
         <div class="header-right">
           <button type="button" id="chat-toggle-btn" class="chat-toggle-btn" aria-controls="chatSidebar" aria-expanded="true">💬 Ocultar chats</button>
           <div class="live-indicator"><div class="live-dot"></div> DIRECTO</div>
-          <!-- Visitas activas de esta página: widget Dynamic Small de whos.amung.us.
-               ID exclusivo para Alecciss Cine (no incluye otras páginas). -->
+          <!-- Contador compacto de visitantes activos; se mantiene íntegro el widget
+               oficial de whos.amung.us y el mismo ID de estadísticas. -->
           <div class="cine-viewers-widget" aria-label="Visitantes conectados a Cine" title="Visitantes conectados a esta página de Cine">
-            <span class="cine-viewers-icon" aria-hidden="true">👥</span>
-            <span class="cine-viewers-provider"><script id="_wauac1">var _wau = _wau || []; _wau.push(["dynamic", "h8p2a6lc26", "ac1", "0f172affffff", "small"]);</script><script async src="https://waust.at/d.js"></script></span>
+            <span class="cine-viewers-provider"><script id="_wauac1">var _wau = _wau || []; _wau.push(["dynamic", "h8p2a6lc26", "ac1", "111827ffffff", "small"]);</script><script async src="https://waust.at/d.js"></script></span>
           </div>
         </div>
       </div>
