@@ -675,6 +675,23 @@
 
   // ============ CARGA DEL STREAM Y CHATS ============
   let originalStreamUrl = "";
+  let twitchChatConfig = null;
+
+  function mountVisibleTwitchChat() {
+    const panel = document.getElementById('chatTwitch');
+    const sidebar = document.getElementById('chatSidebar');
+    if (!panel.classList.contains('active') || document.body.classList.contains('chat-hidden') || !sidebar) return;
+    if (!twitchChatConfig) {
+      panel.innerHTML = '<div style="padding:20px;text-align:center;color:#a6b7e8">Falta el canal de Twitch o el dominio Parent en la configuración.</div>';
+      return;
+    }
+    if (panel.querySelector('iframe')) return;
+    const frame = document.createElement('iframe');
+    frame.title = 'Chat de Twitch en vivo';
+    frame.src = 'https://www.twitch.tv/embed/' + encodeURIComponent(twitchChatConfig.channel) +
+      '/chat?darkpopout&parent=' + encodeURIComponent(twitchChatConfig.parent);
+    panel.replaceChildren(frame);
+  }
 
   fetch('./cine.json?t=' + Date.now()).then(r=>r.json()).then(j => {
     if(j.streamUrl) {
@@ -697,10 +714,12 @@
       document.getElementById('chatKick').innerHTML = '<div style="padding:20px;text-align:center;color:#a6b7e8">Chat de Kick no configurado.</div>';
     }
 
-    if(j.twitchChannel && j.twitchParent) {
-      document.getElementById('chatTwitch').innerHTML = `<iframe src="https://www.twitch.tv/embed/${j.twitchChannel}/chat?darkpopout&parent=${j.twitchParent}"></iframe>`;
-    } else {
-      document.getElementById('chatTwitch').innerHTML = '<div style="padding:20px;text-align:center;color:#a6b7e8">Falta el canal de Twitch o el dominio Parent en la configuración.</div>';
+    // Twitch bloquea escritura de dueño/mods si su iframe se crea oculto.
+    // Guardamos la configuración y montamos el chat solo en su pestaña visible.
+    twitchChatConfig = (j.twitchChannel && j.twitchParent)
+      ? { channel: j.twitchChannel, parent: j.twitchParent } : null;
+    if (document.getElementById('chatTwitch').classList.contains('active')) {
+      mountVisibleTwitchChat();
     }
 
     if(j.kickChannel) {
@@ -716,11 +735,23 @@
 
   document.querySelectorAll('.chat-tab').forEach(tab => {
     tab.addEventListener('click', () => {
+      const target = tab.getAttribute('data-target');
+      // Desmontamos Twitch ANTES de esconder su pestaña: no queda un iframe
+      // invisible que pueda activar las protecciones contra superposiciones.
+      if (target !== 'chatTwitch') document.getElementById('chatTwitch').replaceChildren();
       document.querySelectorAll('.chat-tab').forEach(t => t.classList.remove('active'));
       document.querySelectorAll('.chat-wrap').forEach(c => c.classList.remove('active'));
       tab.classList.add('active');
-      document.getElementById(tab.getAttribute('data-target')).classList.add('active');
+      document.getElementById(target).classList.add('active');
+      if (target === 'chatTwitch') mountVisibleTwitchChat();
     });
+  });
+  // Al ocultar los chats, también descargamos Twitch; al mostrarlos, se monta
+  // solo si su pestaña está activa y visible.
+  document.getElementById('chat-toggle-btn').addEventListener('click', () => {
+    const panel = document.getElementById('chatTwitch');
+    if (document.body.classList.contains('chat-hidden')) panel.replaceChildren();
+    else mountVisibleTwitchChat();
   });
 </script>
 </body>
