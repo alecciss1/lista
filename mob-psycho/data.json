@@ -4,7 +4,7 @@
     "name": "Mob Psycho",
     "type": "series"
   },
-  "generatedAt": "2026-10-16T02:32:59.586Z",
+  "generatedAt": "2026-10-16T04:18:54.462Z",
   "scale": 1,
   "data": [
     {
@@ -17,11 +17,29 @@
       "colId": "mob-psycho"
     },
     {
+      "id": "1792118166908",
+      "capitulo": "Capitulo 11",
+      "promedio": 9.29,
+      "votos": 8,
+      "date": "2026-10-16T02:36:06.908Z",
+      "channel": "alecciss",
+      "colId": "mob-psycho"
+    },
+    {
       "id": "1791512833363",
       "capitulo": "Capitulo 8",
       "promedio": 9.15,
       "votos": 12,
       "date": "2026-10-09T02:27:13.363Z",
+      "channel": "alecciss",
+      "colId": "mob-psycho"
+    },
+    {
+      "id": "1792119728107",
+      "capitulo": "Capitulo 12",
+      "promedio": 8.94,
+      "votos": 8,
+      "date": "2026-10-16T03:02:08.107Z",
       "channel": "alecciss",
       "colId": "mob-psycho"
     },

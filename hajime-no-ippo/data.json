@@ -4,7 +4,7 @@
     "name": "Hajime no Ippo",
     "type": "series"
   },
-  "generatedAt": "2026-10-16T02:32:59.583Z",
+  "generatedAt": "2026-10-16T04:18:54.460Z",
   "scale": 1,
   "data": [
     {
@@ -116,11 +116,29 @@
       "colId": "hajime-no-ippo"
     },
     {
+      "id": "1792121209181",
+      "capitulo": "Capitulo 19",
+      "promedio": 8.17,
+      "votos": 6,
+      "date": "2026-10-16T03:26:49.181Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
       "id": "1790825573887",
       "capitulo": "Capitulo 8",
       "promedio": 8.07,
       "votos": 15,
       "date": "2026-10-01T03:32:53.887Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1792122632262",
+      "capitulo": "Capitulo 19",
+      "promedio": 8.06,
+      "votos": 5,
+      "date": "2026-10-16T03:50:32.262Z",
       "channel": "alecciss",
       "colId": "hajime-no-ippo"
     },

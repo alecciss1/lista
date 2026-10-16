@@ -213,14 +213,14 @@
     "id": "hajime-no-ippo",
     "name": "Hajime no Ippo",
     "type": "series",
-    "count": 18,
+    "count": 20,
     "avg": 8.507
   },
   {
     "id": "mob-psycho",
     "name": "Mob Psycho",
     "type": "series",
-    "count": 10,
-    "avg": 8.461000000000002
+    "count": 12,
+    "avg": 8.755
   }
 ]
