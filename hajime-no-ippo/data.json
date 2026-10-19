@@ -4,7 +4,7 @@
     "name": "Hajime no Ippo",
     "type": "series"
   },
-  "generatedAt": "2026-10-17T00:58:11.652Z",
+  "generatedAt": "2026-10-19T19:38:39.737Z",
   "scale": 1,
   "data": [
     {
@@ -22,6 +22,15 @@
       "promedio": 8.88,
       "votos": 13,
       "date": "2026-10-08T02:32:49.317Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1792202799531",
+      "capitulo": "Capitulo 22",
+      "promedio": 8.74,
+      "votos": 7,
+      "date": "2026-10-17T02:06:39.531Z",
       "channel": "alecciss",
       "colId": "hajime-no-ippo"
     },
@@ -49,6 +58,15 @@
       "promedio": 8.58,
       "votos": 17,
       "date": "2026-09-29T01:48:53.657Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1792204235484",
+      "capitulo": "Capitulo 23",
+      "promedio": 8.37,
+      "votos": 10,
+      "date": "2026-10-17T02:30:35.484Z",
       "channel": "alecciss",
       "colId": "hajime-no-ippo"
     },
@@ -121,6 +139,15 @@
       "promedio": 8.17,
       "votos": 6,
       "date": "2026-10-16T03:26:49.181Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1792201416095",
+      "capitulo": "Capitulo 21",
+      "promedio": 8.1,
+      "votos": 7,
+      "date": "2026-10-17T01:43:36.095Z",
       "channel": "alecciss",
       "colId": "hajime-no-ippo"
     },
