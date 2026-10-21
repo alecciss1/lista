@@ -4,7 +4,7 @@
     "name": "Black Clover",
     "type": "series"
   },
-  "generatedAt": "2026-10-20T00:58:14.056Z",
+  "generatedAt": "2026-10-21T03:01:18.492Z",
   "scale": 1,
   "data": [
     {
@@ -277,6 +277,15 @@
       "votos": 24,
       "date": "2025-09-21T05:21:41.350Z",
       "channel": "alecciss"
+    },
+    {
+      "id": "1792460967012",
+      "capitulo": "Capitulo 173",
+      "promedio": 9.12,
+      "votos": 23,
+      "date": "2026-10-20T01:49:27.012Z",
+      "channel": "alecciss",
+      "colId": "black-clover"
     },
     {
       "id": "1758943085015",
