@@ -383,6 +383,45 @@
     .twitch-desktop-panel:not([hidden]) { display: block; }
   }
 
+
+  /* ALECCISS_CINE_CHAT_LAYOUT_V3: escritorio compacto; movemos las pestañas a la barra azul del pie. */
+  @media (min-width: 1100px) and (min-height: 640px) {
+    body:not(.chat-hidden) .chat-col { min-height: 0; }
+    body:not(.chat-hidden) .chat-content { min-height: 0; flex: 1 1 auto; }
+    body:not(.chat-hidden) .twitch-desktop-panel { flex: 0 0 auto; }
+    body:not(.chat-hidden) .chat-header {
+      position: fixed; bottom: 0; right: 0; width: 294px;
+      height: 60px; z-index: 35;
+      box-sizing: border-box; display: flex; align-items: center; gap: 8px;
+      padding: 0 12px; border: 0;
+      background: #0f172a;
+    }
+    body:not(.chat-hidden) .chat-header .chat-tab {
+      flex: 1 1 0; min-width: 0; min-height: 36px;
+      padding: 9px 8px; border: 1px solid rgba(255,255,255,.13);
+      border-radius: 8px; background: #111d34;
+      font: 700 12px/16px Inter, system-ui, sans-serif;
+      letter-spacing: .4px; color: #cbd5e1;
+    }
+    body:not(.chat-hidden) .chat-header .chat-tab.active[data-target="chatKick"] {
+      border: 1px solid #53fc18; background: rgba(83,252,24,.13); color: #79ff56;
+    }
+    body:not(.chat-hidden) .chat-header .chat-tab.active[data-target="chatTwitch"] {
+      border: 1px solid #9146ff; background: rgba(145,70,255,.16); color: #c3a5ff;
+    }
+    body:not(.chat-hidden) .footer {
+      padding-left: 16px; padding-right: 310px;
+      justify-content: center;
+    }
+    body:not(.chat-hidden) .footer .f-right {
+      max-width: 100%; min-width: 0; width: auto;
+      justify-content: center; gap: 8px;
+      overflow-x: auto; overflow-y: hidden; white-space: nowrap;
+      scrollbar-width: none;
+    }
+    body:not(.chat-hidden) .footer .f-right::-webkit-scrollbar { display: none; }
+  }
+
 </style>
 </head>
 <body>
@@ -417,7 +456,6 @@
   <div class="chat-col" id="chatSidebar">
     <!-- ALECCISS_TWITCH_PC_V2_LOW: reproductor real Twitch, arriba del chat solo PC -->
     <section class="twitch-desktop-panel" id="twitchDesktopPanel" hidden aria-label="Transmision de Twitch">
-      <div class="twitch-desktop-heading"><span>🟣 TWITCH EN VIVO</span><a id="twitchDesktopLink" class="twitch-desktop-link" href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">Abrir Twitch ↗</a></div>
       <div id="twitchDesktopMount" class="twitch-desktop-mount"></div>
     </section>
     <div class="chat-header">
@@ -489,7 +527,7 @@
 <script>
   // El sitio está en GitHub Pages, pero la API debe ser un servidor HTTPS público.
   // localhost se permite únicamente para probar el preview local.
-  const configuredApiUrl = "https://staffing-cosmetics-continent-brunswick.trycloudflare.com";
+  const configuredApiUrl = "https://costumes-outcome-hub-wanting.trycloudflare.com";
   const LIVE_API = configuredApiUrl || ((location.hostname === 'localhost' || location.hostname === '127.0.0.1') ? location.origin : '');
 
   // ============ WIDGET DE VOTACIÓN ============
@@ -838,7 +876,7 @@
   var panel = document.getElementById('twitchDesktopPanel');
   var mount = document.getElementById('twitchDesktopMount');
   var link = document.getElementById('twitchDesktopLink');
-  if (!panel || !mount || !link) return;
+  if (!panel || !mount) return;
   var channel = '';
   var desired = '160p'; // Configurable opcionalmente con twitchPlayerQuality en cine.json.
   var checkedConfig = false, loadingConfig = false;
@@ -959,7 +997,7 @@
         var pref = String((data && data.twitchPlayerQuality) || '160p').trim().toLowerCase();
         desired = pref === '240p' ? '240p' : '160p';
         checkedConfig = true;
-        if (channel) link.href = 'https://www.twitch.tv/' + channel;
+        if (channel && link) link.href = 'https://www.twitch.tv/' + channel;
         sync();
       })
       .catch(function (error) { console.warn('Twitch PC: no se pudo leer la configuracion:', error); })
