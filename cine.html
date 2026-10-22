@@ -364,6 +364,25 @@
     transition: background 0.2s, color 0.2s;
   }
   #vw-btn-change:hover { background: rgba(255,255,255,0.14); color: #fff; }
+
+  /* ALECCISS_TWITCH_PC_V1: Twitch en PC, visible y sin alterar la vista movil */
+  .twitch-desktop-panel { display: none; background: #0b1120; border-bottom: 1px solid var(--line, rgba(255,255,255,.1)); }
+  .twitch-desktop-panel[hidden] { display: none !important; }
+  .twitch-desktop-heading {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 8px 12px; min-height: 36px; background: #161126;
+    color: #dac9ff; font: 700 12px/1.2 Inter,system-ui,sans-serif; letter-spacing: .6px;
+  }
+  .twitch-desktop-link { color: #dac9ff; text-decoration: none; font-weight: 600; letter-spacing: 0; }
+  .twitch-desktop-link:hover { text-decoration: underline; }
+  .twitch-desktop-mount, .twitch-desktop-mount iframe {
+    display: block; width: 100%; height: 300px; border: 0; background: #000;
+  }
+  @media (min-width: 1100px) and (min-height: 640px) {
+    body.twitch-desktop-ready .chat-col { width: 424px; flex: 0 0 424px; }
+    .twitch-desktop-panel:not([hidden]) { display: block; }
+  }
+
 </style>
 </head>
 <body>
@@ -396,6 +415,11 @@
     </div>
   </div>
   <div class="chat-col" id="chatSidebar">
+    <!-- ALECCISS_TWITCH_PC_V1: reproductor real Twitch, arriba del chat solo PC -->
+    <section class="twitch-desktop-panel" id="twitchDesktopPanel" hidden aria-label="Transmision de Twitch">
+      <div class="twitch-desktop-heading"><span>🟣 TWITCH EN VIVO</span><a id="twitchDesktopLink" class="twitch-desktop-link" href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">Abrir Twitch ↗</a></div>
+      <div id="twitchDesktopMount" class="twitch-desktop-mount"></div>
+    </section>
     <div class="chat-header">
       <div class="chat-tab active" data-target="chatTwitch">TWITCH</div>
       <div class="chat-tab" data-target="chatKick">KICK</div>
@@ -465,7 +489,7 @@
 <script>
   // El sitio está en GitHub Pages, pero la API debe ser un servidor HTTPS público.
   // localhost se permite únicamente para probar el preview local.
-  const configuredApiUrl = "https://styles-organizations-kathy-nerve.trycloudflare.com";
+  const configuredApiUrl = "https://pal-conditions-suggestions-transformation.trycloudflare.com";
   const LIVE_API = configuredApiUrl || ((location.hostname === 'localhost' || location.hostname === '127.0.0.1') ? location.origin : '');
 
   // ============ WIDGET DE VOTACIÓN ============
@@ -803,5 +827,72 @@
         data-online="#cineViewersCount"
         async></script>
 <noscript><img src="https://meusonline.com/p/alecciss1f8433089.webp" alt="" width="0" height="0" style="display:none" data-no-lazy="1"></noscript>
+
+<script>
+/* ALECCISS_TWITCH_PC_V1: carga condicional para no pedir video de Twitch en moviles. */
+(function () {
+  'use strict';
+  var breakpoint = window.matchMedia('(min-width: 1100px) and (min-height: 640px)');
+  var panel = document.getElementById('twitchDesktopPanel');
+  var mount = document.getElementById('twitchDesktopMount');
+  var link = document.getElementById('twitchDesktopLink');
+  if (!panel || !mount || !link) return;
+  var channel = '';
+  var checkedConfig = false;
+  var loadingConfig = false;
+
+  function syncPlayer() {
+    var shouldPlay = breakpoint.matches && !!channel &&
+      !document.body.classList.contains('chat-hidden');
+    panel.hidden = !shouldPlay;
+    document.body.classList.toggle('twitch-desktop-ready', shouldPlay);
+    if (!shouldPlay) {
+      if (mount.firstChild) mount.replaceChildren();
+      return;
+    }
+    if (mount.firstChild) return;
+    var u = new URL('https://player.twitch.tv/');
+    u.searchParams.set('channel', channel);
+    u.searchParams.set('parent', location.hostname); // Dominio real en GitHub Pages.
+    u.searchParams.set('muted', 'true');
+    u.searchParams.set('autoplay', 'true');
+    var frame = document.createElement('iframe');
+    frame.title = 'Twitch en directo - ' + channel;
+    frame.src = u.href;
+    frame.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture');
+    frame.setAttribute('allowfullscreen', '');
+    frame.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+    mount.appendChild(frame);
+  }
+
+  function loadConfigForDesktop() {
+    // No hace ningun fetch extra ni crea iframe en pantalla pequena.
+    if (!breakpoint.matches || checkedConfig || loadingConfig) return;
+    loadingConfig = true;
+    fetch('./cine.json?t=' + Date.now(), { cache: 'no-store' })
+      .then(function (response) { if (!response.ok) throw new Error('Sin cine.json'); return response.json(); })
+      .then(function (data) {
+        var value = String((data && data.twitchChannel) || '').trim().toLowerCase();
+        channel = /^[a-z0-9_]{3,25}$/.test(value) ? value : '';
+        checkedConfig = true;
+        if (channel) link.href = 'https://www.twitch.tv/' + channel;
+        syncPlayer();
+      })
+      .catch(function (error) { console.warn('Twitch PC: no se pudo leer el canal:', error); })
+      .finally(function () { loadingConfig = false; });
+  }
+
+  function update() { syncPlayer(); loadConfigForDesktop(); }
+  var observer = new MutationObserver(function (changes) {
+    // Escuchamos solo cambios de clase (p. ej., Ocultar chats), sin loops.
+    if (changes.some(function (change) { return change.attributeName === 'class'; })) syncPlayer();
+  });
+  observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
+  if (breakpoint.addEventListener) breakpoint.addEventListener('change', update);
+  else if (breakpoint.addListener) breakpoint.addListener(update);
+  update();
+})();
+</script>
+
 </body>
 </html>
