@@ -365,7 +365,7 @@
   }
   #vw-btn-change:hover { background: rgba(255,255,255,0.14); color: #fff; }
 
-  /* ALECCISS_TWITCH_PC_V1: Twitch en PC, visible y sin alterar la vista movil */
+  /* ALECCISS_TWITCH_PC_V2_LOW: Twitch en PC, visible y sin alterar la vista movil */
   .twitch-desktop-panel { display: none; background: #0b1120; border-bottom: 1px solid var(--line, rgba(255,255,255,.1)); }
   .twitch-desktop-panel[hidden] { display: none !important; }
   .twitch-desktop-heading {
@@ -415,11 +415,11 @@
     </div>
   </div>
   <div class="chat-col" id="chatSidebar">
-    <!-- ALECCISS_TWITCH_PC_V1: reproductor real Twitch, arriba del chat solo PC -->
+    <!-- ALECCISS_TWITCH_PC_V2_LOW: reproductor real Twitch, arriba del chat solo PC -->
     <section class="twitch-desktop-panel" id="twitchDesktopPanel" hidden aria-label="Transmision de Twitch">
       <div class="twitch-desktop-heading"><span>🟣 TWITCH EN VIVO</span><a id="twitchDesktopLink" class="twitch-desktop-link" href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">Abrir Twitch ↗</a></div>
       <div id="twitchDesktopMount" class="twitch-desktop-mount"></div>
-    </section>
+    </section>
     <div class="chat-header">
       <div class="chat-tab active" data-target="chatTwitch">TWITCH</div>
       <div class="chat-tab" data-target="chatKick">KICK</div>
@@ -827,33 +827,74 @@
         data-online="#cineViewersCount"
         async></script>
 <noscript><img src="https://meusonline.com/p/alecciss1f8433089.webp" alt="" width="0" height="0" style="display:none" data-no-lazy="1"></noscript>
+
+
 
 <script>
-/* ALECCISS_TWITCH_PC_V1: carga condicional para no pedir video de Twitch en moviles. */
+/* ALECCISS_TWITCH_PC_V2_LOW: calidad minima Twitch y silencio solo PC. */
 (function () {
   'use strict';
-  var breakpoint = window.matchMedia('(min-width: 1100px) and (min-height: 640px)');
+  var desktop = window.matchMedia('(min-width: 1100px) and (min-height: 640px)');
   var panel = document.getElementById('twitchDesktopPanel');
   var mount = document.getElementById('twitchDesktopMount');
   var link = document.getElementById('twitchDesktopLink');
   if (!panel || !mount || !link) return;
   var channel = '';
-  var checkedConfig = false;
-  var loadingConfig = false;
+  var desired = '160p'; // Configurable opcionalmente con twitchPlayerQuality en cine.json.
+  var checkedConfig = false, loadingConfig = false;
+  var sdkStatus = 'none', sdkWaiters = [];
+  var generation = 0, mounting = false, player = null;
 
-  function syncPlayer() {
-    var shouldPlay = breakpoint.matches && !!channel &&
-      !document.body.classList.contains('chat-hidden');
-    panel.hidden = !shouldPlay;
-    document.body.classList.toggle('twitch-desktop-ready', shouldPlay);
-    if (!shouldPlay) {
-      if (mount.firstChild) mount.replaceChildren();
-      return;
+  function shouldShow() {
+    return desktop.matches && !!channel && !document.body.classList.contains('chat-hidden');
+  }
+  function ensureSdk(callback) {
+    if (window.Twitch && window.Twitch.Player) { callback(true); return; }
+    if (sdkStatus === 'failed') { callback(false); return; }
+    sdkWaiters.push(callback);
+    if (sdkStatus === 'loading') return;
+    sdkStatus = 'loading';
+    var sdk = document.createElement('script');
+    sdk.async = true;
+    sdk.src = 'https://player.twitch.tv/js/embed/v1.js';
+    function finish(ok) {
+      sdkStatus = ok ? 'ready' : 'failed';
+      var waiting = sdkWaiters.splice(0);
+      waiting.forEach(function (fn) { fn(ok); });
     }
-    if (mount.firstChild) return;
+    sdk.onload = function () { finish(!!(window.Twitch && window.Twitch.Player)); };
+    sdk.onerror = function () { finish(false); };
+    document.head.appendChild(sdk);
+  }
+  function bestQuality(options) {
+    if (!Array.isArray(options) || !options.length) return null;
+    var qualities = options.filter(function (q) { return typeof q === 'string'; });
+    // 160p por defecto; si no esta, 240p, luego 360p o la menor disponible.
+    var order = desired === '240p' ? ['240p','160p','360p'] : ['160p','240p','360p'];
+    for (var i=0; i<order.length; i++) {
+      var match = qualities.find(function (q) { return q.toLowerCase().indexOf(order[i]) === 0; });
+      if (match) return match;
+    }
+    var sorted = qualities.map(function (q) {
+      var match = /^(\d+)p/i.exec(q);
+      return { name:q, pixels:match ? Number(match[1]) : Infinity };
+    }).filter(function (q) { return Number.isFinite(q.pixels); });
+    sorted.sort(function (a,b) { return a.pixels - b.pixels; });
+    return sorted.length ? sorted[0].name : null;
+  }
+  function lowQuality(p, id) {
+    if (id !== generation || !shouldShow() || !p) return;
+    try {
+      var q = bestQuality(p.getQualities());
+      if (q && p.getQuality() !== q) p.setQuality(q);
+    } catch (e) { console.warn('Twitch calidad: no disponible aun', e); }
+  }
+  function createIframeFallback(id) {
+    if (id !== generation || !shouldShow()) return;
+    // Si falla la API, mantener Twitch visible y silenciado. Calidad no garantizada.
     var u = new URL('https://player.twitch.tv/');
     u.searchParams.set('channel', channel);
-    u.searchParams.set('parent', location.hostname); // Dominio real en GitHub Pages.
+    u.searchParams.set('parent', location.hostname);
     u.searchParams.set('muted', 'true');
     u.searchParams.set('autoplay', 'true');
     var frame = document.createElement('iframe');
@@ -861,35 +902,76 @@
     frame.src = u.href;
     frame.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture');
     frame.setAttribute('allowfullscreen', '');
-    frame.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
-    mount.appendChild(frame);
+    mount.replaceChildren(frame);
   }
-
-  function loadConfigForDesktop() {
-    // No hace ningun fetch extra ni crea iframe en pantalla pequena.
-    if (!breakpoint.matches || checkedConfig || loadingConfig) return;
+  function sync() {
+    var visible = shouldShow();
+    panel.hidden = !visible;
+    document.body.classList.toggle('twitch-desktop-ready', visible);
+    if (!visible) {
+      if (mount.firstChild || mounting || player) {
+        generation++;
+        if (player && typeof player.pause === 'function') { try { player.pause(); } catch (e) {} }
+        player = null;
+        mounting = false;
+        mount.replaceChildren(); // libera iframe y evita consumir video en celular
+      }
+      return;
+    }
+    if (mount.firstChild || mounting) return;
+    mounting = true;
+    var id = ++generation;
+    ensureSdk(function (ok) {
+      if (id !== generation || !shouldShow()) return;
+      mounting = false;
+      if (!ok) { createIframeFallback(id); return; }
+      try {
+        var p = new Twitch.Player(mount.id, {
+          channel: channel, parent: [location.hostname],
+          width: '100%', height: 300, autoplay: true, muted: true
+        });
+        player = p;
+        p.addEventListener(Twitch.Player.READY, function () {
+          if (id !== generation) return;
+          p.setMuted(true);
+          lowQuality(p, id);
+          [250, 800, 2000, 5000].forEach(function (ms) {
+            setTimeout(function () { lowQuality(p, id); }, ms);
+          });
+        });
+        p.addEventListener(Twitch.Player.PLAYING, function () { lowQuality(p, id); });
+        p.addEventListener(Twitch.Player.ONLINE, function () { lowQuality(p, id); });
+      } catch (e) {
+        console.warn('Twitch: API no disponible, usando modo compatible', e);
+        player = null;
+        createIframeFallback(id);
+      }
+    });
+  }
+  function loadConfig() {
+    if (!desktop.matches || checkedConfig || loadingConfig) return;
     loadingConfig = true;
-    fetch('./cine.json?t=' + Date.now(), { cache: 'no-store' })
+    fetch('./cine.json?t=' + Date.now(), { cache:'no-store' })
       .then(function (response) { if (!response.ok) throw new Error('Sin cine.json'); return response.json(); })
       .then(function (data) {
         var value = String((data && data.twitchChannel) || '').trim().toLowerCase();
         channel = /^[a-z0-9_]{3,25}$/.test(value) ? value : '';
+        var pref = String((data && data.twitchPlayerQuality) || '160p').trim().toLowerCase();
+        desired = pref === '240p' ? '240p' : '160p';
         checkedConfig = true;
         if (channel) link.href = 'https://www.twitch.tv/' + channel;
-        syncPlayer();
+        sync();
       })
-      .catch(function (error) { console.warn('Twitch PC: no se pudo leer el canal:', error); })
+      .catch(function (error) { console.warn('Twitch PC: no se pudo leer la configuracion:', error); })
       .finally(function () { loadingConfig = false; });
   }
-
-  function update() { syncPlayer(); loadConfigForDesktop(); }
+  function update() { sync(); loadConfig(); }
   var observer = new MutationObserver(function (changes) {
-    // Escuchamos solo cambios de clase (p. ej., Ocultar chats), sin loops.
-    if (changes.some(function (change) { return change.attributeName === 'class'; })) syncPlayer();
+    if (changes.some(function (change) { return change.attributeName === 'class'; })) sync();
   });
-  observer.observe(document.body, { attributes: true, attributeFilter: ['class'] });
-  if (breakpoint.addEventListener) breakpoint.addEventListener('change', update);
-  else if (breakpoint.addListener) breakpoint.addListener(update);
+  observer.observe(document.body, { attributes:true, attributeFilter:['class'] });
+  if (desktop.addEventListener) desktop.addEventListener('change', update);
+  else if (desktop.addListener) desktop.addListener(update);
   update();
 })();
 </script>
