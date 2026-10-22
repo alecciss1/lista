@@ -4,7 +4,7 @@
     "name": "Peliculas",
     "type": "series"
   },
-  "generatedAt": "2026-10-21T03:01:18.532Z",
+  "generatedAt": "2026-10-22T01:09:50.332Z",
   "scale": 1,
   "data": [
     {
@@ -130,6 +130,15 @@
       "promedio": 9.24,
       "votos": 9,
       "date": "2026-09-09T03:22:59.676Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1792553890450",
+      "capitulo": "Temp 2 Capitulo 1",
+      "promedio": 9.2,
+      "votos": 16,
+      "date": "2026-10-21T03:38:10.450Z",
       "channel": "alecciss",
       "colId": "peliculas"
     },
@@ -445,6 +454,15 @@
       "promedio": 7.29,
       "votos": 8,
       "date": "2026-08-14T03:34:12.414Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1792551893663",
+      "capitulo": "Camino hacia el terror",
+      "promedio": 7.23,
+      "votos": 12,
+      "date": "2026-10-21T03:04:53.663Z",
       "channel": "alecciss",
       "colId": "peliculas"
     },
