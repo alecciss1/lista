@@ -457,6 +457,66 @@
     }
   }
 
+
+  /* ALECCISS_TWITCH_LAYOUT_V7: Twitch siempre encima del chat en escritorio; tabs en la barra azul. */
+  @media (min-width: 1100px) {
+    body.twitch-desktop-ready:not(.chat-hidden) #chatSidebar {
+      display: flex !important;
+      flex-direction: column !important;
+      min-height: 0 !important;
+      width: 424px !important;
+      flex: 0 0 424px !important;
+    }
+    body.twitch-desktop-ready:not(.chat-hidden) #twitchDesktopPanel:not([hidden]) {
+      display: block !important;
+      flex: 0 0 300px !important;
+      height: 300px !important;
+      min-height: 300px !important;
+      overflow: hidden !important;
+    }
+    #twitchDesktopMount,
+    #twitchDesktopMount iframe {
+      display: block;
+      width: 100% !important;
+      height: 300px !important;
+      border: 0;
+      background: #000;
+    }
+    body:not(.chat-hidden) #chatSidebar .chat-content {
+      min-height: 0 !important;
+      flex: 1 1 auto !important;
+    }
+    body:not(.chat-hidden) .footer {
+      padding-left: 12px !important;
+      padding-right: 424px !important;
+    }
+    body:not(.chat-hidden) .footer > .chat-header {
+      position: absolute !important;
+      display: flex !important;
+      justify-content: stretch !important;
+      align-items: center !important;
+      left: auto !important;
+      top: auto !important;
+      bottom: 0 !important;
+      right: 0 !important;
+      width: 424px !important;
+      height: 60px !important;
+      padding: 7px 12px !important;
+      gap: 10px !important;
+      margin: 0 !important;
+      border: 0 !important;
+      box-sizing: border-box !important;
+      background: #0f172a !important;
+      z-index: 35 !important;
+    }
+    body:not(.chat-hidden) .footer > .chat-header .chat-tab {
+      flex: 1 1 0 !important;
+      min-width: 0 !important;
+      text-align: center !important;
+    }
+    body.chat-hidden .footer > .chat-header { display: none !important; }
+  }
+
 </style>
 </head>
 <body>
@@ -907,7 +967,7 @@
 /* ALECCISS_TWITCH_PC_V2_LOW: calidad minima Twitch y silencio solo PC. */
 (function () {
   'use strict';
-  var desktop = window.matchMedia('(min-width: 1100px) and (min-height: 640px)');
+  var desktop = window.matchMedia('(min-width: 1100px)');
   var panel = document.getElementById('twitchDesktopPanel');
   var mount = document.getElementById('twitchDesktopMount');
   var link = document.getElementById('twitchDesktopLink');
