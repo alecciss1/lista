@@ -4,7 +4,7 @@
     "name": "Mob Psycho",
     "type": "series"
   },
-  "generatedAt": "2026-10-23T02:13:39.226Z",
+  "generatedAt": "2026-10-23T02:21:49.304Z",
   "scale": 1,
   "data": [
     {
@@ -40,6 +40,15 @@
       "promedio": 9.15,
       "votos": 12,
       "date": "2026-10-09T02:27:13.363Z",
+      "channel": "alecciss",
+      "colId": "mob-psycho"
+    },
+    {
+      "id": "1792722049634",
+      "capitulo": "Temp 2 Capitulo 4",
+      "promedio": 9.05,
+      "votos": 13,
+      "date": "2026-10-23T02:20:49.634Z",
       "channel": "alecciss",
       "colId": "mob-psycho"
     },
