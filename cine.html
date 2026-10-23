@@ -422,6 +422,41 @@
     body:not(.chat-hidden) .footer .f-right::-webkit-scrollbar { display: none; }
   }
 
+
+  /* ALECCISS_FOOTER_TABS_V6: Tabs de chat dentro de la barra inferior en PC. */
+  @media (min-width: 1100px) {
+    body:not(.chat-hidden) .footer { padding-right: 310px !important; }
+    .footer > .chat-header {
+      position: absolute !important;
+      left: auto !important;
+      bottom: 0 !important;
+      right: 0 !important;
+      width: 294px !important;
+      height: 60px !important;
+      z-index: 35 !important;
+      background: #0f172a !important;
+      display: flex !important;
+      align-items: center !important;
+      gap: 8px !important;
+      padding: 0 12px !important;
+      box-sizing: border-box !important;
+      border: 0 !important;
+    }
+    body.chat-hidden .footer > .chat-header { display: none !important; }
+    .footer > .chat-header .chat-tab {
+      min-width: 0; min-height: 36px;
+      flex: 1 1 0;
+      padding: 9px 8px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,.13);
+      background: #111d34;
+      font: 700 12px/16px Inter,system-ui,sans-serif;
+      letter-spacing: .4px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+
 </style>
 </head>
 <body>
@@ -1011,6 +1046,28 @@
   if (desktop.addEventListener) desktop.addEventListener('change', update);
   else if (desktop.addListener) desktop.addListener(update);
   update();
+})();
+</script>
+
+
+<script>
+/* ALECCISS_FOOTER_TABS_V6: reubica los tabs existentes sin duplicarlos ni reiniciar chats. */
+(function() {
+  const bar = document.querySelector('#chatSidebar > .chat-header');
+  const sidebar = document.getElementById('chatSidebar');
+  const footer = document.querySelector('.footer');
+  if (!bar || !sidebar || !footer) return;
+  const anchor = document.createComment('Posicion original de los chats en movil');
+  sidebar.insertBefore(anchor, bar);
+  function reposition() {
+    if (window.innerWidth >= 1100) {
+      if (bar.parentElement !== footer) footer.appendChild(bar);
+    } else if (bar.parentElement !== sidebar) {
+      sidebar.insertBefore(bar, anchor.nextSibling);
+    }
+  }
+  reposition();
+  window.addEventListener('resize', reposition, { passive: true });
 })();
 </script>
 
