@@ -4,7 +4,7 @@
     "name": "Bleach TYBW",
     "type": "series"
   },
-  "generatedAt": "2026-10-27T01:36:34.247Z",
+  "generatedAt": "2026-10-27T11:57:22.236Z",
   "scale": 1,
   "data": [
     {
@@ -400,6 +400,15 @@
       "promedio": 8.61,
       "votos": 31,
       "date": "2026-09-15T02:44:39.569Z",
+      "channel": "alecciss",
+      "colId": "bleach-tybw"
+    },
+    {
+      "id": "1793069260280",
+      "capitulo": "Capitulo 50",
+      "promedio": 8.61,
+      "votos": 25,
+      "date": "2026-10-27T02:47:40.280Z",
       "channel": "alecciss",
       "colId": "bleach-tybw"
     },

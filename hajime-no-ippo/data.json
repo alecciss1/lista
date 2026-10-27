@@ -4,9 +4,27 @@
     "name": "Hajime no Ippo",
     "type": "series"
   },
-  "generatedAt": "2026-10-27T01:36:34.252Z",
+  "generatedAt": "2026-10-27T11:57:22.243Z",
   "scale": 1,
   "data": [
+    {
+      "id": "1793072696394",
+      "capitulo": "Capitulo 34",
+      "promedio": 9.33,
+      "votos": 12,
+      "date": "2026-10-27T03:44:56.394Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1793070984602",
+      "capitulo": "Capitulo 33",
+      "promedio": 8.92,
+      "votos": 12,
+      "date": "2026-10-27T03:16:24.602Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
     {
       "id": "1790822367386",
       "capitulo": "Capitulo 6",

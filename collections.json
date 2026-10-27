@@ -3,7 +3,7 @@
     "id": "black-clover",
     "name": "Black Clover",
     "type": "series",
-    "count": 170,
+    "count": 171,
     "avg": 9.954000000000002
   },
   {
@@ -199,7 +199,7 @@
     "id": "bleach-tybw",
     "name": "Bleach TYBW",
     "type": "series",
-    "count": 50,
+    "count": 51,
     "avg": 9.846
   },
   {
@@ -213,8 +213,8 @@
     "id": "hajime-no-ippo",
     "name": "Hajime no Ippo",
     "type": "series",
-    "count": 31,
-    "avg": 8.589000000000002
+    "count": 33,
+    "avg": 8.743
   },
   {
     "id": "mob-psycho",
