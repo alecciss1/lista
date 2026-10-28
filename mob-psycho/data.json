@@ -4,7 +4,7 @@
     "name": "Mob Psycho",
     "type": "series"
   },
-  "generatedAt": "2026-10-28T01:07:17.866Z",
+  "generatedAt": "2026-10-28T10:42:30.510Z",
   "scale": 1,
   "data": [
     {
@@ -53,6 +53,15 @@
       "colId": "mob-psycho"
     },
     {
+      "id": "1793154797375",
+      "capitulo": "Temp 2 Capitulo 6",
+      "promedio": 9.02,
+      "votos": 13,
+      "date": "2026-10-28T02:33:17.375Z",
+      "channel": "alecciss",
+      "colId": "mob-psycho"
+    },
+    {
       "id": "1792119728107",
       "capitulo": "Capitulo 12",
       "promedio": 8.94,
@@ -76,6 +85,15 @@
       "promedio": 8.76,
       "votos": 15,
       "date": "2026-10-02T00:47:39.227Z",
+      "channel": "alecciss",
+      "colId": "mob-psycho"
+    },
+    {
+      "id": "1793152774481",
+      "capitulo": "Temp 2 Capitulo 5",
+      "promedio": 8.69,
+      "votos": 14,
+      "date": "2026-10-28T01:59:34.481Z",
       "channel": "alecciss",
       "colId": "mob-psycho"
     },
