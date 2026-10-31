@@ -4,7 +4,7 @@
     "name": "Hajime no Ippo",
     "type": "series"
   },
-  "generatedAt": "2026-10-29T01:36:17.824Z",
+  "generatedAt": "2026-10-31T00:24:23.802Z",
   "scale": 1,
   "data": [
     {
@@ -80,6 +80,15 @@
       "colId": "hajime-no-ippo"
     },
     {
+      "id": "1793244681314",
+      "capitulo": "Capitulo 38",
+      "promedio": 8.49,
+      "votos": 14,
+      "date": "2026-10-29T03:31:21.314Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
       "id": "1792806609561",
       "capitulo": "Capitulo 29",
       "promedio": 8.42,
@@ -125,6 +134,15 @@
       "colId": "hajime-no-ippo"
     },
     {
+      "id": "1793241364416",
+      "capitulo": "Capitulo 36",
+      "promedio": 8.29,
+      "votos": 15,
+      "date": "2026-10-29T02:36:04.416Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
       "id": "1792809518554",
       "capitulo": "Capitulo 32",
       "promedio": 8.29,
@@ -139,6 +157,15 @@
       "promedio": 8.29,
       "votos": 13,
       "date": "2026-10-01T03:05:52.334Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1793243003566",
+      "capitulo": "Capitulo 37",
+      "promedio": 8.27,
+      "votos": 18,
+      "date": "2026-10-29T03:03:23.566Z",
       "channel": "alecciss",
       "colId": "hajime-no-ippo"
     },
@@ -265,6 +292,15 @@
       "promedio": 7.81,
       "votos": 15,
       "date": "2026-10-10T02:47:20.644Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1793239851043",
+      "capitulo": "Capitulo 35",
+      "promedio": 7.76,
+      "votos": 18,
+      "date": "2026-10-29T02:10:51.043Z",
       "channel": "alecciss",
       "colId": "hajime-no-ippo"
     },
