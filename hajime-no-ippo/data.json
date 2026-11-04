@@ -4,7 +4,7 @@
     "name": "Hajime no Ippo",
     "type": "series"
   },
-  "generatedAt": "2026-11-03T01:06:43.793Z",
+  "generatedAt": "2026-11-04T01:32:48.575Z",
   "scale": 1,
   "data": [
     {
@@ -49,6 +49,15 @@
       "promedio": 8.88,
       "votos": 13,
       "date": "2026-10-08T02:32:49.317Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1793672920915",
+      "capitulo": "Capitulo 42",
+      "promedio": 8.78,
+      "votos": 17,
+      "date": "2026-11-03T02:28:40.915Z",
       "channel": "alecciss",
       "colId": "hajime-no-ippo"
     },
@@ -301,6 +310,24 @@
       "promedio": 7.97,
       "votos": 12,
       "date": "2026-10-24T02:14:24.913Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1793674424003",
+      "capitulo": "Capitulo 43",
+      "promedio": 7.88,
+      "votos": 14,
+      "date": "2026-11-03T02:53:44.003Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1793676260653",
+      "capitulo": "Capitulo 44",
+      "promedio": 7.88,
+      "votos": 13,
+      "date": "2026-11-03T03:24:20.653Z",
       "channel": "alecciss",
       "colId": "hajime-no-ippo"
     },
