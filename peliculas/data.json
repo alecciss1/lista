@@ -4,7 +4,7 @@
     "name": "Peliculas",
     "type": "series"
   },
-  "generatedAt": "2026-11-04T01:32:48.523Z",
+  "generatedAt": "2026-11-05T02:04:20.426Z",
   "scale": 1,
   "data": [
     {
@@ -229,6 +229,15 @@
       "promedio": 8.58,
       "votos": 10,
       "date": "2026-01-17T05:06:10.096Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1793765445446",
+      "capitulo": "Rocky 1",
+      "promedio": 8.52,
+      "votos": 17,
+      "date": "2026-11-04T04:10:45.446Z",
       "channel": "alecciss",
       "colId": "peliculas"
     },
