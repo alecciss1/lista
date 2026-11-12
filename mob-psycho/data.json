@@ -4,7 +4,7 @@
     "name": "Mob Psycho",
     "type": "series"
   },
-  "generatedAt": "2026-11-11T00:58:48.493Z",
+  "generatedAt": "2026-11-12T03:06:43.422Z",
   "scale": 1,
   "data": [
     {
@@ -13,6 +13,15 @@
       "promedio": 9.97,
       "votos": 21,
       "date": "2026-11-04T01:37:00.961Z",
+      "channel": "alecciss",
+      "colId": "mob-psycho"
+    },
+    {
+      "id": "1794364795820",
+      "capitulo": "Temp 2 Capitulo 13",
+      "promedio": 9.81,
+      "votos": 13,
+      "date": "2026-11-11T02:39:55.820Z",
       "channel": "alecciss",
       "colId": "mob-psycho"
     },
@@ -53,11 +62,38 @@
       "colId": "mob-psycho"
     },
     {
+      "id": "1794361746745",
+      "capitulo": "Temp 2 Capitulo 11",
+      "promedio": 9.17,
+      "votos": 10,
+      "date": "2026-11-11T01:49:06.745Z",
+      "channel": "alecciss",
+      "colId": "mob-psycho"
+    },
+    {
       "id": "1791512833363",
       "capitulo": "Capitulo 8",
       "promedio": 9.15,
       "votos": 12,
       "date": "2026-10-09T02:27:13.363Z",
+      "channel": "alecciss",
+      "colId": "mob-psycho"
+    },
+    {
+      "id": "1794363156837",
+      "capitulo": "Temp 2 Capitulo 12",
+      "promedio": 9.09,
+      "votos": 12,
+      "date": "2026-11-11T02:12:36.837Z",
+      "channel": "alecciss",
+      "colId": "mob-psycho"
+    },
+    {
+      "id": "1794364632794",
+      "capitulo": "Temp 2 Capitulo 12",
+      "promedio": 9.09,
+      "votos": 12,
+      "date": "2026-11-11T02:37:12.794Z",
       "channel": "alecciss",
       "colId": "mob-psycho"
     },
@@ -157,6 +193,15 @@
       "promedio": 8.17,
       "votos": 6,
       "date": "2026-10-16T02:01:25.955Z",
+      "channel": "alecciss",
+      "colId": "mob-psycho"
+    },
+    {
+      "id": "1794366588214",
+      "capitulo": "OVA 2",
+      "promedio": 8.09,
+      "votos": 10,
+      "date": "2026-11-11T03:09:48.214Z",
       "channel": "alecciss",
       "colId": "mob-psycho"
     },
