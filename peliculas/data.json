@@ -4,7 +4,7 @@
     "name": "Peliculas",
     "type": "series"
   },
-  "generatedAt": "2026-11-12T03:06:43.372Z",
+  "generatedAt": "2026-11-13T00:25:25.518Z",
   "scale": 1,
   "data": [
     {
@@ -157,6 +157,15 @@
       "promedio": 9.14,
       "votos": 14,
       "date": "2026-01-26T03:48:28.765Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1794452974094",
+      "capitulo": "Rocky 2",
+      "promedio": 9.05,
+      "votos": 15,
+      "date": "2026-11-12T03:09:34.094Z",
       "channel": "alecciss",
       "colId": "peliculas"
     },

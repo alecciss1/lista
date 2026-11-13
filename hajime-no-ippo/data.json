@@ -4,7 +4,7 @@
     "name": "Hajime no Ippo",
     "type": "series"
   },
-  "generatedAt": "2026-11-12T03:06:43.420Z",
+  "generatedAt": "2026-11-13T00:25:25.551Z",
   "scale": 1,
   "data": [
     {
@@ -22,6 +22,15 @@
       "promedio": 9.01,
       "votos": 19,
       "date": "2026-10-31T02:09:52.048Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1794454530856",
+      "capitulo": "Capitulo 50",
+      "promedio": 8.97,
+      "votos": 10,
+      "date": "2026-11-12T03:35:30.856Z",
       "channel": "alecciss",
       "colId": "hajime-no-ippo"
     },

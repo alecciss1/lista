@@ -87,7 +87,7 @@
     "id": "peliculas",
     "name": "Peliculas",
     "type": "series",
-    "count": 63,
+    "count": 64,
     "avg": 9.766000000000002
   },
   {
@@ -213,8 +213,8 @@
     "id": "hajime-no-ippo",
     "name": "Hajime no Ippo",
     "type": "series",
-    "count": 48,
-    "avg": 8.877
+    "count": 49,
+    "avg": 8.905000000000001
   },
   {
     "id": "mob-psycho",
