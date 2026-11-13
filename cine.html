@@ -921,6 +921,17 @@
       document.getElementById('playerFrameContainer').innerHTML = '<div class="no-stream"><h2>Sin Transmisión Activa</h2><p>El administrador todavía no envió ninguna escena del cine.</p></div>';
     }
 
+    // ALECCISS_MOBILE_PLAYER_FIRST_V1: en celular (táctil) primero carga el reproductor de Nimo y
+    // despues, ya listo, los chats y el reproductor oculto de Kick. En PC se carga todo junto como siempre.
+    function whenPlayerReady(fn) {
+      if (!window.matchMedia('(hover: none) and (pointer: coarse)').matches) { fn(); return; }
+      var done = false;
+      function go() { if (done) return; done = true; setTimeout(fn, 2500); }
+      var f = document.querySelector('#playerFrameContainer iframe');
+      if (f) f.addEventListener('load', go, { once: true });
+      setTimeout(go, 12000);
+    }
+    whenPlayerReady(function () {
     if(j.chatUrl) {
       const chatContainer = document.getElementById('chatKick');
       chatContainer.innerHTML = '';
@@ -942,6 +953,7 @@
     if(j.kickChannel) {
       document.getElementById('hiddenPlayer').innerHTML = `<iframe src="https://player.kick.com/${j.kickChannel}?muted=true&autoplay=true" allow="autoplay"></iframe>`;
     }
+    });
 
     // Pasar URLs al overlay de pantalla completa móvil
     var kickChatUrl = j.chatUrl || '';
