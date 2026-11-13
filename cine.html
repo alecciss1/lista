@@ -541,6 +541,10 @@
     body .chat-col .chat-header .chat-tab { min-height: 0 !important; padding: 10px 6px !important; border: 0 !important; border-radius: 0 !important; background: none; }
     .stream-title, .live-indicator { display: none; }
   }
+
+  /* ALECCISS_NIMO_MODES_V1: el iframe que crea el SDK de Nimo debe llenar el reproductor */
+  #nimoSdkPlayer { position: absolute; inset: 0; }
+  #nimoSdkPlayer iframe { position: absolute; inset: 0; width: 100% !important; height: 100% !important; border: 0; }
 </style>
 </head>
 <body>
@@ -864,7 +868,10 @@
       }
     }
     syncVotingState();
-    setInterval(syncVotingState, 2000);
+    setInterval(function () {
+      if (document.hidden && window.matchMedia('(hover: none) and (pointer: coarse)').matches) return;
+      syncVotingState();
+    }, 2000);
 
   })(); // fin IIFE widget
 
@@ -927,32 +934,54 @@
       if (!window.matchMedia('(hover: none) and (pointer: coarse)').matches) { fn(); return; }
       var done = false;
       function go() { if (done) return; done = true; setTimeout(fn, 2500); }
-      var f = document.querySelector('#playerFrameContainer iframe');
-      if (f) f.addEventListener('load', go, { once: true });
+      var tries = 0;
+      (function findFrame() {
+        var f = document.querySelector('#playerFrameContainer iframe');
+        if (f) { f.addEventListener('load', go, { once: true }); return; }
+        if (++tries < 40) setTimeout(findFrame, 300);
+      })();
       setTimeout(go, 12000);
     }
+    // ALECCISS_MOBILE_LIGHT_V1: en celular se carga menos para que el video no se corte.
+    //  - Solo se carga el chat de la pestaña activa (el otro, al tocar su pestaña).
+    //  - El reproductor oculto de Kick (baja otro video en segundo plano) se puede apagar en celular.
+    //    Cambia a true si quieres que tambien cuente como espectador de Kick desde celulares.
+    var MOBILE_LOAD_HIDDEN_KICK = false;
+    var isTouchPhone = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+    function loadKickChat() {
+      if (j.chatUrl) {
+        const chatContainer = document.getElementById('chatKick');
+        chatContainer.innerHTML = '';
+        const chatFrame = document.createElement('iframe');
+        chatFrame.src = j.chatUrl;
+        chatFrame.title = 'Chat de Kick en vivo';
+        chatFrame.setAttribute('loading', 'lazy');
+        chatContainer.appendChild(chatFrame);
+      } else {
+        document.getElementById('chatKick').innerHTML = '<div style="padding:20px;text-align:center;color:#a6b7e8">Chat de Kick no configurado.</div>';
+      }
+    }
+    function loadTwitchChat() {
+      if (j.twitchChannel && j.twitchParent) {
+        document.getElementById('chatTwitch').innerHTML = `<iframe src="https://www.twitch.tv/embed/${j.twitchChannel}/chat?darkpopout&parent=${j.twitchParent}"></iframe>`;
+      } else {
+        document.getElementById('chatTwitch').innerHTML = '<div style="padding:20px;text-align:center;color:#a6b7e8">Falta el canal de Twitch o el dominio Parent en la configuración.</div>';
+      }
+    }
+    function loadHiddenKick() {
+      if (j.kickChannel) {
+        document.getElementById('hiddenPlayer').innerHTML = `<iframe src="https://player.kick.com/${j.kickChannel}?muted=true&autoplay=true" allow="autoplay"></iframe>`;
+      }
+    }
     whenPlayerReady(function () {
-    if(j.chatUrl) {
-      const chatContainer = document.getElementById('chatKick');
-      chatContainer.innerHTML = '';
-      const chatFrame = document.createElement('iframe');
-      chatFrame.src = j.chatUrl;
-      chatFrame.title = 'Chat de Kick en vivo';
-      chatFrame.setAttribute('loading', 'lazy');
-      chatContainer.appendChild(chatFrame);
-    } else {
-      document.getElementById('chatKick').innerHTML = '<div style="padding:20px;text-align:center;color:#a6b7e8">Chat de Kick no configurado.</div>';
-    }
-
-    if(j.twitchChannel && j.twitchParent) {
-      document.getElementById('chatTwitch').innerHTML = `<iframe src="https://www.twitch.tv/embed/${j.twitchChannel}/chat?darkpopout&parent=${j.twitchParent}"></iframe>`;
-    } else {
-      document.getElementById('chatTwitch').innerHTML = '<div style="padding:20px;text-align:center;color:#a6b7e8">Falta el canal de Twitch o el dominio Parent en la configuración.</div>';
-    }
-
-    if(j.kickChannel) {
-      document.getElementById('hiddenPlayer').innerHTML = `<iframe src="https://player.kick.com/${j.kickChannel}?muted=true&autoplay=true" allow="autoplay"></iframe>`;
-    }
+      if (!isTouchPhone) { loadKickChat(); loadTwitchChat(); loadHiddenKick(); return; }
+      var active = (document.querySelector('.chat-tab.active') || {}).getAttribute
+        ? document.querySelector('.chat-tab.active').getAttribute('data-target') : 'chatTwitch';
+      window.__pendingChats = { chatKick: loadKickChat, chatTwitch: loadTwitchChat };
+      var first = window.__pendingChats[active] || loadTwitchChat;
+      delete window.__pendingChats[active];
+      first();
+      if (MOBILE_LOAD_HIDDEN_KICK) loadHiddenKick();
     });
 
     // Pasar URLs al overlay de pantalla completa móvil
@@ -963,9 +992,75 @@
     document.getElementById('noStreamBox').innerHTML = '<h2>Error de conexión</h2><p>No se pudo cargar la info del stream.</p>';
   });
 
+  // ALECCISS_NIMO_MODES_V1: formas de incrustar Nimo (probar con ?nimo=iframe | m | sdk al final del enlace).
+  //   iframe = como hasta ahora (www.nimo.tv/embed)        <- por defecto
+  //   m      = iframe pero con la direccion movil m.nimo.tv/embed (evita la redireccion)
+  //   sdk    = reproductor del SDK oficial de Nimo (NimoTV.Player)
+  // Sin ?nimo=... en la direccion, el modo de abajo se usa SOLO en celulares (en PC siempre iframe).
+  var NIMO_MOBILE_MODE = 'iframe';
+  var NIMO_SDK_MUTED_AUTOPLAY = false; // true = arranca silenciado (los navegadores lo permiten sin tocar nada)
+
+  function nimoMode() {
+    var p = '';
+    try { p = (new URLSearchParams(location.search).get('nimo') || '').toLowerCase(); } catch (e) {}
+    if (p === 'iframe' || p === 'm' || p === 'sdk') return p;
+    return window.matchMedia('(hover: none) and (pointer: coarse)').matches ? NIMO_MOBILE_MODE : 'iframe';
+  }
+  function iframeHtml(src) {
+    return `<iframe src="${src}" allowfullscreen webkitallowfullscreen mozallowfullscreen allow="autoplay; fullscreen; picture-in-picture; encrypted-media" scrolling="no"></iframe>`;
+  }
+  function renderNimoSdk(container, url, fallback) {
+    var m = String(url).match(/nimo\.tv\/embed\/([A-Za-z0-9_-]+)/i);
+    if (!m) { fallback(); return; }
+    var finished = false;
+    function fail() { if (finished) return; finished = true; console.warn('Nimo SDK no disponible, uso iframe normal.'); fallback(); }
+    container.innerHTML = '<div id="nimoSdkPlayer"></div>';
+    var sc = document.createElement('script');
+    sc.src = 'https://www.nimo.tv/sdk/embed-player-0.5.0.min.js';
+    sc.onerror = fail;
+    sc.onload = function () {
+      try {
+        var box = document.getElementById('nimoSdkPlayer');
+        var player = new NimoTV.Player('nimoSdkPlayer', {
+          width: Math.max(box.clientWidth, 300),
+          height: Math.max(box.clientHeight, 200),
+          resourceId: m[1],
+          autoplay: 1,
+          muted: NIMO_SDK_MUTED_AUTOPLAY ? 1 : 0
+        });
+        window.__nimoPlayer = player;
+        // Si el SDK crea el iframe sin permiso de pantalla completa, se lo agrega y se recarga una vez.
+        var obs = new MutationObserver(function () {
+          var f = box.querySelector('iframe');
+          if (!f || f.dataset.alecciss) return;
+          f.dataset.alecciss = '1';
+          finished = true;
+          if (!f.hasAttribute('allowfullscreen') || !/fullscreen/.test(f.getAttribute('allow') || '')) {
+            f.setAttribute('allowfullscreen', '');
+            f.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture; encrypted-media');
+            var src = f.src; f.src = 'about:blank'; setTimeout(function () { f.src = src; }, 50);
+          }
+          obs.disconnect();
+        });
+        obs.observe(box, { childList: true, subtree: true });
+        setTimeout(function () { if (!box.querySelector('iframe')) fail(); }, 10000);
+      } catch (e) { fail(); }
+    };
+    document.head.appendChild(sc);
+  }
   function renderPlayer(url) {
-    document.body.classList.toggle('player-nimo', /nimo\.tv/i.test(String(url)));
-    document.getElementById('playerFrameContainer').innerHTML = `<iframe src="${url}" allowfullscreen webkitallowfullscreen mozallowfullscreen allow="autoplay; fullscreen; picture-in-picture; encrypted-media" scrolling="no"></iframe>`;
+    var isNimo = /nimo\.tv/i.test(String(url));
+    document.body.classList.toggle('player-nimo', isNimo);
+    var container = document.getElementById('playerFrameContainer');
+    var mode = isNimo ? nimoMode() : 'iframe';
+    if (mode === 'sdk') {
+      renderNimoSdk(container, url, function () { container.innerHTML = iframeHtml(url); });
+    } else if (mode === 'm') {
+      container.innerHTML = iframeHtml(String(url).replace(/^https?:\/\/(www\.)?nimo\.tv/i, 'https://m.nimo.tv'));
+    } else {
+      container.innerHTML = iframeHtml(url);
+    }
+    console.log('[cine] modo Nimo:', mode);
   }
 
   document.querySelectorAll('.chat-tab').forEach(tab => {
@@ -975,6 +1070,8 @@
       tab.classList.add('active');
       document.getElementById(tab.getAttribute('data-target')).classList.add('active');
       updateChatOpenLink(tab.getAttribute('data-target'));
+      var pend = window.__pendingChats && window.__pendingChats[tab.getAttribute('data-target')];
+      if (pend) { delete window.__pendingChats[tab.getAttribute('data-target')]; pend(); }
     });
   });
 </script>
