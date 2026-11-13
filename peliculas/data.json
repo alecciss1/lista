@@ -4,7 +4,7 @@
     "name": "Peliculas",
     "type": "series"
   },
-  "generatedAt": "2026-11-13T00:52:46.198Z",
+  "generatedAt": "2026-11-13T05:03:10.817Z",
   "scale": 1,
   "data": [
     {
@@ -544,6 +544,15 @@
       "promedio": 6.47,
       "votos": 7,
       "date": "2026-08-21T03:27:20.783Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1794544134760",
+      "capitulo": "The Wolverine",
+      "promedio": 6.08,
+      "votos": 10,
+      "date": "2026-11-13T04:28:54.760Z",
       "channel": "alecciss",
       "colId": "peliculas"
     },
