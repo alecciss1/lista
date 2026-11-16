@@ -549,10 +549,10 @@
   /* ALECCISS_STARVIOS_CROP_V1 (solo celular): video de Starvios solo, header arriba y chat debajo */
   #svBox { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); overflow: hidden; background: #000; }
   #svScale { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
-  @media (hover: none) and (pointer: coarse) {
+  @media all {
     body.player-starvios .stream-cover-watermark { display: none !important; }
     body.player-starvios .player-wrap { display: flex; flex-direction: column; overflow: hidden; }
-    body.player-starvios .stream-cover-top { position: relative; flex: 0 0 48px; height: 48px; background: #05070f; }
+    body.player-starvios .stream-cover-top { position: relative; flex: 0 0 52px; height: 52px; background: #05070f; }
     body.player-starvios #playerFrameContainer { position: relative; flex: 1 1 auto; min-height: 0; width: 100%; height: auto !important; background: #000; overflow: hidden; }
   }
   @media (hover: none) and (pointer: coarse) and (orientation: portrait) {
@@ -1028,16 +1028,28 @@
   var STARVIOS_W = 412;       // ancho (px) con el que se carga su pagina
   var STARVIOS_H = 760;       // alto (px) del iframe antes de recortar
   var STARVIOS_TOP = 56;      // alto (px) del menu de Starvios que hay que ocultar arriba
+  // PC: se carga la pagina de Starvios con su diseño de escritorio (sin escalar, para no perder calidad de video)
+  // y se desplaza para ocultar su menu lateral (izquierda) y su cabecera (arriba).
+  var STARVIOS_PC_LEFT = 232;  // ancho (px) del menu lateral de Starvios
+  var STARVIOS_PC_TOP = 88;    // cabecera + margen (px) sobre el video
+  var STARVIOS_PC_RIGHT = 12;  // margen (px) a la derecha del video
   function svLayout() {
     var c = document.getElementById('playerFrameContainer');
     var box = document.getElementById('svBox'), sc = document.getElementById('svScale');
     if (!c || !box || !sc) return;
     var cw = c.clientWidth, ch = c.clientHeight;
     if (!cw || !ch) return;
-    var bw = Math.min(cw, ch * 16 / 9), bh = bw * 9 / 16, k = bw / STARVIOS_W;
+    var bw = Math.min(cw, ch * 16 / 9), bh = bw * 9 / 16;
     box.style.width = bw + 'px'; box.style.height = bh + 'px';
-    sc.style.width = STARVIOS_W + 'px'; sc.style.height = STARVIOS_H + 'px';
-    sc.style.transform = 'scale(' + k + ') translateY(-' + STARVIOS_TOP + 'px)';
+    if (window.__svMode === 'pc') {
+      sc.style.width = Math.round(bw + STARVIOS_PC_LEFT + STARVIOS_PC_RIGHT) + 'px';
+      sc.style.height = Math.round(bh + STARVIOS_PC_TOP + 300) + 'px';
+      sc.style.transform = 'translate(-' + STARVIOS_PC_LEFT + 'px,-' + STARVIOS_PC_TOP + 'px)';
+    } else {
+      var k = bw / STARVIOS_W;
+      sc.style.width = STARVIOS_W + 'px'; sc.style.height = STARVIOS_H + 'px';
+      sc.style.transform = 'scale(' + k + ') translateY(-' + STARVIOS_TOP + 'px)';
+    }
   }
   function iframeHtml(src) {
     return `<iframe src="${src}" allowfullscreen webkitallowfullscreen mozallowfullscreen allow="autoplay; fullscreen; picture-in-picture; encrypted-media" scrolling="no"></iframe>`;
@@ -1089,7 +1101,8 @@
     var svParam = '';
     try { svParam = new URLSearchParams(location.search).get('crop') || ''; } catch (e) {}
     var svIsTouch = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
-    var svCrop = /(^|\/\/)(www\.)?starvios\.com/i.test(String(url)) && (svParam === '1' || (svParam !== '0' && svIsTouch && STARVIOS_CROP));
+    var svCrop = /(^|\/\/)(www\.)?starvios\.com/i.test(String(url)) && svParam !== '0' && STARVIOS_CROP;
+    window.__svMode = (svIsTouch || svParam === 'm') ? 'm' : 'pc';
     document.body.classList.toggle('player-starvios', svCrop);
     if (svCrop) {
       container.innerHTML = '<div id="svBox"><div id="svScale">' + iframeHtml(url) + '</div></div>';
