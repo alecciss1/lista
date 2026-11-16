@@ -545,6 +545,22 @@
   /* ALECCISS_NIMO_MODES_V1: el iframe que crea el SDK de Nimo debe llenar el reproductor */
   #nimoSdkPlayer { position: absolute; inset: 0; }
   #nimoSdkPlayer iframe { position: absolute; inset: 0; width: 100% !important; height: 100% !important; border: 0; }
+
+  /* ALECCISS_STARVIOS_CROP_V1 (solo celular): video de Starvios solo, header arriba y chat debajo */
+  #svBox { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); overflow: hidden; background: #000; }
+  #svScale { position: absolute; left: 0; top: 0; transform-origin: 0 0; }
+  @media (hover: none) and (pointer: coarse) {
+    body.player-starvios .stream-cover-watermark { display: none !important; }
+    body.player-starvios .player-wrap { display: flex; flex-direction: column; overflow: hidden; }
+    body.player-starvios .stream-cover-top { position: relative; flex: 0 0 48px; height: 48px; background: #05070f; }
+    body.player-starvios #playerFrameContainer { position: relative; flex: 1 1 auto; min-height: 0; width: 100%; height: auto !important; background: #000; overflow: hidden; }
+  }
+  @media (hover: none) and (pointer: coarse) and (orientation: portrait) {
+    body.player-starvios:not(.fs-mode) .main-col { flex: 0 0 auto; }
+    body.player-starvios:not(.fs-mode) .player-wrap { flex: 0 0 auto; height: auto !important; }
+    body.player-starvios:not(.fs-mode) #playerFrameContainer { flex: none; aspect-ratio: 16 / 9; }
+    body.player-starvios:not(.fs-mode) .chat-col { flex: 1 1 auto; height: auto !important; min-height: 0; }
+  }
 </style>
 </head>
 <body>
@@ -647,7 +663,7 @@
 <script>
   // El sitio está en GitHub Pages, pero la API debe ser un servidor HTTPS público.
   // localhost se permite únicamente para probar el preview local.
-  const configuredApiUrl = "https://dylan-work-determines-accessibility.trycloudflare.com";
+  const configuredApiUrl = "";
   const LIVE_API = configuredApiUrl || ((location.hostname === 'localhost' || location.hostname === '127.0.0.1') ? location.origin : '');
 
   // ============ WIDGET DE VOTACIÓN ============
@@ -997,7 +1013,7 @@
   //   m      = iframe pero con la direccion movil m.nimo.tv/embed (evita la redireccion)
   //   sdk    = reproductor del SDK oficial de Nimo (NimoTV.Player)
   // Sin ?nimo=... en la direccion, el modo de abajo se usa SOLO en celulares (en PC siempre iframe).
-  var NIMO_MOBILE_MODE = 'sdk';
+  var NIMO_MOBILE_MODE = 'iframe';
   var NIMO_SDK_MUTED_AUTOPLAY = false; // true = arranca silenciado (los navegadores lo permiten sin tocar nada)
 
   function nimoMode() {
@@ -1005,6 +1021,23 @@
     try { p = (new URLSearchParams(location.search).get('nimo') || '').toLowerCase(); } catch (e) {}
     if (p === 'iframe' || p === 'm' || p === 'sdk') return p;
     return window.matchMedia('(hover: none) and (pointer: coarse)').matches ? NIMO_MOBILE_MODE : 'iframe';
+  }
+  // Medidas de la pagina de Starvios en su diseño de celular (se fija el ancho del iframe en STARVIOS_W para
+  // que siempre use ese diseño). Si se ve una franja de su menu arriba o se corta el video, ajusta STARVIOS_TOP.
+  var STARVIOS_CROP = true;   // false = mostrar la pagina completa de Starvios como antes
+  var STARVIOS_W = 412;       // ancho (px) con el que se carga su pagina
+  var STARVIOS_H = 760;       // alto (px) del iframe antes de recortar
+  var STARVIOS_TOP = 56;      // alto (px) del menu de Starvios que hay que ocultar arriba
+  function svLayout() {
+    var c = document.getElementById('playerFrameContainer');
+    var box = document.getElementById('svBox'), sc = document.getElementById('svScale');
+    if (!c || !box || !sc) return;
+    var cw = c.clientWidth, ch = c.clientHeight;
+    if (!cw || !ch) return;
+    var bw = Math.min(cw, ch * 16 / 9), bh = bw * 9 / 16, k = bw / STARVIOS_W;
+    box.style.width = bw + 'px'; box.style.height = bh + 'px';
+    sc.style.width = STARVIOS_W + 'px'; sc.style.height = STARVIOS_H + 'px';
+    sc.style.transform = 'scale(' + k + ') translateY(-' + STARVIOS_TOP + 'px)';
   }
   function iframeHtml(src) {
     return `<iframe src="${src}" allowfullscreen webkitallowfullscreen mozallowfullscreen allow="autoplay; fullscreen; picture-in-picture; encrypted-media" scrolling="no"></iframe>`;
@@ -1052,6 +1085,25 @@
     var isNimo = /nimo\.tv/i.test(String(url));
     document.body.classList.toggle('player-nimo', isNimo);
     var container = document.getElementById('playerFrameContainer');
+    // ALECCISS_STARVIOS_CROP_V1: en celular muestra SOLO el video de Starvios (sin su menu, descripcion ni chat).
+    var svParam = '';
+    try { svParam = new URLSearchParams(location.search).get('crop') || ''; } catch (e) {}
+    var svIsTouch = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+    var svCrop = /(^|\/\/)(www\.)?starvios\.com/i.test(String(url)) && (svParam === '1' || (svParam !== '0' && svIsTouch && STARVIOS_CROP));
+    document.body.classList.toggle('player-starvios', svCrop);
+    if (svCrop) {
+      container.innerHTML = '<div id="svBox"><div id="svScale">' + iframeHtml(url) + '</div></div>';
+      svLayout();
+      if (!window.__svRO) {
+        if (window.ResizeObserver) { window.__svRO = new ResizeObserver(svLayout); window.__svRO.observe(container); }
+        window.addEventListener('resize', svLayout);
+        window.addEventListener('orientationchange', function () { setTimeout(svLayout, 250); });
+        document.addEventListener('fullscreenchange', function () { setTimeout(svLayout, 150); });
+        window.__svRO = window.__svRO || true;
+      }
+      console.log('[cine] Starvios recortado al video');
+      return;
+    }
     var mode = isNimo ? nimoMode() : 'iframe';
     if (mode === 'sdk') {
       renderNimoSdk(container, url, function () { container.innerHTML = iframeHtml(url); });
