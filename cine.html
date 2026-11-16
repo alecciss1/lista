@@ -561,6 +561,9 @@
     body.player-starvios:not(.fs-mode) #playerFrameContainer { flex: none; aspect-ratio: 16 / 9; }
     body.player-starvios:not(.fs-mode) .chat-col { flex: 1 1 auto; height: auto !important; min-height: 0; }
   }
+
+  /* Botón "ABRIR CHAT" oculto (el JS sigue funcionando; para volver a mostrarlo, borra esta regla) */
+  .chat-open-external, #chat-open-external { display: none !important; }
 </style>
 </head>
 <body>
