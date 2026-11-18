@@ -4,7 +4,7 @@
     "name": "Hajime no Ippo",
     "type": "series"
   },
-  "generatedAt": "2026-11-17T01:29:14.154Z",
+  "generatedAt": "2026-11-18T01:57:05.798Z",
   "scale": 1,
   "data": [
     {
@@ -157,6 +157,15 @@
       "promedio": 8.58,
       "votos": 12,
       "date": "2026-11-10T02:31:40.318Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1794882783898",
+      "capitulo": "Capitulo 55",
+      "promedio": 8.55,
+      "votos": 15,
+      "date": "2026-11-17T02:33:03.898Z",
       "channel": "alecciss",
       "colId": "hajime-no-ippo"
     },
@@ -463,6 +472,15 @@
       "promedio": 7.33,
       "votos": 12,
       "date": "2026-10-06T02:52:14.442Z",
+      "channel": "alecciss",
+      "colId": "hajime-no-ippo"
+    },
+    {
+      "id": "1794884328768",
+      "capitulo": "Capitulo 56",
+      "promedio": 7.15,
+      "votos": 14,
+      "date": "2026-11-17T02:58:48.768Z",
       "channel": "alecciss",
       "colId": "hajime-no-ippo"
     },
