@@ -4,7 +4,7 @@
     "name": "Peliculas",
     "type": "series"
   },
-  "generatedAt": "2026-11-20T01:46:12.741Z",
+  "generatedAt": "2026-11-20T23:29:40.044Z",
   "scale": 1,
   "data": [
     {
@@ -382,6 +382,15 @@
       "promedio": 8.02,
       "votos": 5,
       "date": "2026-07-03T01:56:44.435Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1795149905928",
+      "capitulo": "The Amazing Spiderman 2",
+      "promedio": 8.01,
+      "votos": 14,
+      "date": "2026-11-20T04:45:05.928Z",
       "channel": "alecciss",
       "colId": "peliculas"
     },
