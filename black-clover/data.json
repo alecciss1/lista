@@ -4,7 +4,7 @@
     "name": "Black Clover",
     "type": "series"
   },
-  "generatedAt": "2026-11-24T02:02:07.799Z",
+  "generatedAt": "2026-11-25T01:08:28.314Z",
   "scale": 1,
   "data": [
     {
@@ -190,6 +190,15 @@
       "channel": "alecciss"
     },
     {
+      "id": "1795485949748",
+      "capitulo": "Capitulo 178",
+      "promedio": 9.59,
+      "votos": 15,
+      "date": "2026-11-24T02:05:49.748Z",
+      "channel": "alecciss",
+      "colId": "black-clover"
+    },
+    {
       "id": "1760669557343",
       "capitulo": "Capitulo 169",
       "promedio": 9.58,
@@ -205,6 +214,15 @@
       "votos": 33,
       "date": "2025-09-17T02:31:16.510Z",
       "channel": "alecciss"
+    },
+    {
+      "id": "1795487716752",
+      "capitulo": "Capitulo 179",
+      "promedio": 9.45,
+      "votos": 10,
+      "date": "2026-11-24T02:35:16.752Z",
+      "channel": "alecciss",
+      "colId": "black-clover"
     },
     {
       "id": "1760667999312",
