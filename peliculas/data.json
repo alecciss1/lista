@@ -4,7 +4,7 @@
     "name": "Peliculas",
     "type": "series"
   },
-  "generatedAt": "2026-11-25T01:08:28.359Z",
+  "generatedAt": "2026-11-26T01:44:56.586Z",
   "scale": 1,
   "data": [
     {
@@ -229,6 +229,15 @@
       "promedio": 8.71,
       "votos": 9,
       "date": "2026-06-26T03:15:17.205Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1795579490876",
+      "capitulo": "Rocky IV",
+      "promedio": 8.65,
+      "votos": 13,
+      "date": "2026-11-25T04:04:50.876Z",
       "channel": "alecciss",
       "colId": "peliculas"
     },

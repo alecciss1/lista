@@ -87,7 +87,7 @@
     "id": "peliculas",
     "name": "Peliculas",
     "type": "series",
-    "count": 67,
+    "count": 68,
     "avg": 9.766000000000002
   },
   {
@@ -220,7 +220,7 @@
     "id": "mob-psycho",
     "name": "Mob Psycho",
     "type": "series",
-    "count": 33,
-    "avg": 9.451
+    "count": 35,
+    "avg": 9.472
   }
 ]
