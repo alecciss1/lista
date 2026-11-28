@@ -4,7 +4,7 @@
     "name": "Peliculas",
     "type": "series"
   },
-  "generatedAt": "2026-11-27T03:45:17.485Z",
+  "generatedAt": "2026-11-28T00:58:43.102Z",
   "scale": 1,
   "data": [
     {
@@ -535,6 +535,15 @@
       "promedio": 7.15,
       "votos": 11,
       "date": "2026-08-19T03:09:58.661Z",
+      "channel": "alecciss",
+      "colId": "peliculas"
+    },
+    {
+      "id": "1795751407452",
+      "capitulo": "X-Men: Dias del Futuro Pasado",
+      "promedio": 7.14,
+      "votos": 12,
+      "date": "2026-11-27T03:50:07.452Z",
       "channel": "alecciss",
       "colId": "peliculas"
     },
